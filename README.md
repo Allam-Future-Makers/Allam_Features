@@ -15,3 +15,12 @@
 
 - [**قلم**](https://qalam.ai/)
 
+## IBM Watsonx 
+
+- [**documentation**](https://ibm.github.io/watsonx-ai-python-sdk/index.html)
+
+- [**All IBM Foundation Models, Embeddings, etc**](https://ibm.github.io/watsonx-ai-python-sdk/foundation_models.html)
+
+- [**IBM Foundation models**](https://ibm.github.io/watsonx-ai-python-sdk/fm_models.html)
+
+
