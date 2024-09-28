@@ -23,4 +23,6 @@
 
 - [**IBM Foundation models**](https://ibm.github.io/watsonx-ai-python-sdk/fm_models.html)
 
+## Langchain docs
 
+- [**Langserve**](https://python.langchain.com/docs/langserve/)
