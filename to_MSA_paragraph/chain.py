@@ -44,7 +44,7 @@ class ToMSAParagraphChain:
         waiting_messages = ["Patience is a virtue. Thanks for waiting!", "Almost there! Your answer is coming soon.", "Hang tight...", "See the gears turning as our AI processes your request...", "Watch as our AI works its magic"]
         processed_paragraph = ""
         
-        with open("to_MSA.txt", 'w') as f:
+        with open("to_MSA_paragraph.txt", 'w') as f:
             f.write("")
         i=0
         j=0
@@ -66,7 +66,7 @@ class ToMSAParagraphChain:
                     break
                 except: 
                     continue
-            past_sentence = words[i:(i+chunk_size-j)//4] 
+            past_sentence = words[i:(i+chunk_size-j)//4] # get the last quarter of the chunk ... to be passed again with the new chunk to ensure coherense of chunks. 
             i = i+chunk_size-j  
             try:
                 current_chunk_processed = result['finally_corrected_text']
@@ -74,7 +74,7 @@ class ToMSAParagraphChain:
                 response = str(result)
                 pattern_correct = r'"finally_corrected_text":\s*"([^"]*)"'
                 current_chunk_processed = re.findall(pattern_correct, response)[0]
-            with open("to_MSA.txt", 'a') as f:
+            with open("to_MSA_paragraph.txt", 'a') as f:
                 f.write(str(current_chunk_processed))
             processed_paragraph += current_chunk_processed + "\n"
         return processed_paragraph
