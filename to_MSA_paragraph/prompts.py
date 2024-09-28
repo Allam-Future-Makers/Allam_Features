@@ -1,6 +1,6 @@
 from langchain_core.prompts import PromptTemplate
 
-correct_prompt_paragraph = PromptTemplate(template="""
+correct_prompt_text = PromptTemplate(template="""
 <s>
 [INST]
 حلل المعطى لك ثم قم بإعطاء إجابة نهائية بها نصين (أولًا: النص المعطى لك بدون النص السابق(قد ينقسم النص المعطى لك إلى جزئين ... نص مصحح سابق و نص غير مصحح معطى لتصحيحه) , وثانيًا: النص المصحح) بعد القيام بالخمس خطوات القادمة:
@@ -37,17 +37,21 @@ correct_prompt_paragraph = PromptTemplate(template="""
 """,
 input_variables=['sentence'])
 
-correct_parser_prompt_paragraph = PromptTemplate(template="""
-أنت سوف تعطى إجابة عن نص معاد صياغته ليكون باللغة العربية الفصحى
-وقد يكون النص المصحح هى نفس النص الأصلي  
-give your answer as JSON with keys as 'input_text' and 'primary_corrected_text'
+correct_parser_prompt_text = PromptTemplate(template="""
+give your final answer as JSON with keys as 'input_text' and 'corrected_text'
+أنت سوف تعطى إجابة عن نص مصحح ليكون باللغة العربية الفصحى
+وقد يكون النص المصحح هى نفس النص الأصلي 
+النص المدخل = input_text
+النص المصحح = corrected_text
 هذه هى الإجابة المعطاة لك:
 {asnwer}
+                                            
+give your final answer as JSON with keys as 'input_text' and 'corrected_text'
 """,
 input_variables=['answer'])
 
 
-critic_prompt_paragraph = PromptTemplate(template="""
+critic_prompt_text = PromptTemplate(template="""
 <s> [INST]
 قم بفحص النصين المعطيين لك (نص مدخل من المستخدم و نص مصحح ليكون باللغة العربية الفصحى) ثم قم بالأربع خطوات القادمة على  الترتيب:
 1- تأكد من أن النص المصحح لا يخالف قواعد اللغة العربية الفصحى وليس به كلمات لا تنتمى للغة العربية الفصحى (مثل: مش عارف , أنا واخد بالى ,... وغيرها من الكلمات التى لا تنتمى للغة العربية الفصحى) وأعط إجابتك ب (تخالف أو لا تخالف) ثم اذهب للخطوة الثانية
@@ -64,11 +68,17 @@ critic_prompt_paragraph = PromptTemplate(template="""
 """,
 input_variables=['sentence'])
 
-critic_parser_prompt_paragraph = PromptTemplate(template="""
+critic_parser_prompt_text = PromptTemplate(template="""
+give your final answer as JSON with keys as 'input_text' and 'primary_corrected_text' and 'finally_corrected_text'.
 أنت سوف تعطى إجابة بها ثلاث نصوص (نص مدخل من المستخدم ونص مصحح أولي ونص مصحح نهائي
 قد يكون الثلاث نصوص متطابقين  
-give your answer as JSON with keys as 'input_text' and 'primary_corrected_text' and 'finally_corrected_text'
+النص المدخل = input_text
+النص المصحح الأولى = primary_corrected_text
+النص المصحح النهائى = finally_corrected_text
 هذه هى الإجابة المعطاة لك:
 {asnwer}
+                                           
+give your final answer as JSON with keys as 'input_text' and 'primary_corrected_text' and 'finally_corrected_text'
+
 """,
 input_variables=['answer'])
