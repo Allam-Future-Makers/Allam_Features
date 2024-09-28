@@ -43,10 +43,14 @@ give your final answer as JSON with keys as 'input_text' and 'corrected_text'
 وقد يكون النص المصحح هى نفس النص الأصلي 
 النص المدخل = input_text
 النص المصحح = corrected_text
+
+give the final answer as a valid JSON with keys as 'input_text' and 'corrected_text'.
+
+
 هذه هى الإجابة المعطاة لك:
 {asnwer}
                                             
-give your final answer as JSON with keys as 'input_text' and 'corrected_text'
+make sure to return the final answer as a valid JSON with keys [input_text, corrected_text]
 """,
 input_variables=['answer'])
 
@@ -75,10 +79,12 @@ give your final answer as JSON with keys as 'input_text' and 'primary_corrected_
 النص المدخل = input_text
 النص المصحح الأولى = primary_corrected_text
 النص المصحح النهائى = finally_corrected_text
+
+give the final answer as a valid JSON with keys as 'input_text' and 'primary_corrected_text' and 'finally_corrected_text'.
+
 هذه هى الإجابة المعطاة لك:
 {asnwer}
                                            
-give your final answer as JSON with keys as 'input_text' and 'primary_corrected_text' and 'finally_corrected_text'
-
+make sure to return the final answer as a valid JSON with keys [input_text, primary_corrected_text, finally_corrected_text]
 """,
 input_variables=['answer'])
