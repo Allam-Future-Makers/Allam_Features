@@ -42,40 +42,43 @@ class ToMSAParagraphChain:
 
         words = paragraph.split()
         waiting_messages = ["Patience is a virtue. Thanks for waiting!", "Almost there! Your answer is coming soon.", "Hang tight...", "See the gears turning as our AI processes your request...", "Watch as our AI works its magic"]
-
         processed_paragraph = ""
-        with open("paragraph_to_MSA.txt", 'w') as f:
-                f.write("")
+        
+        with open("to_MSA.txt", 'w') as f:
+            f.write("")
         i=0
         j=0
-        iterator = 0
-        self.summary = ""
+        iterator=0
+        summary = ""
+        past_sentence = "لا يوجد نص سابق حيث أن النص الغير مصحح التالى المعطى لك هو بداية الكلام"
         while i < len(words):
             print(waiting_messages[iterator % len(waiting_messages)])
             iterator += 1 
             for j in  words[i:i+chunk_size: -1]:
                 if j.endswith('.'):
                     break 
+            
             chunk = " ".join(words[i:i+chunk_size-j])
-            i = i+chunk_size-j
-            # Modify the chain to process the chunk
-            result = chain.invoke({"sentence": chunk})
+            # Modify the chain to process the chunk'
+            while True:
+                try:
+                    result = chain.invoke({"sentence": chunk, "past_sentence": past_sentence})
+                    break
+                except: 
+                    continue
+            past_sentence = words[i:(i+chunk_size-j)//4] 
+            i = i+chunk_size-j  
             try:
                 current_chunk_processed = result['finally_corrected_text']
-                self.summary = " :هذا هو تلخيص النص السابق ليساعدك فى تصحيح النص الحالى" + result['finally_corrected_text_short_summary']
             except:
                 response = str(result)
                 pattern_correct = r'"finally_corrected_text":\s*"([^"]*)"'
-                pattern_summary = r'"finally_corrected_text_short_summary":\s*"([^"]*)"'
-        
                 current_chunk_processed = re.findall(pattern_correct, response)[0]
-                self.summary = " :هذا هو تلخيص النص السابق ليساعدك فى تصحيح النص الحالى" + re.findall(pattern_summary, response)[0]
-            
-            with open("paragraph_to_MSA.txt", 'a') as f:
+            with open("to_MSA.txt", 'a') as f:
                 f.write(str(current_chunk_processed))
             processed_paragraph += current_chunk_processed + "\n"
         return processed_paragraph
-
+    
     def __call__(self, path_to_paragraph):
         if self.cares_about_requests:
             self.iterator += 1
