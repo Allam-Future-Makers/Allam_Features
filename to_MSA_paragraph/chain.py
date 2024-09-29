@@ -1,4 +1,4 @@
-from prompts import correct_prompt_paragraph, correct_parser_prompt_paragraph, critic_prompt_paragraph, critic_parser_prompt_paragraph
+from prompts import correct_prompt_text, correct_parser_prompt_text, critic_prompt_text, critic_parser_prompt_text
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_ibm import WatsonxLLM
@@ -32,24 +32,24 @@ class ToMSAParagraphChain:
 
     def _build_chain(self):
         llm_chain = (
-            correct_prompt_paragraph | self.watsonx_llm | correct_parser_prompt_paragraph | self.gemini_llm | JsonOutputParser() 
+            correct_prompt_text | self.watsonx_llm | correct_parser_prompt_text | self.gemini_llm | JsonOutputParser() 
             | {"sentence": RunnablePassthrough()} 
-            | critic_prompt_paragraph | self.watsonx_llm | critic_parser_prompt_paragraph | self.gemini_llm | JsonOutputParser() 
+            | critic_prompt_text | self.watsonx_llm | critic_parser_prompt_text | self.gemini_llm | JsonOutputParser() 
         )
         return llm_chain
     
     def _process_paragraph(self, chain, paragraph, chunk_size=60):
-
         words = paragraph.split()
+
         waiting_messages = ["Patience is a virtue. Thanks for waiting!", "Almost there! Your answer is coming soon.", "Hang tight...", "See the gears turning as our AI processes your request...", "Watch as our AI works its magic"]
+
         processed_paragraph = ""
-        
         with open("to_MSA_paragraph.txt", 'w') as f:
-            f.write("")
+                f.write("")
         i=0
         j=0
         iterator=0
-        summary = ""
+        tries = 0
         past_sentence = "لا يوجد نص سابق حيث أن النص الغير مصحح التالى المعطى لك هو بداية الكلام"
         while i < len(words):
             print(waiting_messages[iterator % len(waiting_messages)])
@@ -64,9 +64,11 @@ class ToMSAParagraphChain:
                 try:
                     result = chain.invoke({"sentence": chunk, "past_sentence": past_sentence})
                     break
-                except: 
+                except Exception as e:
+                    print(f" Encountered an error and in our {tries} trial to resolve it.") 
+                    tries +=1
                     continue
-            past_sentence = words[i:(i+chunk_size-j)//4] # get the last quarter of the chunk ... to be passed again with the new chunk to ensure coherense of chunks. 
+            past_sentence = " ".join(words[((i+chunk_size-j)//8 * 7): (i+chunk_size-j)]) 
             i = i+chunk_size-j  
             try:
                 current_chunk_processed = result['finally_corrected_text']

@@ -26,3 +26,4 @@
 ## Langchain docs
 
 - [**Langserve**](https://python.langchain.com/docs/langserve/)
+- [**Use Cases**](https://python.langchain.com/v0.1/docs/use_cases/)
