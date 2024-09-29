@@ -38,20 +38,21 @@ correct_prompt_text = PromptTemplate(template="""
 input_variables=['sentence'])
 
 correct_parser_prompt_text = PromptTemplate(template="""
-give your final answer as JSON with keys as 'input_text' and 'corrected_text'
-أنت سوف تعطى إجابة عن نص مصحح ليكون باللغة العربية الفصحى
-وقد يكون النص المصحح هى نفس النص الأصلي 
+أنت سوف تعطى إجابة بها نصين (نص مدخل من المستخدم ونص مصحح
+قد يكون النصين متطابقين  
 النص المدخل = input_text
 النص المصحح = corrected_text
-
-give the final answer as a valid JSON with keys as 'input_text' and 'corrected_text'.
-
+                        
+give your final answer as JSON with keys as 'input_text' and 'corrected_text' with this structre:
+'input_text': 'valid string content of the input_text (النص المدخل) given to you after making it organized for display but not changed in content',
+'corrected_text': 'valid string content of the corrected_text (النص المصحح) given to you after making it organized for display but not changed in content'
 
 هذه هى الإجابة المعطاة لك:
 {answer}
-                                            
-make sure to return the final answer as a valid JSON with keys [input_text, corrected_text]
-So Important: If the value of the JSON  contains the symbol `"` make sure to add `\` before it to be `\"`.
+                                           
+make sure to return the final answer as a valid JSON with keys [input_text,corrected_text]
+                                           
+So Important: If the values (values only not the keys) of the JSON  contains the symbol `"` replace it with `“`.
 """,
 input_variables=['answer'])
 
@@ -62,7 +63,8 @@ critic_prompt_text = PromptTemplate(template="""
 1- تأكد من أن النص المصحح لا يخالف قواعد اللغة العربية الفصحى وليس به كلمات لا تنتمى للغة العربية الفصحى (مثل: مش عارف , أنا واخد بالى ,... وغيرها من الكلمات التى لا تنتمى للغة العربية الفصحى) وأعط إجابتك ب (تخالف أو لا تخالف) ثم اذهب للخطوة الثانية
 2- أعد تصحيح النص المصحح إذا كانت إجابتك فى الخطوة السابقة ب (تخالف). وإذا كانت إجابتك  فى الخطوة السابقة ب (لا تخالف) انتقل للخطوة الثالثة
 3- قم بتصحيح الأخطاء فى النحو أو الصرف أو الإملاء إذا وجدت أخطاء ثم انتقل للخطوة الرابعة
-4- قم بإمعان أن النص المصحح النهائي قصير على قدر الإمكان وتجنب التكرار بدون فقدان معلومات أو فقدان العلاقة بالنص المدخل من المستخدم
+4- قم بجعل النص متناسق من حيث البعد الزمانى والمكانى والمعنوى حتى يسهل قراءته. ثم انتقل للخطوة الخامسة
+5- قم بإمعان بجعل النص المصحح النهائي قصير على قدر الإمكان وتجنب التكرار بدون فقدان معلومات أو فقدان العلاقة بالنص المدخل من المستخدم
 
 (أعط ثلاث نصوص على أية حالة حتى إذا كان نصين من الثلاث متطابقين أو الثلاث نصوص متطابقين).أعط إجابتك النهائية كثلاث نصوص (النص المدخل من المستخدم و النص المصحح الأولي والنص بعد تنفيذ الثلاث خطوات) بعد القيام بالأربع خطوات
 هذان هما النصان المعطايين لك (النص المدخل من المستخدم والنص المصصح الأولي):
@@ -74,20 +76,22 @@ critic_prompt_text = PromptTemplate(template="""
 input_variables=['sentence'])
 
 critic_parser_prompt_text = PromptTemplate(template="""
-give your final answer as JSON with keys as 'input_text' and 'primary_corrected_text' and 'finally_corrected_text'.
 أنت سوف تعطى إجابة بها ثلاث نصوص (نص مدخل من المستخدم ونص مصحح أولي ونص مصحح نهائي
 قد يكون الثلاث نصوص متطابقين  
 النص المدخل = input_text
 النص المصحح الأولى = primary_corrected_text
 النص المصحح النهائى = finally_corrected_text
-
-give the final answer as a valid JSON with keys as 'input_text' and 'primary_corrected_text' and 'finally_corrected_text'.
+                                           
+give your final answer as JSON with keys as 'input_text' and 'primary_corrected_text' and 'finally_corrected_text' with this structre:
+'input_text': 'valid string content of the input_text (النص المدخل) given to you after making it organized for display but not changed in content',
+'primary_corrected_text': 'valid string content of the primary_corrected_text (النص المصحح الأولى) given to you after making it organized for display but not changed in content', 
+'finally_corrected_text': 'valid string content of the finally_corrected_text (النص المصحح النهائى) given to you after making it organized for display but not changed in content'
 
 هذه هى الإجابة المعطاة لك:
 {answer}
                                            
 make sure to return the final answer as a valid JSON with keys [input_text, primary_corrected_text, finally_corrected_text]
                                            
-So Important: If the value of the JSON  contains the symbol `"` make sure to add `\` before it to be `\"`.
+So Important: If the values (values only not the keys) of the JSON  contains the symbol `"` replace it with `“`.
 """,
 input_variables=['answer'])

@@ -9,6 +9,8 @@ from langchain_core.output_parsers import JsonOutputParser
 from langchain_ibm import WatsonxLLM
 from langchain_google_genai import ChatGoogleGenerativeAI
 import os, re
+from google.generativeai.types import HarmCategory, HarmBlockThreshold
+from functools import partial
 
 
 class ToMSAParagraphChain:
@@ -38,6 +40,16 @@ class ToMSAParagraphChain:
         self.gemini_llm = ChatGoogleGenerativeAI(
             model="gemini-1.5-flash", temperature=0
         )
+        safety_settings = {
+            HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE,
+            HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
+            HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE,
+            HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: HarmBlockThreshold.BLOCK_NONE
+            }
+        # store the original method
+        self.og_generate = ChatGoogleGenerativeAI._generate
+        # patch
+        ChatGoogleGenerativeAI._generate = partial(self.gemini_llm._generate, safety_settings=safety_settings)
         return self.watsonx_llm, self.gemini_llm
 
     def _build_chain(self):
@@ -91,15 +103,16 @@ class ToMSAParagraphChain:
                     result = chain.invoke(
                         {"sentence": chunk, "past_sentence": past_sentence}
                     )
+                    
                     break
                 except Exception as e:
                     print(
-                        f" Encountered an error and in our {tries} trial to resolve it."
+                        f" Encountered an error whith this exception {e} and we are in our {tries} trial to resolve it."
                     )
                     tries += 1
                     continue
             past_sentence = " ".join(
-                words[((i + chunk_size - j) // 8 * 7) : (i + chunk_size - j)]
+                words[((i + chunk_size - j) // 8 * 7) : (i + chunk_size - j)] # get 1/8 from the last chunk to be fed again with the current chunk
             )
             i = i + chunk_size - j
             try:
