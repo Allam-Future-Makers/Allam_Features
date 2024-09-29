@@ -84,7 +84,7 @@ give your final answer as JSON with keys as 'input_text' and 'primary_corrected_
 give the final answer as a valid JSON with keys as 'input_text' and 'primary_corrected_text' and 'finally_corrected_text'.
 
 هذه هى الإجابة المعطاة لك:
-{asnwer}
+{answer}
                                            
 make sure to return the final answer as a valid JSON with keys [input_text, primary_corrected_text, finally_corrected_text]
                                            
