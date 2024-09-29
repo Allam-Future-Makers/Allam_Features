@@ -3,8 +3,6 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from chain import ToMSAChain
-from langserve import add_routes
-from pydantic import BaseModel
 import uvicorn
 
 # Initialize the FastAPI app
