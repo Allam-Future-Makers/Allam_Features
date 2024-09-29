@@ -44,12 +44,14 @@ class ToMSAParagraphChain:
             HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE,
             HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
             HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE,
-            HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: HarmBlockThreshold.BLOCK_NONE
-            }
+            HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: HarmBlockThreshold.BLOCK_NONE,
+        }
         # store the original method
         self.og_generate = ChatGoogleGenerativeAI._generate
         # patch
-        ChatGoogleGenerativeAI._generate = partial(self.gemini_llm._generate, safety_settings=safety_settings)
+        ChatGoogleGenerativeAI._generate = partial(
+            self.gemini_llm._generate, safety_settings=safety_settings
+        )
         return self.watsonx_llm, self.gemini_llm
 
     def _build_chain(self):
@@ -103,7 +105,7 @@ class ToMSAParagraphChain:
                     result = chain.invoke(
                         {"sentence": chunk, "past_sentence": past_sentence}
                     )
-                    
+
                     break
                 except Exception as e:
                     print(
@@ -112,7 +114,9 @@ class ToMSAParagraphChain:
                     tries += 1
                     continue
             past_sentence = " ".join(
-                words[((i + chunk_size - j) // 8 * 7) : (i + chunk_size - j)] # get 1/8 from the last chunk to be fed again with the current chunk
+                words[
+                    ((i + chunk_size - j) // 8 * 7) : (i + chunk_size - j)
+                ]  # get 1/8 from the last chunk to be fed again with the current chunk
             )
             i = i + chunk_size - j
             try:
