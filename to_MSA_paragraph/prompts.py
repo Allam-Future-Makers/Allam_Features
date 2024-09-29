@@ -48,7 +48,7 @@ give the final answer as a valid JSON with keys as 'input_text' and 'corrected_t
 
 
 هذه هى الإجابة المعطاة لك:
-{asnwer}
+{answer}
                                             
 make sure to return the final answer as a valid JSON with keys [input_text, corrected_text]
 So Important: If the value of the JSON  contains the symbol `"` make sure to add `\` before it to be `\"`.
