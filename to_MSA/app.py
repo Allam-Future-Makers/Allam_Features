@@ -12,7 +12,6 @@ app = FastAPI(
     description="API for converting Arabic dialects to Modern Standard Arabic",
 )
 
-
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
@@ -40,7 +39,8 @@ class ToMSAOutput(BaseModel):
 @app.post("/api/tomsa", response_model=ToMSAOutput)
 async def tomsa_endpoint(input: ToMSAInput):
     try:
-        result = tomsa_chain.to_MSA_chain.invoke({"sentence": input.sentence})
+        # Use `ainvoke` for asynchronous invocation
+        result = await tomsa_chain.to_MSA_chain.ainvoke({"sentence": input.sentence})
         return ToMSAOutput(**result)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
@@ -66,6 +66,4 @@ async def test_route(input: ToMSAInput):
 
 
 if __name__ == "__main__":
-    import uvicorn
-
-    uvicorn.run(app, host="localhost", port=8111, reload=True)
+    uvicorn.run(app, host="localhost", port=8111)
