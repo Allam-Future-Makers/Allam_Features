@@ -65,9 +65,8 @@ class ToMSAParagraphChain:
                     result = chain.invoke({"sentence": chunk, "past_sentence": past_sentence})
                     break
                 except Exception as e:
-                    print(f"{tries}") 
+                    print(f" Encountered an error and in our {tries} trial to resolve it.") 
                     tries +=1
-                    print(f"{e}")
                     continue
             past_sentence = " ".join(words[((i+chunk_size-j)//8 * 7): (i+chunk_size-j)]) 
             i = i+chunk_size-j  
