@@ -36,7 +36,7 @@ correct_parser_prompt = PromptTemplate(template="""
 وقد تكون الجملة المصححة هى نفس الجملة الأصلية  
 give your answer as JSON with keys as 'input_sentence' and 'primary_corrected_sentence'
 هذه هى الإجابة المعطاة لك:
-{asnwer}
+{answer}
 """,
 input_variables=['answer'])
 
@@ -61,6 +61,6 @@ critic_parser_prompt = PromptTemplate(template="""
 قد يكون الثلاث جمل متطابقة  
 give your answer as JSON with keys as 'input_sentence' and 'primary_corrected_sentence' and 'finally_corrected_sentence'
 هذه هى الإجابة المعطاة لك:
-{asnwer}
+{answer}
 """,
 input_variables=['answer'])
