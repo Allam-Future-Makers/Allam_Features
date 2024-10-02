@@ -38,10 +38,10 @@ class ToMSAParagraphChain:
         )
 
         try:
-            with open(path_to_paragraph, 'r') as f:
+            with open(path_to_paragraph, 'r', encoding="utf-8") as f:
                 paragraph = f.read()
                 words = paragraph.split()
-                words = words[:len(words)//4]
+                #words = words[:len(words)//4]
                 self.chunks = []
                 for i in range(0,len(words), chunk_size):
                     self.chunks.append(" ".join(words[i:i+chunk_size]))
@@ -96,10 +96,7 @@ class ToMSAParagraphChain:
         #    self.iterator += 1
         #    self.gemini_llm = self._initialize_gemini(self.iterator)
         result = self._build_parallel_chain(self.chunks).invoke({})
-        cor = ""
-        for res in result.values():
-            inp += res["input_text"] + " "
-            cor += res["corrected_text"] + " "
-        with open("paragraph_processed.txt",'w') as f:
-            f.write(cor)
-        return cor
+        for part in result:
+            with open("paragraph_processed.txt",'a', encoding="utf-8") as f:
+                f.write(part["corrected_text"])
+        return None
