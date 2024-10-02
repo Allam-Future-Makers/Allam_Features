@@ -3,16 +3,11 @@ from termcolor import colored
 import argparse
 
 
-def main(path_to_pargraph):
-    chain = ToMSAParagraphChain(cares_about_requests=False)
-    try:
-        file = open(path_to_pargraph, "r", encoding="utf-8")
-        file.close()
-        chain(path_to_pargraph)
-    except:
-        print("file path cannot be opened.")
-
-
+def main(path_to_paragraph):
+    chain = ToMSAParagraphChain(path_to_paragraph= path_to_paragraph, cares_about_requests=True)
+    result = chain()
+    print(result)
+    
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Path to the paragraph text.")
     parser.add_argument(

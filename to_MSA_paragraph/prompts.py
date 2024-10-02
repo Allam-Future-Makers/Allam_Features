@@ -95,3 +95,56 @@ make sure to return the final answer as a valid JSON with keys [input_text, prim
 So Important: If the values (values only not the keys) of the JSON  contains the symbol `"` replace it with `“`.
 """,
 input_variables=['answer'])
+
+
+
+
+new_correct_prompt_text = PromptTemplate(template="""
+<s>
+[INST]
+قم بدورك الأساسى وهو تصحيح النص المعطى لك لتجعله مطابق لقواعد اللغة العربية الفصحى ال MSA من حيث:
+اجعل إجابتك النهائية تتضمن نصين اثنين على أية حال (النص المعطى لك فى الأساس و النص بعد التصحيح من غير تأويل وإذا كان النص المعطى صحيح لا تصححه) حتى إذا كان النصان متطابقين أو كان النص المعطى قصير. 
+
+1- استبدال الكلمات التى لا تنتمى للغة العربية الفصحى (مثل: النهاردة, نسولف, هاى, مش عاوز, بتوع, بتاعك .... الخ) بأقصر كلمة ممكنة معبرة
+2- تصحيح النص من حيث الأخطاء الإملائية أو النحوية أو الأخطاء فى الصرف.
+
+قم بدراسة هذه الأمثلة للمساعدة:
+الجملة من اللهجة المصرية: "ايوا واضح ان الاتنين ستات مشغولين أوى فى مكالمتهم دى."
+التصحيح:"نعم من الواضح أن المرأتين مشغولتان فى مكالمتهما التليفونية هذه."
+الجملة من اللهجة الموريتانية: "لمرا واقفة ولا قاعدة؟."
+التصحيح:"هل المرأة واقفة أم جالسة؟"
+الجملة من اللهجة المغربية: "شحال ديال الناس كاينين فى الصورة, وشنو كايديرو؟."
+التصحيح:"كم عدد الأشخاص الموجودين فى الصورة, وماذا يفعلون؟"
+الجملة من اللهجة الفلسطينية: "شو نوع الورد اللى قادر تشوفه حولين المنتزة؟"
+التصحيح:"ما نوع الزهور التى يمكن رؤيتها حول الحديقة؟"
+الجملة من اللهجة السعودية: "أنا تعبان اليوم، أبي أرتاح شوي"
+التصحيح:"أنا متعب اليوم، أريد أن أرتاح قليلاً."
+الجملة من اللهجة السعودية: "تعال نشرب قهوة ونقعد نسولف شوي"
+التصحيح:"تعال نشرب قهوة ونتحدث قليلاً"
+الجملة : "أريد الذهاب للمنزل"
+التصحيح: "أريد الذهاب للمنزل"
+                             
+هذا هو النص المعطى لك من المستخدم:
+{sentence}
+
+[/INST]
+""", input_variables=['sentence'])
+
+new_correct_parser_prompt_text = PromptTemplate(template="""
+أنت سوف تعطى إجابة بها نصين (نص مدخل من المستخدم ونص مصحح
+قد يكون النصين متطابقين  
+النص المعطى = input_text
+النص المصحح = corrected_text
+                        
+give your final answer as JSON with keys as 'input_text' and 'corrected_text' with this structre:
+'input_text': 'valid string content of the input_text (النص المعطى) given to you after making it organized for display but not changed in content',
+'corrected_text': 'valid string content of the corrected_text (النص المصحح) given to you after making it organized for display but not changed in content'
+
+هذه هى الإجابة المعطاة لك:
+{answer}
+                                           
+make sure to return the final answer as a valid JSON with keys [input_text,corrected_text]
+                                           
+So Important: If the values (values only not the keys) of the JSON  contains the symbol `"` replace it with `“`.
+""",
+input_variables=['answer'])
