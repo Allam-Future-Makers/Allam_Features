@@ -1,12 +1,5 @@
-from prompts import (
-    correct_prompt_text,
-    correct_parser_prompt_text,
-    critic_prompt_text,
-    critic_parser_prompt_text,
-    new_correct_prompt_text,
-    new_correct_parser_prompt_text
-)
-from langchain_core.runnables import RunnablePassthrough, RunnableLambda, RunnableParallel
+from prompts import new_correct_prompt_text, whole_paragraph_organizer_prompt
+from langchain_core.runnables import RunnableLambda, RunnableParallel
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_ibm import WatsonxLLM
 from langchain_google_genai import ChatGoogleGenerativeAI
@@ -16,9 +9,8 @@ from functools import partial
 
 
 class ToMSAParagraphChain:
-    def __init__(self, path_to_paragraph, chunk_size=80, cares_about_requests=True):
-        self.iterator = 0
-        self.cares_about_requests = cares_about_requests
+    def __init__(self, path_to_paragraph, chunk_size=80):
+    
         self.watson_keys = ["tBmyiiTXb1TYJQPrYHOCjiek8iIQGZoqqZreZwrpSRCM"]
         self.gemini_keys = [
             "AIzaSyA0WgVJxLelaY3fvIhq4XK8Av9udDfJ9rI",
@@ -27,7 +19,8 @@ class ToMSAParagraphChain:
             "AIzaSyDzyMWZB82YyWKzf21k6qdiAn4JG6DXL-Q",
             "AIzaSyC2YG-msSXWXOxnzaxSlEPnQE4scpNLOAc"
         ]
-        self.gemini_llm = self._initialize_gemini(self.iterator)[0]
+    
+        self.gemini_llm = self._initialize_gemini()[0]
 
         os.environ["WATSONX_APIKEY"] = self.watson_keys[0]
         self.watsonx_llm = WatsonxLLM(
@@ -41,7 +34,7 @@ class ToMSAParagraphChain:
             with open(path_to_paragraph, 'r', encoding="utf-8") as f:
                 paragraph = f.read()
                 words = paragraph.split()
-                #words = words[:len(words)//4]
+                #words = words[:len(words)//8]
                 self.chunks = []
                 for i in range(0,len(words), chunk_size):
                     self.chunks.append(" ".join(words[i:i+chunk_size]))
@@ -51,8 +44,8 @@ class ToMSAParagraphChain:
         self.to_MSA_chain = self._build_parallel_chain(self.chunks)
 
 
-    def _initialize_gemini(self, id):
-        api_key = self.gemini_keys[id % 4]
+    def _initialize_gemini(self):
+        api_key = self.gemini_keys[1]
 
         self.gemini_llm = ChatGoogleGenerativeAI(
             model="gemini-1.5-flash", temperature=0, api_key=api_key
@@ -73,32 +66,40 @@ class ToMSAParagraphChain:
         return self.gemini_llm, original_generate
     
     def _reset_default_gemini_arguments(self, gemini_llm):
-        ChatGoogleGenerativeAI._generate = self._initialize_gemini(0)[1]
+        ChatGoogleGenerativeAI._generate = self._initialize_gemini()[1]
         return gemini_llm
     
-    def _build_mini_chain(self, idx, chunk):
+    def _build_mini_chain(self, chunk):
         llm_chain = (
             RunnableLambda(lambda x: chunk) 
             | new_correct_prompt_text 
             | self.watsonx_llm
-            | new_correct_parser_prompt_text 
-            | self._initialize_gemini(idx)[0] | RunnableLambda(self._reset_default_gemini_arguments) | JsonOutputParser() 
+            | RunnableLambda(lambda x: x + "\n---------------------------\n") # for splitting the whole text to help the model
         )
         return llm_chain
     
     def _build_parallel_chain(self, chunks):
-        tasks = {f"sentence_{idx}": self._build_mini_chain(idx, chunk) for idx, chunk in enumerate(chunks)}
-        parallel_chain = RunnableParallel(**tasks)
+        tasks = {f"sentence_{idx}": self._build_mini_chain(chunk) for idx, chunk in enumerate(chunks)}
+        parallel_chain = (
+            RunnableParallel(**tasks) 
+            | RunnableLambda(lambda x: x.values())
+            | whole_paragraph_organizer_prompt 
+            | self._initialize_gemini()[0] 
+            | RunnableLambda(self._reset_default_gemini_arguments) 
+            | JsonOutputParser()
+        ) 
         return parallel_chain
 
     def __call__(self):
-        #if self.cares_about_requests:
-        #    self.iterator += 1
-        #    self.gemini_llm = self._initialize_gemini(self.iterator)
         result = self._build_parallel_chain(self.chunks).invoke({})
-        for part in result.values():
-            with open("paragraph_processed.txt",'a', encoding="utf-8") as f:
-                print(part)
-                print("-----------------------")
-                f.write(part["corrected_text"])
+        with open("paragraph_processed.txt",'w', encoding="utf-8") as f:
+            f.write(result["combined_corrected_text"])
         return None
+
+
+
+
+
+
+
+whole_paragraph_organizer_prompt

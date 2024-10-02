@@ -148,3 +148,18 @@ make sure to return the final answer as a valid JSON with keys [input_text,corre
 So Important: If the values (values only not the keys) of the JSON  contains the symbol `"` replace it with `“`.
 """,
 input_variables=['answer'])
+
+
+
+whole_paragraph_organizer_prompt = PromptTemplate(template="""
+You will be given chunks of Arabic texts. Each chunk has a corrected_text of this chunk (النص المصحح).
+Your job is to combine all the corrected_text of all the chunks in one paragraph and return this paragraph.
+Try to organize the paragraph for being displayed.
+                                                 
+here is the text given to you:                    
+{text}                             
+                                                 
+return you answer as JSON with the key 'combined_corrected_text'.
+So Important: If the values (values only not the keys) of the JSON  contains the symbol `"` replace it with `“`.
+
+""", input_variables=['text'])

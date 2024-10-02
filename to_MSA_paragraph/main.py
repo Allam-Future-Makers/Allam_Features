@@ -1,13 +1,12 @@
-from chain import ToMSAParagraphChain
+from chain2 import ToMSAParagraphChain
 from termcolor import colored
 import argparse
 
 
 def main(path_to_paragraph):
-    chain = ToMSAParagraphChain(path_to_paragraph= path_to_paragraph, cares_about_requests=True)
+    chain = ToMSAParagraphChain(path_to_paragraph= path_to_paragraph)
     result = chain()
-    print(result)
-    
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Path to the paragraph text.")
     parser.add_argument(
