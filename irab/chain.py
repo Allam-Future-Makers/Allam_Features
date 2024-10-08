@@ -8,6 +8,7 @@ json_parse_prompt = prompts.json_parse_prompt
 critic_prompt = prompts.critic_prompt
 helper_prompt = prompts.helper_prompt
 small_irab_prompt = prompts.small_irab_prompt
+small_critic_prompt = prompts.small_critic_prompt
 
 from langchain_core.prompts import PromptTemplate  # noqa: E402, F401
 from langchain_ibm import WatsonxLLM  # noqa: E402
@@ -28,23 +29,25 @@ class IrabProcessor:
         os.environ["CLOUD_URL"] = "https://eu-de.ml.cloud.ibm.com"
 
         # Initialize models
-        self.model_params = {
-            "max_new_tokens": 1536,
+        model_params = {
+            "max_new_tokens": 600,
             "min_new_tokens": 0,
-            "temperature": 0.05,
+            "temperature": 0.12,
+            "top_p": 0.88,
+            "top_k": 30,
         }
 
+        # Initialize models
         self.allam_model = WatsonxLLM(
             project_id=os.getenv("PROJECT_ID"),
             model_id=os.getenv("MODEL_ID"),
             url=os.getenv("CLOUD_URL"),
-            params=self.model_params,
+            params=model_params,
         )
-
         self.gemini_model = ChatGoogleGenerativeAI(
             model="gemini-1.5-pro",
             max_output_tokens=None,
-            temperature=0.05,
+            temperature=0.18,
         )
 
     def log(self, x):
@@ -69,6 +72,8 @@ class IrabProcessor:
     def build_mini_chain(self, sentence, original_sentence):
         i_rab_chain = irab_prompt | self.allam_model | StrOutputParser()
         critic_chain = critic_prompt | self.allam_model | StrOutputParser()
+        # i_rab_chain = small_irab_prompt | self.allam_model | StrOutputParser()
+        # critic_chain = small_critic_prompt | self.allam_model | StrOutputParser()
 
         llm_chain = (
             RunnableLambda(
@@ -100,9 +105,6 @@ class IrabProcessor:
     def process_sentences_parallel(self, sentences, original_sentence):
         parallel_chain = self.build_parallel_chain(sentences, original_sentence)
         result = parallel_chain.invoke({})
-        for part in result.values():
-            print(part)
-            print("-----------------------")
         return result
 
     def process_irab(self, long_sentence):
@@ -139,3 +141,5 @@ final_result = processor.process_irab(long_sentence)
 
 
 # print(critic_prompt)
+# %load_ext autoreload
+# %autoreload 2
