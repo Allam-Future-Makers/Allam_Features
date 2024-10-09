@@ -121,7 +121,7 @@ class ToMSAParagraphChain:
             result = self._build_main_chain(self.splits).invoke({})
 
         with open("paragraph_processed.txt",'w', encoding="utf-8") as f:
-            f.write(result["combined_corrected_text"])
+            f.write(result["combined_corrected_text"].strip().strip('}'))
         
         e = time.time()
         print(f"Coversion Ellapsed: {e-s : 0.8f} seconds")
