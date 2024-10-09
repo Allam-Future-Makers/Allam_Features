@@ -1,15 +1,15 @@
-from prompts import new_correct_prompt_text, whole_paragraph_organizer_prompt
+from prompts import new_correct_prompt_text, whole_paragraph_organizer_prompt, whole_paragraph_organizer_prompt_in_case_of_long_context
 from langchain_core.runnables import RunnableLambda, RunnableParallel
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_ibm import WatsonxLLM
 from langchain_google_genai import ChatGoogleGenerativeAI
-import os, re
+import os, math, time
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
 from functools import partial
 
 
 class ToMSAParagraphChain:
-    def __init__(self, path_to_paragraph, chunk_size=60):
+    def __init__(self, path_to_paragraph, chunk_size=50):
     
         self.watson_keys = ["tBmyiiTXb1TYJQPrYHOCjiek8iIQGZoqqZreZwrpSRCM"]
         self.gemini_keys = [
@@ -20,7 +20,10 @@ class ToMSAParagraphChain:
             "AIzaSyC2YG-msSXWXOxnzaxSlEPnQE4scpNLOAc"
         ]
     
-        self.gemini_llm = self._initialize_gemini()[0]
+        self.gemini_llm = ChatGoogleGenerativeAI(
+            model="gemini-1.5-flash", temperature=0, api_key=self.gemini_keys[0]
+        )
+
 
         os.environ["WATSONX_APIKEY"] = self.watson_keys[0]
         self.watsonx_llm = WatsonxLLM(
@@ -33,23 +36,30 @@ class ToMSAParagraphChain:
         try:
             with open(path_to_paragraph, 'r', encoding="utf-8") as f:
                 paragraph = f.read()
-                words = paragraph.split()
-                #words = words[:len(words)//8]
-                self.chunks = []
-                for i in range(0,len(words), chunk_size):
-                    self.chunks.append(" ".join(words[i:i+chunk_size]))
+                self.splits = [] 
+                for i in range(math.ceil(len(paragraph)/8000)):
+                    splt = paragraph[i*8000: (i*8000)+8000]
+                    words = splt.split()
+                    self.chunks = []
+                    for i in range(0,len(words), chunk_size):
+                        self.chunks.append(" ".join(words[i:i+chunk_size]))
+                    self.splits.append(self.chunks)
+
         except Exception as e:
             print(f"Error: {e}")
              
         self.to_MSA_chain = self._build_parallel_chain(self.chunks)
 
+    def log(self, x):
+        print(x)
+        print("--------------")
+        return x
+    
 
-    def _initialize_gemini(self):
-        api_key = self.gemini_keys[1]
+    def _initialize_gemini(self, gemini_llm):
+        
+        self.gemini_llm = gemini_llm
 
-        self.gemini_llm = ChatGoogleGenerativeAI(
-            model="gemini-1.5-flash", temperature=0, api_key=api_key
-        )
         safety_settings = {
             HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE,
             HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
@@ -62,11 +72,11 @@ class ToMSAParagraphChain:
         ChatGoogleGenerativeAI._generate = partial(
             self.gemini_llm._generate, safety_settings=safety_settings
         )
-        self.gemini_llm.google_api_key = api_key
+
         return self.gemini_llm, original_generate
     
     def _reset_default_gemini_arguments(self, gemini_llm):
-        ChatGoogleGenerativeAI._generate = self._initialize_gemini()[1]
+        ChatGoogleGenerativeAI._generate = self._initialize_gemini(self.gemini_llm)[1]
         return gemini_llm
     
     def _build_mini_chain(self, chunk):
@@ -74,24 +84,45 @@ class ToMSAParagraphChain:
             RunnableLambda(lambda x: chunk) 
             | new_correct_prompt_text 
             | self.watsonx_llm
-            | RunnableLambda(lambda x: x + "\n---------------------------\n") # for splitting the whole text to help the model
+            | RunnableLambda(lambda x: x + "\n-----------\n") # for splitting the whole text to help the model
         )
         return llm_chain
     
     def _build_parallel_chain(self, chunks):
-        tasks = {f"sentence_{idx}": self._build_mini_chain(chunk) for idx, chunk in enumerate(chunks)}
+        tasks = {f"chunk_{idx}": self._build_mini_chain(chunk) for idx, chunk in enumerate(chunks)}
         parallel_chain = (
             RunnableParallel(**tasks) 
-            | RunnableLambda(lambda x: x.values())
+            | RunnableLambda(lambda x: " ".join(list(x.values())))
             | whole_paragraph_organizer_prompt 
-            | self._initialize_gemini()[0] 
+            | self._initialize_gemini(self.gemini_llm)[0] 
             | RunnableLambda(self._reset_default_gemini_arguments) 
             | JsonOutputParser()
         ) 
         return parallel_chain
+    
+    def _build_main_chain(self, splits):
+        tasks = {f"split_{idx}": self._build_parallel_chain(splt) for idx, splt in enumerate(splits)}
+        main_chain = (
+            RunnableParallel(**tasks)
+            | RunnableLambda(lambda x : "\n-----------\n".join([i['combined_corrected_text'] for i in list(x.values())]) )
+            | whole_paragraph_organizer_prompt_in_case_of_long_context
+            | self._initialize_gemini(self.gemini_llm)[0] 
+            | RunnableLambda(self._reset_default_gemini_arguments) 
+            | JsonOutputParser()
+        )
+        return main_chain
 
     def __call__(self):
-        result = self._build_parallel_chain(self.chunks).invoke({})
+        s = time.time()
+
+        if len(self.splits) == 1:
+            result = self._build_parallel_chain(self.chunks).invoke({})
+        else:
+            result = self._build_main_chain(self.splits).invoke({})
+
         with open("paragraph_processed.txt",'w', encoding="utf-8") as f:
             f.write(result["combined_corrected_text"])
+        
+        e = time.time()
+        print(f"Coversion Ellapsed: {e-s : 0.8f} seconds")
         return None

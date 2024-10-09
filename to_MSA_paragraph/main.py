@@ -1,4 +1,4 @@
-from chain2 import ToMSAParagraphChain
+from chain3 import ToMSAParagraphChain
 from termcolor import colored
 import argparse
 

@@ -54,9 +54,11 @@ class ToMSAParagraphChain:
     def _initialize_gemini(self, id):
         api_key = self.gemini_keys[id % 4]
 
+        os.environ['GOOGLE_API_KEY'] = api_key
+
         self.gemini_llm = ChatGoogleGenerativeAI(
-            model="gemini-1.5-flash", temperature=0, api_key=api_key
-        )
+            model="gemini-1.5-flash", temperature=0)
+        
         safety_settings = {
             HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE,
             HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
@@ -74,6 +76,7 @@ class ToMSAParagraphChain:
     
     def _reset_default_gemini_arguments(self, gemini_llm):
         ChatGoogleGenerativeAI._generate = self._initialize_gemini(0)[1]
+        os.environ['GOOGLE_API_KEY'] = self.gemini_keys[self.iterator % 5]
         return gemini_llm
     
     def _build_mini_chain(self, idx, chunk):

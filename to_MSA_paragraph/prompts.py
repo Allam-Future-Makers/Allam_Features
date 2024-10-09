@@ -105,8 +105,8 @@ new_correct_prompt_text = PromptTemplate(template="""
 قم بدورك الأساسى وهو تصحيح النص المعطى لك لتجعله مطابق لقواعد اللغة العربية الفصحى ال MSA من حيث:
 اجعل إجابتك النهائية تتضمن نصين اثنين على أية حال (النص المعطى لك فى الأساس و النص بعد التصحيح من غير تأويل وإذا كان النص المعطى صحيح لا تصححه) حتى إذا كان النصان متطابقين أو كان النص المعطى قصير. 
 
-1- استبدال الكلمات التى لا تنتمى للغة العربية الفصحى (مثل: النهاردة, نسولف, هاى, مش عاوز, بتوع, بتاعك .... الخ) بأقصر كلمة ممكنة معبرة
-2- تصحيح النص من حيث الأخطاء الإملائية أو النحوية أو الأخطاء فى الصرف.
+1- استبدل الكلمات التى لا تنتمى للغة العربية الفصحى (مثل: النهاردة, نسولف, هاى, مش عاوز, بتوع, بتاعك .... الخ) بأقصر كلمة ممكنة معبرة
+2- صحح النص من حيث الأخطاء الإملائية أو النحوية أو الأخطاء فى الصرف.
 
 قم بدراسة هذه الأمثلة للمساعدة:
 الجملة من اللهجة المصرية: "ايوا واضح ان الاتنين ستات مشغولين أوى فى مكالمتهم دى."
@@ -127,6 +127,7 @@ new_correct_prompt_text = PromptTemplate(template="""
 هذا هو النص المعطى لك من المستخدم:
 {sentence}
 
+تأكد من استبدال أى كلمة لا تنتمى للغة العربية الفصحى بنظيرتها التى تنتمى للغة العربية الفصحى.
 [/INST]
 """, input_variables=['sentence'])
 
@@ -152,13 +153,34 @@ input_variables=['answer'])
 
 
 whole_paragraph_organizer_prompt = PromptTemplate(template="""
-You will be given chunks of Arabic texts. Each chunk has a corrected_text of this chunk (النص المصحح).
-Your job is to combine all the corrected_text of all the chunks in one paragraph and return this paragraph.
-Try to organize the paragraph for being displayed.
+You will be given chunks of Arabic texts. Each chunk has a original_text and corrected_text of this chunk (corrected_text = النص المصحح). Each two chunks are separated by `-----------`.
+Your job is to extract the corrected_text from each chunk and combine all the corrected_text of all the chunks in one paragraph and return this paragraph after the following: 
+1- replace any word in the corrected_text that doesn't belong to MSA (Modern Standard Arabic = اللغة العربية الفصحى) with a word belongs to MSA.
+2- remove the separation line `-----------` between the chunks and smoothly connect them.
                                                  
 here is the text given to you:                    
 {text}                             
-                                                 
+
+Try to organize the paragraph for being displayed.
+                                                              
+Mandatory Note: If the corrected_text chunk contains words that aren't belong to MSA (Modern Standard Arabic), replace it with equivalent MSA-related word
+
+return you answer as JSON with the key 'combined_corrected_text'.
+So Important: If the values (values only not the keys) of the JSON  contains the symbol `"` replace it with `“`.
+
+""", input_variables=['text'])
+
+whole_paragraph_organizer_prompt_in_case_of_long_context = PromptTemplate(template="""
+You will be given chunks of Arabic texts. Each two chunks are separated by `-----------`.
+Your job is to smoothly combine all those chunks in one paragraph and return this paragraph. 
+here is the text given to you:                    
+{text}                      
+                                                                                 
+Do this while combining chunks:
+                                                                          
+- remove separating lines "-----------" if exist.
+- organize the whole connected paragraph for display (ex: organize the flow of the paragraph, bold important headlines if exist ...etc).
+                                                       
 return you answer as JSON with the key 'combined_corrected_text'.
 So Important: If the values (values only not the keys) of the JSON  contains the symbol `"` replace it with `“`.
 
