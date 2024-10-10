@@ -1,0 +1,4 @@
+tool_name: 'to_MSA_paragraph'
+tool_description: it is a tool to convert the long text (more than three sentences) given to it in any dialect to MSA (Modern Standard Arabic = اللغة العربية الفصحى)
+tool_usage: to_MSA_paragraph(text)
+example_usage: to_MSA_paragraph("أنا قمت من النومى النهاردة الصبح. اتوضيت وصليت. وبعدها نزلت على الجامعة. هناك قابلت صحابى واتكلمنا") -> "قمت من نومى اليوم فى الصباح. بعدها توضأت ثم صليت. ثم ذهبت بعد ذلك إلى الجامعة. وهناك قابلت أصحابى وتحدثنا"

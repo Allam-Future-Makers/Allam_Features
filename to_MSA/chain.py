@@ -1,9 +1,10 @@
-from prompts import correct_prompt, correct_parser_prompt, critic_prompt, critic_parser_prompt
+from Allam_Features.to_MSA.prompts import correct_prompt, correct_parser_prompt, critic_prompt, critic_parser_prompt
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_ibm import WatsonxLLM
 from langchain_google_genai import ChatGoogleGenerativeAI
 import os
+
 
 class ToMSAChain:
     def __init__(self, cares_about_requests=False):

@@ -1,5 +1,5 @@
 from importlib import reload
-import prompts
+import Allam_Features.irab.prompts as prompts
 
 reload(prompts)
 irab_prompt = prompts.irab_prompt
@@ -131,13 +131,15 @@ class IrabProcessor:
         print(json.dumps(gemini_result, indent=4, ensure_ascii=False))
         return gemini_result
 
+    def __call__(self, long_sentence):
+        return self.process_irab(long_sentence)
 
 # Usage
-processor = IrabProcessor()
-long_sentence = "إنَّ العلمَ نورٌ يهتدي به الإنسانُ في ظلماتِ الجهلِ، ولن ينالَ المجدَ من لم يسع إليه بجدٍّ وإصرارٍ"
+#processor = IrabProcessor()
+#long_sentence = "إنَّ العلمَ نورٌ يهتدي به الإنسانُ في ظلماتِ الجهلِ، ولن ينالَ المجدَ من لم يسع إليه بجدٍّ وإصرارٍ"
 # long_sentence = "ذهبَ الطِّفلُ إلى المدرسةِ صباحًا. قرأَ في الكتابِ الجديدِ. شرحَ المعلمُ الدرسَ بوضوحٍ. استمعَ الطُّلابُ بانتباهٍ. وعادَ الجميعُ إلى منازلِهم بعد انتهاءِ الدرسِ."
 # long_sentence = "'شرحَ المعلمُ الدرسَ بوضوحٍ.'"
-final_result = processor.process_irab(long_sentence)
+#final_result = processor.process_irab(long_sentence)
 
 
 # print(critic_prompt)

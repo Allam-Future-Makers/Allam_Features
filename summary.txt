@@ -1,0 +1,2 @@
+user query: من أنت
+llm response: Answer: أنا نموذج لغوي كبير، تم تدريبي بواسطة جوجل. 

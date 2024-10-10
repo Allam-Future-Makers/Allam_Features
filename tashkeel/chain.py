@@ -2,7 +2,7 @@ from langchain_core.output_parsers import JsonOutputParser
 from langchain_core.runnables import RunnablePassthrough, RunnableLambda
 from langchain_ibm import WatsonxLLM
 from langchain_google_genai import ChatGoogleGenerativeAI
-from prompts import tashkeel_prompt, verification_prompt, gemini_prompt
+from Allam_Features.tashkeel.prompts import tashkeel_prompt, verification_prompt, gemini_prompt
 import os
 import json
 import re
