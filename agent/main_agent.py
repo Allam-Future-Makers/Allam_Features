@@ -5,7 +5,9 @@ from helper_chains.summarization_chain import SummarizationChain
 from termcolor import colored
 
 import warnings
+
 warnings.filterwarnings("ignore", message="The function `loads` is in beta")
+
 
 class ReActAgent:
     """
@@ -15,6 +17,7 @@ class ReActAgent:
         verbose (bool, optional): Whether to print verbose output. Defaults to True.
         grad_answer (bool, optional): Whether to grade and improve the final answer. Defaults to True.
     """
+
     general_verbosity = True
     general_grading_option = True
 
@@ -27,9 +30,9 @@ class ReActAgent:
         self.summarization_object = SummarizationChain()
         self.messages = []
         self.history = ""
-        with open("summary.txt", 'w') as f:
+        with open("summary.txt", "w", encoding="utf-8") as f:
             f.write("")
-    
+
     def __call__(self, Query):
         """
         Processes a query using the ReAct loop.
@@ -41,10 +44,12 @@ class ReActAgent:
             str: The generated response.
         """
         result = self.ReAct_loop_object(Query)
-        self.summarization_object.add_current_query_response(Query, result) # adds the current query and response to the summary.txt file
+        self.summarization_object.add_current_query_response(
+            Query, result
+        )  # adds the current query and response to the summary.txt file
         self.messages = self.ReAct_loop_object.messages
         return result
-    
+
     def correct_hallucination(self, query, answer, ReAct_messages):
         """
         Checks for hallucinations in the generated answer and corrects them if necessary.
@@ -57,14 +62,23 @@ class ReActAgent:
         Returns:
             str: The corrected answer.
         """
-        is_hallucinating =  self.check_hallucination_object(query, answer, ReAct_messages)
-        print(colored("Is there hallucination? ",'cyan'), colored(is_hallucinating,"cyan")) if ReActAgent.general_verbosity else None
+        is_hallucinating = self.check_hallucination_object(
+            query, answer, ReAct_messages
+        )
+        print(
+            colored("Is there hallucination? ", "cyan"),
+            colored(is_hallucinating, "cyan"),
+        ) if ReActAgent.general_verbosity else None
         while True:
-            if is_hallucinating.lower() == 'yes':
-                print(colored("we are correcting hallucination...","cyan"),flush=True) if ReActAgent.general_verbosity else None
-                answer = self.__call__(query+". Please be aware of hallucinating")
+            if is_hallucinating.lower() == "yes":
+                print(
+                    colored("we are correcting hallucination...", "cyan"), flush=True
+                ) if ReActAgent.general_verbosity else None
+                answer = self.__call__(query + ". Please be aware of hallucinating")
                 ReAct_messages = self.messages
-                is_hallucinating =  self.check_hallucination_object(query, answer, ReAct_messages)
+                is_hallucinating = self.check_hallucination_object(
+                    query, answer, ReAct_messages
+                )
             else:
                 return answer
 
@@ -81,13 +95,17 @@ class ReActAgent:
             str: The improved answer.
         """
         is_good_answer = self.grad_answer_object(query=query, answer=answer)
-        while self.counter<1:
-            self.counter+=1 # this counter to prevent stucking the loop of obtimizing answers
-            if is_good_answer.lower() == 'no':
-                print(colored("we are optimizing your answer...","red"),flush=True)
-                answer = self.__call__("rewrite the following query to give a better answer. "+query)
+        while self.counter < 1:
+            self.counter += (
+                1  # this counter to prevent stucking the loop of obtimizing answers
+            )
+            if is_good_answer.lower() == "no":
+                print(colored("we are optimizing your answer...", "red"), flush=True)
+                answer = self.__call__(
+                    "rewrite the following query to give a better answer. " + query
+                )
                 answer = self.correct_hallucination(query, answer, ReAct_messages)
-                is_good_answer =  self.grad_answer_object(query=query, answer=answer)
+                is_good_answer = self.grad_answer_object(query=query, answer=answer)
             else:
                 return answer
         return answer
@@ -100,9 +118,11 @@ class ReActAgent:
             grad_answer (bool, optional): Whether to grade and improve the final answer. Defaults to general_grading_option.
         """
         while True:
-            query = input(colored("Input your query: ",'green'))
-            self.counter = 0 # this counter to prevent stucking the loop of obtimizing answers
-            if query == 'exit':
+            query = input(colored("Input your query: ", "green"))
+            self.counter = (
+                0  # this counter to prevent stucking the loop of obtimizing answers
+            )
+            if query == "exit":
                 break
             else:
                 answer = self.__call__(query)
@@ -110,5 +130,4 @@ class ReActAgent:
                 answer = self.correct_hallucination(query, answer, ReAct_messages)
                 if grad_answer:
                     answer = self.correct_final_answer(query, answer, ReAct_messages)
-                print(colored(answer,"magenta"),flush=True)
-            
+                print(colored(answer, "magenta"), flush=True)

@@ -80,7 +80,7 @@ class IrabProcessor:
                 lambda x: {"sentence": sentence, "original_sentence": original_sentence}
             )
             | i_rab_chain
-            | RunnableLambda(self.log)
+            # | RunnableLambda(self.log)
             | RunnableLambda(
                 lambda result: {"sentence": sentence, "irab_results": result}
             )
@@ -116,7 +116,7 @@ class IrabProcessor:
         sentences = eval(
             helper_chain.invoke({"sentence": split_sentences}).content.replace("\n", "")
         )
-        print(sentences, end="\n" + "-" * 50 + "\n")
+        # print(sentences, end="\n" + "-" * 50 + "\n")
 
         # Step 3: Process sentences in parallel
         results = self.process_sentences_parallel(sentences, long_sentence)
@@ -134,12 +134,13 @@ class IrabProcessor:
     def __call__(self, long_sentence):
         return self.process_irab(long_sentence)
 
+
 # Usage
-#processor = IrabProcessor()
-#long_sentence = "إنَّ العلمَ نورٌ يهتدي به الإنسانُ في ظلماتِ الجهلِ، ولن ينالَ المجدَ من لم يسع إليه بجدٍّ وإصرارٍ"
+# processor = IrabProcessor()
+# long_sentence = "إنَّ العلمَ نورٌ يهتدي به الإنسانُ في ظلماتِ الجهلِ، ولن ينالَ المجدَ من لم يسع إليه بجدٍّ وإصرارٍ"
 # long_sentence = "ذهبَ الطِّفلُ إلى المدرسةِ صباحًا. قرأَ في الكتابِ الجديدِ. شرحَ المعلمُ الدرسَ بوضوحٍ. استمعَ الطُّلابُ بانتباهٍ. وعادَ الجميعُ إلى منازلِهم بعد انتهاءِ الدرسِ."
 # long_sentence = "'شرحَ المعلمُ الدرسَ بوضوحٍ.'"
-#final_result = processor.process_irab(long_sentence)
+# final_result = processor.process_irab(long_sentence)
 
 
 # print(critic_prompt)
