@@ -1,5 +1,5 @@
 from importlib import reload
-import Allam_Features.irab.prompts as prompts
+import prompts
 
 reload(prompts)
 irab_prompt = prompts.irab_prompt
@@ -32,7 +32,7 @@ class IrabProcessor:
         model_params = {
             "max_new_tokens": 600,
             "min_new_tokens": 0,
-            "temperature": 0.12,
+            "temperature": 0.00,
             "top_p": 0.88,
             "top_k": 30,
         }
@@ -51,7 +51,11 @@ class IrabProcessor:
         )
 
     def log(self, x):
-        print(x)
+        print(x, end="\n" + "-" * 70 + "\n")
+        return x
+
+    def log1(self, x):
+        print("\n" + "=" * 50 + "\n")
         return x
 
     def split_sentence(self, sentence):
@@ -85,6 +89,8 @@ class IrabProcessor:
                 lambda result: {"sentence": sentence, "irab_results": result}
             )
             | critic_chain
+            # | RunnableLambda(self.log)
+            # | RunnableLambda((self.log1))
             | RunnableLambda(
                 lambda critic_result: {
                     "sentence": sentence,
@@ -116,11 +122,14 @@ class IrabProcessor:
         sentences = eval(
             helper_chain.invoke({"sentence": split_sentences}).content.replace("\n", "")
         )
+        # Pretty print the sentences
         # print(sentences, end="\n" + "-" * 50 + "\n")
 
         # Step 3: Process sentences in parallel
         results = self.process_sentences_parallel(sentences, long_sentence)
-
+        # Pretty print the results
+        # print(json.dumps(results, indent=4, ensure_ascii=False))
+        # print("\n" + "#" * 50 + "\n")
         # Step 4: Parse results using the Gemini model
         json_parse_chain = json_parse_prompt | self.gemini_model | JsonOutputParser()
         gemini_result = json_parse_chain.invoke(
@@ -136,11 +145,11 @@ class IrabProcessor:
 
 
 # Usage
-# processor = IrabProcessor()
+processor = IrabProcessor()
 # long_sentence = "إنَّ العلمَ نورٌ يهتدي به الإنسانُ في ظلماتِ الجهلِ، ولن ينالَ المجدَ من لم يسع إليه بجدٍّ وإصرارٍ"
-# long_sentence = "ذهبَ الطِّفلُ إلى المدرسةِ صباحًا. قرأَ في الكتابِ الجديدِ. شرحَ المعلمُ الدرسَ بوضوحٍ. استمعَ الطُّلابُ بانتباهٍ. وعادَ الجميعُ إلى منازلِهم بعد انتهاءِ الدرسِ."
+long_sentence = "ذهبَ الطِّفلُ إلى المدرسةِ صباحًا. قرأَ في الكتابِ الجديدِ. شرحَ المعلمُ الدرسَ بوضوحٍ. استمعَ الطُّلابُ بانتباهٍ. وعادَ الجميعُ إلى منازلِهم بعد انتهاءِ الدرسِ."
 # long_sentence = "'شرحَ المعلمُ الدرسَ بوضوحٍ.'"
-# final_result = processor.process_irab(long_sentence)
+final_result = processor.process_irab(long_sentence)
 
 
 # print(critic_prompt)
