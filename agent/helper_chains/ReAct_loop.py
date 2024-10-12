@@ -59,7 +59,7 @@ class ReActLoop:
             str: The generated response from the LLM.
         """
         verbose = ReActLoop.general_verbosity
-        print(message)
+        # print(message)
 
         if message:
             if "original_sentence" in message:
