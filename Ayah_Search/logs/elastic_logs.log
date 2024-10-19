@@ -16,3 +16,15 @@
 2024-10-19 15:20:04,796 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.014s]
 2024-10-19 15:20:04,797 - INFO - Successfully connected to Elasticsearch.
 2024-10-19 15:20:04,817 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.020s]
+2024-10-19 15:26:38,221 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.005s]
+2024-10-19 15:26:38,222 - INFO - Successfully connected to Elasticsearch.
+2024-10-19 15:26:38,250 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.028s]
+2024-10-19 15:42:05,035 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.099s]
+2024-10-19 15:42:05,035 - INFO - Successfully connected to Elasticsearch.
+2024-10-19 15:42:05,060 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.023s]
+2024-10-19 15:52:16,754 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.000s]
+2024-10-19 15:52:16,754 - INFO - Successfully connected to Elasticsearch.
+2024-10-19 15:52:16,792 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.039s]
+2024-10-19 15:52:33,401 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.001s]
+2024-10-19 15:52:33,401 - INFO - Successfully connected to Elasticsearch.
+2024-10-19 15:52:33,436 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.035s]
