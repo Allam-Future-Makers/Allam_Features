@@ -1,14 +1,16 @@
-from chain import ToMSAChain
+from chain import ToMSAParagraphChain
 from termcolor import colored
-def main():
-    chain = ToMSAChain(cares_about_requests=False)
-    while True:
-        sentence = input(colored("Type here: ","green"))
-        if sentence == 'exit':
-            break
-        result = chain(sentence)
-        print(colored("Original: " + result['input_sentence'],"magenta"))
-        print(colored("Corrected: " + result['finally_corrected_sentence'],"magenta"))
+import argparse
 
-if __name__ == '__main__':
-    main()
+
+def main(path_to_paragraph):
+    chain = ToMSAParagraphChain(path_to_paragraph= path_to_paragraph)
+    result = chain()
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Path to the paragraph text.")
+    parser.add_argument(
+        "file_name", type=str, help="The paragraph text file to process"
+    )
+    args = parser.parse_args()
+    main(args.file_name)
