@@ -9,7 +9,7 @@ from functools import partial
 
 
 class ToMSAParagraphChain:
-    def __init__(self, path_to_paragraph, chunk_size=50):
+    def __init__(self, paragraph, chunk_size=50):
     
         self.watson_keys = ["tBmyiiTXb1TYJQPrYHOCjiek8iIQGZoqqZreZwrpSRCM"]
         self.gemini_keys = [
@@ -34,27 +34,19 @@ class ToMSAParagraphChain:
         )
 
         try:
-            with open(path_to_paragraph, 'r', encoding="utf-8") as f:
-                paragraph = f.read()
-                self.splits = [] 
-                for i in range(math.ceil(len(paragraph)/8000)):
-                    splt = paragraph[i*8000: (i*8000)+8000]
-                    words = splt.split()
-                    self.chunks = []
-                    for i in range(0,len(words), chunk_size):
-                        self.chunks.append(" ".join(words[i:i+chunk_size]))
-                    self.splits.append(self.chunks)
+
+            self.splits = [] 
+            for i in range(math.ceil(len(paragraph)/8000)):
+                splt = paragraph[i*8000: (i*8000)+8000]
+                words = splt.split()
+                self.chunks = []
+                for i in range(0,len(words), chunk_size):
+                    self.chunks.append(" ".join(words[i:i+chunk_size]))
+                self.splits.append(self.chunks)
 
         except Exception as e:
             print(f"Error: {e}")
-             
-        self.to_MSA_chain = self._build_parallel_chain(self.chunks)
 
-    def log(self, x):
-        print(x)
-        print("--------------")
-        return x
-    
 
     def _initialize_gemini(self, gemini_llm):
         

@@ -15,24 +15,23 @@ from langchain_ibm import WatsonxLLM  # noqa: E402
 from langchain_google_genai import ChatGoogleGenerativeAI  # noqa: E402, F401
 from langchain_core.output_parsers import JsonOutputParser, StrOutputParser  # noqa: E402, F401
 from langchain_core.runnables import RunnableLambda, RunnableParallel  # noqa: E402
-import os  # noqa: E402, F401
-import json  # noqa: E402, F401
+import os, time  # noqa: E402, F401
 
 
 class IrabProcessor:
-    def __init__(self):
+    def __init__(self, paragraph):
         # Set up environment variables
         os.environ["WATSONX_APIKEY"] = "I23GGOrvbVPdcG-MzPGPmxv8Cv7LezjfmmDQT2APmmet"
         os.environ["GOOGLE_API_KEY"] = "AIzaSyDzyMWZB82YyWKzf21k6qdiAn4JG6DXL-Q"
         os.environ["PROJECT_ID"] = "40481c96-7240-4b7d-8d44-08a21aea2013"
         os.environ["MODEL_ID"] = "sdaia/allam-1-13b-instruct"
         os.environ["CLOUD_URL"] = "https://eu-de.ml.cloud.ibm.com"
-
+        self.paragraph = paragraph
         # Initialize models
         model_params = {
             "max_new_tokens": 600,
             "min_new_tokens": 0,
-            "temperature": 0.12,
+            "temperature": 0.00,
             "top_p": 0.88,
             "top_k": 30,
         }
@@ -51,7 +50,11 @@ class IrabProcessor:
         )
 
     def log(self, x):
-        print(x)
+        print(x, end="\n" + "-" * 70 + "\n")
+        return x
+
+    def log1(self, x):
+        print("\n" + "=" * 50 + "\n")
         return x
 
     def split_sentence(self, sentence):
@@ -63,7 +66,7 @@ class IrabProcessor:
             set(
                 [
                     sentence.strip()
-                    for sentence in sentences[sentences.index(" Output:") + 1 :]
+                    for sentence in sentences[sentences.index("Output:") + 1 :]
                 ]
             )
         )
@@ -80,11 +83,13 @@ class IrabProcessor:
                 lambda x: {"sentence": sentence, "original_sentence": original_sentence}
             )
             | i_rab_chain
-            | RunnableLambda(self.log)
+            # | RunnableLambda(self.log)
             | RunnableLambda(
                 lambda result: {"sentence": sentence, "irab_results": result}
             )
             | critic_chain
+            # | RunnableLambda(self.log)
+            # | RunnableLambda((self.log1))
             | RunnableLambda(
                 lambda critic_result: {
                     "sentence": sentence,
@@ -107,39 +112,51 @@ class IrabProcessor:
         result = parallel_chain.invoke({})
         return result
 
-    def process_irab(self, long_sentence):
+    def process_irab(self):
         # Step 1: Split sentences
-        split_sentences = self.split_sentence(long_sentence)
+        split_sentences = self.split_sentence(self.paragraph)
 
         # Step 2: Use helper chain with Gemini model
         helper_chain = helper_prompt | self.gemini_model
         sentences = eval(
             helper_chain.invoke({"sentence": split_sentences}).content.replace("\n", "")
         )
-        print(sentences, end="\n" + "-" * 50 + "\n")
+        # Pretty print the sentences
+        # print(sentences, end="\n" + "-" * 50 + "\n")
 
         # Step 3: Process sentences in parallel
-        results = self.process_sentences_parallel(sentences, long_sentence)
-
+        results = self.process_sentences_parallel(sentences, self.paragraph)
+        # Pretty print the results
+        # print(json.dumps(results, indent=4, ensure_ascii=False))
+        # print("\n" + "#" * 50 + "\n")
         # Step 4: Parse results using the Gemini model
+        
         json_parse_chain = json_parse_prompt | self.gemini_model | JsonOutputParser()
         gemini_result = json_parse_chain.invoke(
-            {"sentence": long_sentence, "irab_results": results}
+            {"sentence": self.paragraph, "irab_results": results}
         )
 
-        # Pretty print the final result
-        print(json.dumps(gemini_result, indent=4, ensure_ascii=False))
-        return gemini_result
+
+        output_as_text = " ".join([f'كلمة "{item["word"]}" هي {item["irab"]}.' for item in gemini_result["irab_results"]])
+
+        return output_as_text
+    
+
+    def __call__(self):
+        s = time.time()
+        
+        result = self.process_irab()
+
+        with open("paragraph_irabed.txt",'w', encoding="utf-8") as f:
+            f.write(result)
+        
+        e = time.time()
+        print(f"Coversion Ellapsed: {e-s : 0.8f} seconds")
+        return None
 
 
 # Usage
-processor = IrabProcessor()
-long_sentence = "إنَّ العلمَ نورٌ يهتدي به الإنسانُ في ظلماتِ الجهلِ، ولن ينالَ المجدَ من لم يسع إليه بجدٍّ وإصرارٍ"
-# long_sentence = "ذهبَ الطِّفلُ إلى المدرسةِ صباحًا. قرأَ في الكتابِ الجديدِ. شرحَ المعلمُ الدرسَ بوضوحٍ. استمعَ الطُّلابُ بانتباهٍ. وعادَ الجميعُ إلى منازلِهم بعد انتهاءِ الدرسِ."
-# long_sentence = "'شرحَ المعلمُ الدرسَ بوضوحٍ.'"
-final_result = processor.process_irab(long_sentence)
-
-
-# print(critic_prompt)
-# %load_ext autoreload
-# %autoreload 2
+#processor = IrabProcessor()
+# long_sentence = "إنَّ العلمَ نورٌ يهتدي به الإنسانُ في ظلماتِ الجهلِ، ولن ينالَ المجدَ من لم يسع إليه بجدٍّ وإصرارٍ"
+#long_sentence = "ذهبَ الطِّفلُ إلى المدرسةِ صباحًا. قرأَ في الكتابِ الجديدِ. شرحَ المعلمُ الدرسَ بوضوحٍ. استمعَ الطُّلابُ بانتباهٍ. وعادَ الجميعُ إلى منازلِهم بعد انتهاءِ الدرسِ."
+#final_result = processor.process_irab(long_sentence)

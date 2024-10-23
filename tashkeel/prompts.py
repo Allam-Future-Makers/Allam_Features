@@ -21,7 +21,7 @@ tashkeel_prompt = PromptTemplate(
 {sentence}
 
 **ضع التشكيل على كل حرف**. إذا كنت غير متأكد، حاول اختيار التشكيل الأنسب.
-أجب بالجملة المشكّلة فقط. [/INST]
+أجب بالجملة المشكّلة فقط ولا تعطى أى نص آخر فى الإجابة النهائية. [/INST]
 """,
     input_variables=["sentence"],
     partial_variables={"system_prompt": SYSTEM_PROMPT},
@@ -47,14 +47,17 @@ verification_prompt = PromptTemplate(
 التصحيح: الشَّمْسُ تُشْرِقُ مِنَ الشَّرْقِ
 (تم تصحيح "مِنْ" إلى "مِنَ" قبل الاسم المعرف بـ "ال")
 
-الآن، تحقق من صحة التشكيل للجملة التالية:
+الآن، تحقق من صحة التشكيل للجملة التالية وتأكد من عدم وجود كلمة بدون تشكيل:
 
 الجملة الأصلية: {original}
 الجملة المشكّلة: {diacritized}
 
 تحقق من صحة التشكيل. إذا كان صحيحًا، أعد الجملة كما هي. إذا وجدت أخطاء، قم بتصحيحها فقط.
 لا تغير الحروف. 
-أجب بالجملة النهائية. [/INST]
+أجب بالجملة النهائية. 
+
+مهم جدا: أعط الجملة النهائية عبارة عن الجملة المشكلة فقط بدون الجملة الأصلية
+[/INST]
 """,
     input_variables=["original", "diacritized"],
     partial_variables={"system_prompt": SYSTEM_PROMPT},
@@ -62,5 +65,23 @@ verification_prompt = PromptTemplate(
 
 
 gemini_prompt = PromptTemplate(
-    template="""{old} استخرج الجملة الأصلية والمشكّلة في صيغة JSON، المفاتيح المطلوبة هي: `original` و `diacritized`.""",
+    template="""{sentence} استخرج الجملة الأصلية والمشكّلة في صيغة JSON، المفاتيح المطلوبة هي: `original` و `diacritized`.""",
+    input_variables = ['sentence']
 )
+
+
+
+whole_paragraph_organizer_prompt = PromptTemplate(template="""
+                                                  
+سيتم إعطاؤك أجزاء من النصوص العربية. كل جزء عبارة عن diacratized_text (diacratized_text = النص المشكّل). كل جزأين مفصولين بـ -----------.
+مهمتك هي استخراج هى دمج جميع النصوص المشكّلة في فقرة واحدة، وإرجاع هذه الفقرة بعد ما يلي:
+إزالة خط الفصل ----------- بين الأجزاء وربطها بسلاسة.
+
+إليك النص المقدم لك:
+{text}
+
+
+ارجع بإجابتك في صيغة JSON باستخدام المفتاح 'combined_diacratized_text'.
+مهم جدًا: إذا احتوت القيم (القيم فقط وليس المفاتيح) في JSON على الرمز `"` فاستبدله بـ `“`.
+
+""", input_variables=['text'])

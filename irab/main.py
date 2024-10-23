@@ -1,11 +1,11 @@
-from chain import TashkeelChain
+from chain import IrabProcessor
 import argparse
 
 
 def main(path_to_paragraph):
     with open(path_to_paragraph, 'r') as f:
         paragraph = f.read()
-    chain = TashkeelChain(paragraph)
+    chain = IrabProcessor(paragraph)
     result = chain()
 
 if __name__ == "__main__":

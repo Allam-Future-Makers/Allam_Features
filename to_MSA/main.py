@@ -1,10 +1,11 @@
 from chain import ToMSAParagraphChain
-from termcolor import colored
 import argparse
 
 
 def main(path_to_paragraph):
-    chain = ToMSAParagraphChain(path_to_paragraph= path_to_paragraph)
+    with open(path_to_paragraph, 'r') as f:
+        paragraph = f.read()
+    chain = ToMSAParagraphChain(paragraph)
     result = chain()
 
 if __name__ == "__main__":
