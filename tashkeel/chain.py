@@ -9,30 +9,34 @@ from functools import partial
 
 
 class TashkeelChain:
-    def __init__(self, paragraph, chunk_size=50):
+    def __init__(self, paragraph, instance, chunk_size=50):
     
-        self.watson_keys = ["tBmyiiTXb1TYJQPrYHOCjiek8iIQGZoqqZreZwrpSRCM"]
-        self.gemini_keys = [
-            "AIzaSyA0WgVJxLelaY3fvIhq4XK8Av9udDfJ9rI",
-            "AIzaSyDof2hE1nOYkSx3vslyRl696NVoBeXCKH8",
-            "AIzaSyC57_NvRsktnNgLvtyutDclVkCS2I4MKDI",
-            "AIzaSyDzyMWZB82YyWKzf21k6qdiAn4JG6DXL-Q",
-            "AIzaSyC2YG-msSXWXOxnzaxSlEPnQE4scpNLOAc"
-        ]
-    
-        self.gemini_llm = ChatGoogleGenerativeAI(
-            model="gemini-1.5-flash", temperature=0, api_key=self.gemini_keys[0]
-        )
+        # Set up variables
+        instance.iterator += 1 
+        self.watson_key = instance.watsons['key']
+        self.watson_project_id = instance.watsons['project_id']
+        self.gemini_keys= instance.gemini_keys
 
+        # Initialize models
+        model_params = {
+            "max_new_tokens": 1536,
+            "min_new_tokens": 0,
+            "temperature": 0.00,
+        }
 
-        os.environ["WATSONX_APIKEY"] = self.watson_keys[0]
         self.watsonx_llm = WatsonxLLM(
+            project_id= self.watson_project_id,
+            apikey= self.watson_key,
             model_id="sdaia/allam-1-13b-instruct",
             url="https://eu-de.ml.cloud.ibm.com",
-            project_id="89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52",
-            params={"max_new_tokens": 1536, "temperature": 0},
+            params=model_params
         )
 
+        self.gemini_llm = ChatGoogleGenerativeAI(
+            model="gemini-1.5-flash", 
+            temperature=0, 
+            api_key=self.gemini_keys[instance.iterator%5]
+        )
         try:
             self.splits = [] 
             for i in range(math.ceil(len(paragraph)/8000)):

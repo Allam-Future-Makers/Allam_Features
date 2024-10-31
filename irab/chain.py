@@ -19,14 +19,16 @@ import os, time  # noqa: E402, F401
 
 
 class IrabProcessor:
-    def __init__(self, paragraph):
-        # Set up environment variables
-        os.environ["WATSONX_APIKEY"] = "I23GGOrvbVPdcG-MzPGPmxv8Cv7LezjfmmDQT2APmmet"
-        os.environ["GOOGLE_API_KEY"] = "AIzaSyDzyMWZB82YyWKzf21k6qdiAn4JG6DXL-Q"
-        os.environ["PROJECT_ID"] = "40481c96-7240-4b7d-8d44-08a21aea2013"
-        os.environ["MODEL_ID"] = "sdaia/allam-1-13b-instruct"
-        os.environ["CLOUD_URL"] = "https://eu-de.ml.cloud.ibm.com"
+    def __init__(self, paragraph, instance):
+        
+        # Set up variables
+        instance.iterator += 1 
+        self.watson_key = instance.watsons['key']
+        self.watson_project_id = instance.watsons['project_id']
+        self.gemini_keys= instance.gemini_keys
+        
         self.paragraph = paragraph
+        
         # Initialize models
         model_params = {
             "max_new_tokens": 600,
@@ -38,15 +40,17 @@ class IrabProcessor:
 
         # Initialize models
         self.allam_model = WatsonxLLM(
-            project_id=os.getenv("PROJECT_ID"),
-            model_id=os.getenv("MODEL_ID"),
-            url=os.getenv("CLOUD_URL"),
+            project_id= self.watson_project_id,
+            apikey= self.watson_key,
+            model_id="sdaia/allam-1-13b-instruct",
+            url="https://eu-de.ml.cloud.ibm.com",
             params=model_params,
         )
         self.gemini_model = ChatGoogleGenerativeAI(
             model="gemini-1.5-pro",
             max_output_tokens=None,
             temperature=0.18,
+            api_key= self.gemini_keys[instance.iterator%5]
         )
 
     def log(self, x):
@@ -62,14 +66,10 @@ class IrabProcessor:
         split_chain = split_prompt | self.allam_model | StrOutputParser()
         split_results = split_chain.invoke({"sentence": sentence})
         sentences = split_results.replace("-", "").split("\n")
-        sentences = list(
-            set(
-                [
-                    sentence.strip()
-                    for sentence in sentences[sentences.index("Output:") + 1 :]
-                ]
-            )
-        )
+        try:
+            sentences = list(set([sentence.strip() for sentence in sentences[sentences.index("Output:") + 1 :]]))
+        except:
+            sentences = list(set([sentence.strip() for sentence in sentences[sentences.index(" Output:") + 1 :]]))
         return sentences
 
     def build_mini_chain(self, sentence, original_sentence):
