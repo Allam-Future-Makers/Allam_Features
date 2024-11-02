@@ -1,8 +1,9 @@
 import requests, json, base64, re
 
 class ScanDocFlowOcr:
-    def __init__(self, access_token):
-        self.access_token = access_token
+    def __init__(self, instance):
+        self.instance =  instance
+        self.access_token = self.instance.ocr_keys[self.instance.iterator%len(self.instance.ocr_keys)]
         self.url = f"https://backend.scandocflow.com/v1/api/documents/extract?access_token={self.access_token}"
 
     def get_text(self, image_path):
@@ -30,4 +31,6 @@ class ScanDocFlowOcr:
         return organized_text
     
     def __call__(self, image_path):
-        return self.get_text(image_path)
+        result = self.get_text(image_path)
+        self.instance.interator +=1
+        return result

@@ -1,4 +1,7 @@
-from prompts import new_correct_prompt_text, whole_paragraph_organizer_prompt, whole_paragraph_organizer_prompt_in_case_of_long_context
+import sys,os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from to_MSA.prompts import new_correct_prompt_text, whole_paragraph_organizer_prompt, whole_paragraph_organizer_prompt_in_case_of_long_context
 from langchain_core.runnables import RunnableLambda, RunnableParallel
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_ibm import WatsonxLLM
@@ -8,14 +11,15 @@ from google.generativeai.types import HarmCategory, HarmBlockThreshold
 from functools import partial
 
 
-class ToMSAParagraphChain:
-    def __init__(self, paragraph, instance, chunk_size=50):
+class ToMSAChain:
+    def __init__(self, instance, chunk_size=50):
         
         # Set up variables
-        instance.iterator += 1 
+        self.instance = instance
         self.watson_key = instance.watsons['key']
         self.watson_project_id = instance.watsons['project_id']
         self.gemini_keys= instance.gemini_keys
+        self.chunk_size = chunk_size
 
         # Initialize models
         model_params = {
@@ -37,20 +41,6 @@ class ToMSAParagraphChain:
             temperature=0, 
             api_key=self.gemini_keys[instance.iterator%5]
         )
-
-
-        try:
-            self.splits = [] 
-            for i in range(math.ceil(len(paragraph)/8000)):
-                splt = paragraph[i*8000: (i*8000)+8000]
-                words = splt.split()
-                self.chunks = []
-                for i in range(0,len(words), chunk_size):
-                    self.chunks.append(" ".join(words[i:i+chunk_size]))
-                self.splits.append(self.chunks)
-
-        except Exception as e:
-            print(f"Error: {e}")
 
 
     def _initialize_gemini(self, gemini_llm):
@@ -109,17 +99,26 @@ class ToMSAParagraphChain:
         )
         return main_chain
 
-    def __call__(self):
-        s = time.time()
+    def __call__(self, paragraph):
+
+        try:
+            self.splits = [] 
+            for i in range(math.ceil(len(paragraph)/8000)):
+                splt = paragraph[i*8000: (i*8000)+8000]
+                words = splt.split()
+                self.chunks = []
+                for i in range(0,len(words), self.chunk_size):
+                    self.chunks.append(" ".join(words[i:i+self.chunk_size]))
+                self.splits.append(self.chunks)
+
+        except Exception as e:
+            print(f"Error: {e}")
 
         if len(self.splits) == 1:
             result = self._build_parallel_chain(self.chunks).invoke({})
         else:
             result = self._build_main_chain(self.splits).invoke({})
 
-        with open("paragraph_processed.txt",'w', encoding="utf-8") as f:
-            f.write(result["combined_corrected_text"].strip().strip('}'))
+        self.instance.iterator += 1
         
-        e = time.time()
-        print(f"Coversion Ellapsed: {e-s : 0.8f} seconds")
-        return None
+        return result

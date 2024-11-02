@@ -2,22 +2,24 @@ import requests, base64, sys, os
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.output_parsers import JsonOutputParser
 
-#if "../" not in sys.path:
-#    sys.path.append("../")
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from agent_prompts import image_modality_prompt 
 from agent_utils.ocr_api_tool import ScanDocFlowOcr
+from agent_utils.main_agent import MainAgent
 
 
 class HandleMultiModality:
     def __init__(self, instance, query: str = "", voice_path: str = "", image_path: str = ""):
-        instance.iterator+=1
+        self.instance = instance
         self.gemini_llm = ChatGoogleGenerativeAI(
             model="gemini-1.5-flash", 
             api_key= instance.gemini_keys[instance.iterator%len(instance.gemini_keys)]
         )
+        
+        self.main_agent_object = MainAgent(self.instance)
+
         self.query = query
         self.voice_path = voice_path
         self.image_path = image_path
@@ -40,6 +42,7 @@ class HandleMultiModality:
         
         chain = image_modality_prompt.prompt | self.gemini_llm | JsonOutputParser()
         result = chain.invoke({"query":self.query, "image_data":image_data})
+        self.instance.iterator +=1
         description = result['precise_description'] 
         query_answer = result['query_answer']
         needs_ocr = result['needed_ocr']
@@ -54,24 +57,24 @@ class HandleMultiModality:
             return answered, description, query_answer
     
     def get_text_via_ocr(self,image_path):
-        ocr_object = ScanDocFlowOcr(instance.ocr_keys[instance.iterator%len(instance.ocr_keys)])
+        ocr_object = ScanDocFlowOcr(self.instance)
         return ocr_object(image_path)
 
     def invoke(self):
         if self.mode == 1:
             """query only as input"""
             final_query = self.query
-            answer = ""
+            answer = self.main_agent_object(final_query)
             return answer
         elif self.mode == 2:
             """voice only as input"""
             final_query = self.voice2txt(self.voice_path)
-            answer = ""
+            answer = self.main_agent_object(final_query)
             return answer
         elif self.mode == 3:
             """query + voice as input"""
             final_query = f"query: {self.query}\n audio_transcript: {self.voice2txt(self.voice_path)}"
-            answer = ""
+            answer = self.main_agent_object(final_query)
             return answer
         elif self.mode == 4:
             """image only as input --> output is the image description"""
@@ -86,7 +89,7 @@ class HandleMultiModality:
                 return answer
             else:
                 final_query = f"query: {self.query}\n image_description: {_2}\n image_text: {_3}"
-                answer = ""
+                answer = self.main_agent_object(final_query)
                 return answer
         elif self.mode == 6:
             """image + voice as input"""
@@ -97,7 +100,7 @@ class HandleMultiModality:
                 return answer
             else:
                 final_query = f"query: {self.query}\n image_description: {_2}\n image_text: {_3}"
-                answer = ""
+                answer = self.main_agent_object(final_query)
                 return answer
         elif self.mode == 7:
             """query + image + voice as input"""
@@ -108,7 +111,7 @@ class HandleMultiModality:
                 return answer
             else:
                 final_query = f"query: {self.query}\n image_description: {_2}\n image_text: {_3}"
-                answer = ""
+                answer = self.main_agent_object(final_query)
                 return answer
     
     def __call__(self):

@@ -73,3 +73,4 @@ urllib3==2.2.3
 uvicorn==0.31.0
 yarl==1.13.1
 zipp==3.20.2
+bs4

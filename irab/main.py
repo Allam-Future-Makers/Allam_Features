@@ -1,5 +1,5 @@
-from chain import IrabProcessor
-import argparse
+from chain import IrabChain
+import argparse, time
 
 class Main:
     def __init__(self):
@@ -19,8 +19,15 @@ class Main:
     def main(self, path_to_paragraph):
         with open(path_to_paragraph, 'r') as f:
             paragraph = f.read()
-        chain = IrabProcessor(paragraph, self)
-        result = chain()
+        
+        chain = IrabChain(self)
+        
+        s = time.time()
+        result = chain(paragraph)
+        with open("paragraph_irabed.txt",'w', encoding="utf-8") as f:
+            f.write(result)
+        e = time.time()
+        print(f"Coversion Ellapsed: {e-s : 0.8f} seconds")
     
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Path to the paragraph text.")

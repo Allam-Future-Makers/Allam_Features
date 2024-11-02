@@ -1,5 +1,8 @@
+import sys,os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from importlib import reload
-import prompts
+from irab import prompts
 
 reload(prompts)
 irab_prompt = prompts.irab_prompt
@@ -18,17 +21,12 @@ from langchain_core.runnables import RunnableLambda, RunnableParallel  # noqa: E
 import os, time  # noqa: E402, F401
 
 
-class IrabProcessor:
-    def __init__(self, paragraph, instance):
+class IrabChain:
+    def __init__(self, instance):
         
         # Set up variables
-        instance.iterator += 1 
-        self.watson_key = instance.watsons['key']
-        self.watson_project_id = instance.watsons['project_id']
-        self.gemini_keys= instance.gemini_keys
-        
-        self.paragraph = paragraph
-        
+        self.instance = instance 
+                
         # Initialize models
         model_params = {
             "max_new_tokens": 600,
@@ -40,8 +38,8 @@ class IrabProcessor:
 
         # Initialize models
         self.allam_model = WatsonxLLM(
-            project_id= self.watson_project_id,
-            apikey= self.watson_key,
+            project_id= instance.watsons['project_id'],
+            apikey= instance.watsons['key'],
             model_id="sdaia/allam-1-13b-instruct",
             url="https://eu-de.ml.cloud.ibm.com",
             params=model_params,
@@ -50,7 +48,7 @@ class IrabProcessor:
             model="gemini-1.5-pro",
             max_output_tokens=None,
             temperature=0.18,
-            api_key= self.gemini_keys[instance.iterator%5]
+            api_key= instance.gemini_keys[instance.iterator%(len(instance.gemini_keys))]
         )
 
     def log(self, x):
@@ -112,7 +110,10 @@ class IrabProcessor:
         result = parallel_chain.invoke({})
         return result
 
-    def process_irab(self):
+    def process_irab(self, paragraph):
+
+        self.paragraph = paragraph
+
         # Step 1: Split sentences
         split_sentences = self.split_sentence(self.paragraph)
 
@@ -135,24 +136,17 @@ class IrabProcessor:
         gemini_result = json_parse_chain.invoke(
             {"sentence": self.paragraph, "irab_results": results}
         )
-
+        
+        self.instance.iterator += 1
 
         output_as_text = " ".join([f'كلمة "{item["word"]}" هي {item["irab"]}.' for item in gemini_result["irab_results"]])
 
         return output_as_text
     
 
-    def __call__(self):
-        s = time.time()
-        
-        result = self.process_irab()
-
-        with open("paragraph_irabed.txt",'w', encoding="utf-8") as f:
-            f.write(result)
-        
-        e = time.time()
-        print(f"Coversion Ellapsed: {e-s : 0.8f} seconds")
-        return None
+    def __call__(self, paragraph):
+        result = self.process_irab(paragraph)
+        return result
 
 
 # Usage
