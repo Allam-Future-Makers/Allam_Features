@@ -2,7 +2,7 @@ import os
 
 class ReActTemp:
     def __init__(self, instance):
-        self.isntance = instance
+        self.instance = instance
 
 
     def update_system_template(self):
