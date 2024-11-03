@@ -12,7 +12,7 @@ services:
     build: .
     command: uvicorn app:app --reload --host 0.0.0.0 --port 8000
     ports:
-      - "8069:8000"
+      - "8169:8000"
     volumes:
       - .:/app
     depends_on:
