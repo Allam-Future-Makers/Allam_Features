@@ -1,5 +1,6 @@
-import sys,os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+import sys, os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from HolyQuran.config.elastic_config import ElasticConfig
 from HolyQuran.elastic.search_manager import SearchManager
@@ -8,7 +9,10 @@ from HolyQuran.elastic.search_manager import SearchManager
 def search_quran(query):
     # Elasticsearch setup
     config = ElasticConfig(
-        host="localhost", port=9200,username="elastic", password="A0hMtZ=pRxRwbi1qigAZ" 
+        host="elasticsearch",
+        port=9200,
+        username="elastic",
+        password="A0hMtZ=pRxRwbi1qigAZ",
     )
     es_client = config.get_client()
 

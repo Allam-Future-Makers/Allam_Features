@@ -1,0 +1,19 @@
+services:
+  elasticsearch:
+    image: elasticsearch:8.15.3
+    ports:
+      - 9200:9200
+      - 9300:9300
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - "ELASTIC_PASSWORD=A0hMtZ=pRxRwbi1qigAZ"
+  app:
+    build: .
+    command: uvicorn app:app --reload --host 0.0.0.0 --port 8000
+    ports:
+      - "8069:8000"
+    volumes:
+      - .:/app
+    depends_on:
+      - elasticsearch
