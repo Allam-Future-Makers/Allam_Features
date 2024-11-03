@@ -8,19 +8,18 @@ services:
       - discovery.type=single-node
       - xpack.security.enabled=false
       - "ELASTIC_PASSWORD=A0hMtZ=pRxRwbi1qigAZ"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9200"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
   app:
     build: .
-    # command:
-    command:
-      [
-        "./wait-for-it.sh",
-        "elasticsearch:9200",
-        "--",
-        "uvicorn app:app --reload --host 0.0.0.0 --port 8000",
-      ]
+    command: "uvicorn app:app --reload --host 0.0.0.0 --port 8000"
     ports:
       - "8169:8000"
     volumes:
       - .:/app
     depends_on:
-      - elasticsearch
+      elasticsearch:
+        condition: service_healthy
