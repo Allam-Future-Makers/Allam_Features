@@ -16,31 +16,17 @@ class ToMSAChain:
         
         # Set up variables
         self.instance = instance
-        self.watson_key = instance.watsons['key']
-        self.watson_project_id = instance.watsons['project_id']
-        self.gemini_keys= instance.gemini_keys
+        self.watson_key = self.instance .watsons['key']
+        self.watson_project_id = self.instance .watsons['project_id']
+        self.gemini_keys= self.instance .gemini_keys
         self.chunk_size = chunk_size
 
         # Initialize models
-        model_params = {
+        self.model_params = {
             "max_new_tokens": 1536,
             "min_new_tokens": 0,
             "temperature": 0.00,
         }
-
-        self.watsonx_llm = WatsonxLLM(
-            project_id= self.watson_project_id,
-            apikey= self.watson_key,
-            model_id="sdaia/allam-1-13b-instruct",
-            url="https://eu-de.ml.cloud.ibm.com",
-            params=model_params
-        )
-
-        self.gemini_llm = ChatGoogleGenerativeAI(
-            model="gemini-1.5-flash", 
-            temperature=0, 
-            api_key=self.gemini_keys[instance.iterator%len(self.gemini_keys)]
-        )
 
 
     def _initialize_gemini(self, gemini_llm):
@@ -101,6 +87,20 @@ class ToMSAChain:
 
     def __call__(self, paragraph):
 
+        self.watsonx_llm = WatsonxLLM(
+            project_id= self.watson_project_id,
+            apikey= self.watson_key,
+            model_id="sdaia/allam-1-13b-instruct",
+            url="https://eu-de.ml.cloud.ibm.com",
+            params=self.model_params
+        )
+
+        self.gemini_llm = ChatGoogleGenerativeAI(
+            model="gemini-1.5-flash", 
+            temperature=0, 
+            api_key=self.gemini_keys[self.instance.iterator%len(self.gemini_keys)]
+        )
+
         try:
             self.splits = [] 
             for i in range(math.ceil(len(paragraph)/8000)):
@@ -115,9 +115,9 @@ class ToMSAChain:
             print(f"Error: {e}")
 
         if len(self.splits) == 1:
-            result = self._build_parallel_chain(self.chunks).invoke({})
+            result = self._build_parallel_chain(self.chunks).invoke({})['combined_corrected_text']
         else:
-            result = self._build_main_chain(self.splits).invoke({})
+            result = self._build_main_chain(self.splits).invoke({})['combined_corrected_text']
 
         self.instance.iterator += 1
         

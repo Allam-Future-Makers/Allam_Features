@@ -1,12 +1,38 @@
-from scripts.run_search import search_mo3gam
+from chain import Mo3gamSearchChain
+import argparse, time
 
-from scripts.run_indexing import index_mo3gam
+class Main:
+    def __init__(self):
+        self.watsons = {
+            'key' : "tBmyiiTXb1TYJQPrYHOCjiek8iIQGZoqqZreZwrpSRCM",
+            'project_id' : "89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52"
+        }
+        self.gemini_keys = [
+            "AIzaSyA0WgVJxLelaY3fvIhq4XK8Av9udDfJ9rI",
+            "AIzaSyDof2hE1nOYkSx3vslyRl696NVoBeXCKH8",
+            "AIzaSyC57_NvRsktnNgLvtyutDclVkCS2I4MKDI",
+            "AIzaSyDzyMWZB82YyWKzf21k6qdiAn4JG6DXL-Q",
+            "AIzaSyC2YG-msSXWXOxnzaxSlEPnQE4scpNLOAc"
+        ]
+        self.iterator = 0
 
-#index_mo3gam()   # created indices are stored here: sudo ls /var/lib/elasticsearch/indices/
+    def main(self, word, helper_sentence):
+    
+        chain = Mo3gamSearchChain(self)
+        
+        s = time.time()
+        text_result = chain(word, helper_sentence)
+        e = time.time()
+        print(f"Coversion Ellapsed: {e-s : 0.8f} seconds")
 
-query = "للذين استجابوا لربهم الحسنى"
-result, hits, best_hit = search_mo3gam(query)
-print(best_hit)
-print("----------")
-for hit in hits:
-    print(hit["_source"]["mo3gam_verse"])
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Inputs of word and helper_sentence")
+    parser.add_argument(
+        "word", type=str, help="The given word."
+    )
+    parser.add_argument(
+        "helper_sentence", nargs='?', default="", type=str, help="The optional helper sentence."
+    )
+    args = parser.parse_args()
+    main_cls = Main()
+    main_cls.main(args.word, args.helper_sentence)

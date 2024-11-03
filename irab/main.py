@@ -16,24 +16,20 @@ class Main:
         ]
         self.iterator = 0
 
-    def main(self, path_to_paragraph):
-        with open(path_to_paragraph, 'r') as f:
-            paragraph = f.read()
+    def main(self, paragraph):
         
         chain = IrabChain(self)
         
         s = time.time()
-        result = chain(paragraph)
-        with open("paragraph_irabed.txt",'w', encoding="utf-8") as f:
-            f.write(result)
+        json_result = chain.process_irab(paragraph)[0]  # chain(paragraph) isn't used because this returs text file which is benefitial for the agent.
         e = time.time()
         print(f"Coversion Ellapsed: {e-s : 0.8f} seconds")
     
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Path to the paragraph text.")
+    parser = argparse.ArgumentParser(description="The paragraph text.")
     parser.add_argument(
-        "file_name", type=str, help="The paragraph text file to process"
+        "paragraph", type=str, help="The paragraph text"
     )
     args = parser.parse_args()
     main_cls = Main()
-    main_cls.main(args.file_name)
+    main_cls.main(args.paragraph)

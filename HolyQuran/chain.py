@@ -15,25 +15,11 @@ class HolyQuranChain:
         self.instance = instance
 
         # Initialize models
-        model_params = {
+        self.model_params = {
             "max_new_tokens": 1536,
             "min_new_tokens": 0,
             "temperature": 0.00,
         }
-
-        self.watsonx_llm = WatsonxLLM(
-            project_id= self.instance.watsons['project_id'],
-            apikey= self.instance.watsons['key'],
-            model_id="sdaia/allam-1-13b-instruct",
-            url="https://eu-de.ml.cloud.ibm.com",
-            params=model_params
-        )
-
-        self.gemini_llm = ChatGoogleGenerativeAI(
-            model="gemini-1.5-flash", 
-            temperature=0, 
-            api_key=self.instance.gemini_keys[self.instance.iterator% len(self.instance.gemini_keys)]
-        )
 
     
     def _get_similar_context(query):
@@ -49,6 +35,21 @@ class HolyQuranChain:
         return context
     
     def __call__(self, query):
+
+        self.watsonx_llm = WatsonxLLM(
+            project_id= self.instance.watsons['project_id'],
+            apikey= self.instance.watsons['key'],
+            model_id="sdaia/allam-1-13b-instruct",
+            url="https://eu-de.ml.cloud.ibm.com",
+            params=self.model_params
+        )
+
+        self.gemini_llm = ChatGoogleGenerativeAI(
+            model="gemini-1.5-flash", 
+            temperature=0, 
+            api_key=self.instance.gemini_keys[self.instance.iterator% len(self.instance.gemini_keys)]
+        )
+
         
         try:
             chain =(

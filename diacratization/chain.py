@@ -25,26 +25,11 @@ class DiacratizeChain:
         self.chunk_size = chunk_size
 
         # Initialize models
-        model_params = {
+        self.model_params = {
             "max_new_tokens": 1536,
             "min_new_tokens": 0,
             "temperature": 0.00,
         }
-
-        self.watsonx_llm = WatsonxLLM(
-            project_id= self.watson_project_id,
-            apikey= self.watson_key,
-            model_id="sdaia/allam-1-13b-instruct",
-            url="https://eu-de.ml.cloud.ibm.com",
-            params=model_params
-        )
-
-        self.gemini_llm = ChatGoogleGenerativeAI(
-            model="gemini-1.5-flash", 
-            temperature=0, 
-            api_key=self.instance.gemini_keys[self.instance.iterator%len(self.instance.gemini_keys)]
-        )
-
 
 
     def _initialize_gemini(self, gemini_llm):
@@ -111,6 +96,20 @@ class DiacratizeChain:
 
 
     def __call__(self, paragraph):
+        
+        self.watsonx_llm = WatsonxLLM(
+            project_id= self.watson_project_id,
+            apikey= self.watson_key,
+            model_id="sdaia/allam-1-13b-instruct",
+            url="https://eu-de.ml.cloud.ibm.com",
+            params=self.model_params
+        )
+
+        self.gemini_llm = ChatGoogleGenerativeAI(
+            model="gemini-1.5-flash", 
+            temperature=0, 
+            api_key=self.instance.gemini_keys[self.instance.iterator%len(self.instance.gemini_keys)]
+        )
 
         try:
             self.splits = [] 
@@ -126,9 +125,9 @@ class DiacratizeChain:
             print(f"Error: {e}")
 
         if len(self.splits) == 1:
-            result = self._build_parallel_chain(self.chunks).invoke({})
+            result = self._build_parallel_chain(self.chunks).invoke({})['combined_diacratized_text']
         else:
-            result = self._build_main_chain(self.splits).invoke({})
+            result = self._build_main_chain(self.splits).invoke({})['combined_diacratized_text']
 
         self.instance.iterator += 1
 

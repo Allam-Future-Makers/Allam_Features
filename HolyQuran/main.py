@@ -21,9 +21,7 @@ class Main:
         chain = HolyQuranChain(self)
         
         s = time.time()
-        result = chain(query)
-        with open("query_answer.txt",'w', encoding="utf-8") as f:
-            f.write(result)
+        text_result = chain(query)
         e = time.time()
         print(f"Coversion Ellapsed: {e-s : 0.8f} seconds")
 

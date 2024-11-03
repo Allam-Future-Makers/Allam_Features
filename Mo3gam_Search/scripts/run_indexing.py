@@ -1,11 +1,18 @@
+import sys,os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import pandas as pd
 from config.elastic_config import ElasticConfig
 from elastic.index_manager import IndexManager
 
+parent_directory = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Specify the log file path
+data_file_path = os.path.join(parent_directory, "data", "merged_data.pkl")
 
 def index_mo3gam():
     # Load data
-    df = pd.read_pickle("data/merged_data.pkl")
+    df = pd.read_pickle(data_file_path)
 
     # Elasticsearch setup
     config = ElasticConfig(
@@ -47,5 +54,9 @@ def index_mo3gam():
     # Indexing
     index_name = "mo3gam_verse"
     index_manager = IndexManager(es_client, index_name)
-    index_manager.create_index(mapping)
-    index_manager.bulk_index(df)
+    
+    # Check if the index already exists
+    if not es_client.indices.exists(index=index_name):
+        index_manager.create_index(mapping)
+        index_manager.bulk_index(df)
+        print(f"Index '{index_name}' created and data indexed.")

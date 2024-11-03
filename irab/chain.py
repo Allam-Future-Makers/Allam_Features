@@ -28,28 +28,13 @@ class IrabChain:
         self.instance = instance 
                 
         # Initialize models
-        model_params = {
+        self.model_params = {
             "max_new_tokens": 600,
             "min_new_tokens": 0,
             "temperature": 0.00,
             "top_p": 0.88,
             "top_k": 30,
         }
-
-        # Initialize models
-        self.allam_model = WatsonxLLM(
-            project_id= instance.watsons['project_id'],
-            apikey= instance.watsons['key'],
-            model_id="sdaia/allam-1-13b-instruct",
-            url="https://eu-de.ml.cloud.ibm.com",
-            params=model_params,
-        )
-        self.gemini_model = ChatGoogleGenerativeAI(
-            model="gemini-1.5-pro",
-            max_output_tokens=None,
-            temperature=0.18,
-            api_key= instance.gemini_keys[instance.iterator%(len(instance.gemini_keys))]
-        )
 
     def log(self, x):
         print(x, end="\n" + "-" * 70 + "\n")
@@ -112,6 +97,22 @@ class IrabChain:
 
     def process_irab(self, paragraph):
 
+                # Initialize models
+        self.allam_model = WatsonxLLM(
+            project_id= self.instance.watsons['project_id'],
+            apikey= self.instance.watsons['key'],
+            model_id="sdaia/allam-1-13b-instruct",
+            url="https://eu-de.ml.cloud.ibm.com",
+            params=self.model_params,
+        )
+        self.gemini_model = ChatGoogleGenerativeAI(
+            model="gemini-1.5-pro",
+            max_output_tokens=None,
+            temperature=0.18,
+            api_key= self.instance.gemini_keys[self.instance.iterator%(len(self.instance.gemini_keys))]
+        )
+
+
         self.paragraph = paragraph
 
         # Step 1: Split sentences
@@ -141,12 +142,12 @@ class IrabChain:
 
         output_as_text = " ".join([f'كلمة "{item["word"]}" هي {item["irab"]}.' for item in gemini_result["irab_results"]])
 
-        return output_as_text
+        return gemini_result, output_as_text
     
 
     def __call__(self, paragraph):
-        result = self.process_irab(paragraph)
-        return result
+        text_result = self.process_irab(paragraph)[1] # this 1 is used with the agent tool calling.
+        return text_result 
 
 
 # Usage

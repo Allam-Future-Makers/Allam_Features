@@ -20521,3 +20521,255 @@
 2024-10-31 12:44:10,631 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.021s]
 2024-10-31 12:44:15,596 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
 2024-10-31 12:44:15,599 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-03 07:36:59,349 - INFO - NumExpr defaulting to 8 threads.
+2024-11-03 07:42:21,557 - INFO - NumExpr defaulting to 8 threads.
+2024-11-03 07:42:21,997 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.148s]
+2024-11-03 07:42:21,997 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 07:42:22,006 - INFO - HEAD http://localhost:9200/mo3gam_verse [status:200 duration:0.009s]
+2024-11-03 07:42:22,011 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-03 07:42:22,011 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 07:42:22,205 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.194s]
+2024-11-03 07:56:12,283 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.013s]
+2024-11-03 07:56:12,283 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 07:56:12,379 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.095s]
+2024-11-03 07:56:13,914 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 400 Bad Request"
+2024-11-03 07:56:13,917 - WARNING - Failure during generate. (POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14)
+Status code: 400, body: {"errors":[{"code":"invalid_input_argument","message":"Invalid input argument for Model 'sdaia/allam-1-13b-instruct': the number of input tokens 4147 cannot exceed the total tokens limit 4096 for this model","more_info":"https://cloud.ibm.com/apidocs/watsonx-ai"}],"trace":"d33cc7c08093b68bed9535d2a9b8b311","status_code":400}
+2024-11-03 07:56:52,357 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.014s]
+2024-11-03 07:56:52,357 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 07:56:52,523 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.166s]
+2024-11-03 07:56:55,888 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-03 07:56:55,890 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-03 07:57:44,808 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.015s]
+2024-11-03 07:57:44,809 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 07:57:44,951 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.142s]
+2024-11-03 07:57:48,316 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-03 07:57:48,317 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-03 07:58:06,351 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.017s]
+2024-11-03 07:58:06,352 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 07:58:06,462 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.110s]
+2024-11-03 07:58:08,898 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-03 07:58:08,900 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-03 07:58:30,581 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.014s]
+2024-11-03 07:58:30,582 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 07:58:30,662 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.079s]
+2024-11-03 07:58:35,112 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-03 07:58:35,114 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-03 08:00:08,502 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.012s]
+2024-11-03 08:00:08,503 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:00:08,609 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.106s]
+2024-11-03 08:00:13,519 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-03 08:00:13,521 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-03 08:00:17,995 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.006s]
+2024-11-03 08:00:17,995 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:00:18,050 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.054s]
+2024-11-03 08:00:20,073 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-03 08:00:20,074 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-03 08:01:57,069 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.005s]
+2024-11-03 08:01:57,069 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:01:57,126 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.057s]
+2024-11-03 08:02:01,860 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-03 08:02:01,862 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-03 08:02:04,437 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.006s]
+2024-11-03 08:02:04,437 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:02:04,494 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.056s]
+2024-11-03 08:02:06,161 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-03 08:02:06,163 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-03 08:03:18,077 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.006s]
+2024-11-03 08:03:18,078 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:03:18,132 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.054s]
+2024-11-03 08:03:19,889 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-03 08:03:19,891 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-03 08:03:46,546 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.006s]
+2024-11-03 08:03:46,546 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:03:46,601 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.055s]
+2024-11-03 08:06:13,552 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.005s]
+2024-11-03 08:06:13,552 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:06:13,615 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.063s]
+2024-11-03 08:06:41,976 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.005s]
+2024-11-03 08:06:41,976 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:06:42,041 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.064s]
+2024-11-03 08:07:11,166 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.005s]
+2024-11-03 08:07:11,166 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:07:11,235 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.069s]
+2024-11-03 08:07:21,870 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-03 08:07:21,870 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:07:21,972 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.102s]
+2024-11-03 08:07:29,128 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-03 08:07:29,128 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:07:29,189 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.061s]
+2024-11-03 08:07:38,645 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.009s]
+2024-11-03 08:07:38,645 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:07:38,712 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.066s]
+2024-11-03 08:07:41,217 - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised InternalServerError: 500 An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting.
+2024-11-03 08:07:59,447 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.005s]
+2024-11-03 08:07:59,448 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:07:59,515 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.067s]
+2024-11-03 08:14:41,115 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.007s]
+2024-11-03 08:14:41,115 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:14:41,191 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.075s]
+2024-11-03 08:14:43,621 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-03 08:14:43,623 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-03 08:15:52,322 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.005s]
+2024-11-03 08:15:52,323 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:15:52,441 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.118s]
+2024-11-03 08:15:54,482 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-03 08:15:54,484 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-03 08:16:11,119 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.005s]
+2024-11-03 08:16:11,119 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:16:11,217 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.098s]
+2024-11-03 08:16:16,908 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-03 08:16:16,910 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-03 08:23:48,551 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-03 08:23:48,551 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:23:48,661 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.109s]
+2024-11-03 08:24:03,456 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-03 08:24:03,458 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-03 08:24:19,996 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-03 08:24:19,996 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:24:20,090 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.094s]
+2024-11-03 08:24:34,894 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-03 08:24:34,896 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-03 08:27:01,089 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-03 08:27:01,089 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:27:01,173 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.084s]
+2024-11-03 08:27:16,486 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-03 08:27:16,487 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-03 08:27:56,388 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-03 08:27:56,388 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:27:56,469 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.081s]
+2024-11-03 08:30:05,049 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-03 08:30:05,049 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:30:05,142 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.093s]
+2024-11-03 08:30:36,031 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-03 08:30:36,031 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:30:36,111 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.080s]
+2024-11-03 08:30:45,796 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-03 08:30:45,797 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-03 08:31:27,722 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.006s]
+2024-11-03 08:31:27,722 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:31:27,809 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.086s]
+2024-11-03 08:44:55,421 - INFO - NumExpr defaulting to 8 threads.
+2024-11-03 08:44:56,947 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.005s]
+2024-11-03 08:44:56,947 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:44:56,951 - INFO - HEAD http://localhost:9200/mo3gam_verse [status:200 duration:0.004s]
+2024-11-03 08:44:58,397 - INFO - Client successfully initialized
+2024-11-03 08:45:01,171 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-03 08:46:14,866 - INFO - NumExpr defaulting to 8 threads.
+2024-11-03 08:46:16,196 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-03 08:46:16,196 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:46:16,198 - INFO - HEAD http://localhost:9200/mo3gam_verse [status:200 duration:0.002s]
+2024-11-03 08:46:19,192 - INFO - Client successfully initialized
+2024-11-03 08:46:20,320 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-03 08:46:20,350 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-03 08:46:20,350 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:46:20,382 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.032s]
+2024-11-03 08:48:40,240 - INFO - NumExpr defaulting to 8 threads.
+2024-11-03 08:48:45,500 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-03 08:48:45,500 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:48:45,502 - INFO - HEAD http://localhost:9200/mo3gam_verse [status:200 duration:0.002s]
+2024-11-03 08:48:46,843 - INFO - Client successfully initialized
+2024-11-03 08:48:48,062 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-03 08:48:48,191 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-03 08:48:48,191 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:48:48,231 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.040s]
+2024-11-03 08:50:53,020 - INFO - NumExpr defaulting to 8 threads.
+2024-11-03 08:50:54,327 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-03 08:50:54,328 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:50:54,330 - INFO - HEAD http://localhost:9200/mo3gam_verse [status:200 duration:0.002s]
+2024-11-03 08:50:57,213 - INFO - Client successfully initialized
+2024-11-03 08:50:58,423 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-03 08:50:58,478 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-03 08:50:58,478 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:50:58,512 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.034s]
+2024-11-03 08:51:31,442 - INFO - NumExpr defaulting to 8 threads.
+2024-11-03 08:51:32,742 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-03 08:51:32,742 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:51:32,745 - INFO - HEAD http://localhost:9200/mo3gam_verse [status:200 duration:0.002s]
+2024-11-03 08:51:34,282 - INFO - Client successfully initialized
+2024-11-03 08:51:35,510 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-03 08:51:35,543 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-03 08:51:35,543 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:51:35,576 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.032s]
+2024-11-03 08:52:15,154 - INFO - NumExpr defaulting to 8 threads.
+2024-11-03 08:52:16,462 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-03 08:52:16,462 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:52:16,464 - INFO - HEAD http://localhost:9200/mo3gam_verse [status:200 duration:0.002s]
+2024-11-03 08:52:18,008 - INFO - Client successfully initialized
+2024-11-03 08:52:19,646 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-03 08:52:19,680 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-03 08:52:19,680 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:52:19,713 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.032s]
+2024-11-03 08:53:01,768 - INFO - NumExpr defaulting to 8 threads.
+2024-11-03 08:53:03,087 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.006s]
+2024-11-03 08:53:03,087 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:53:03,092 - INFO - HEAD http://localhost:9200/mo3gam_verse [status:200 duration:0.004s]
+2024-11-03 08:53:04,599 - INFO - Client successfully initialized
+2024-11-03 08:53:05,521 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-03 08:53:05,552 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-03 08:53:05,553 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:53:05,586 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.033s]
+2024-11-03 08:54:37,656 - INFO - NumExpr defaulting to 8 threads.
+2024-11-03 08:54:38,960 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-03 08:54:38,960 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:54:38,962 - INFO - HEAD http://localhost:9200/mo3gam_verse [status:200 duration:0.002s]
+2024-11-03 08:54:41,267 - INFO - Client successfully initialized
+2024-11-03 08:54:42,143 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-03 08:54:42,190 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-03 08:54:42,190 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:54:42,226 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.036s]
+2024-11-03 08:56:47,237 - INFO - NumExpr defaulting to 8 threads.
+2024-11-03 08:56:48,549 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-03 08:56:48,550 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:56:48,552 - INFO - HEAD http://localhost:9200/mo3gam_verse [status:200 duration:0.002s]
+2024-11-03 08:56:50,397 - INFO - Client successfully initialized
+2024-11-03 08:56:51,878 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-03 08:56:51,909 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-03 08:56:51,909 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:56:51,940 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.031s]
+2024-11-03 08:57:19,697 - INFO - NumExpr defaulting to 8 threads.
+2024-11-03 08:57:21,014 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-03 08:57:21,014 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:57:21,016 - INFO - HEAD http://localhost:9200/mo3gam_verse [status:200 duration:0.002s]
+2024-11-03 08:57:22,344 - INFO - Client successfully initialized
+2024-11-03 08:57:23,779 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-03 08:57:23,810 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-03 08:57:23,810 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:57:23,842 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.032s]
+2024-11-03 08:59:17,276 - INFO - NumExpr defaulting to 8 threads.
+2024-11-03 08:59:18,590 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-03 08:59:18,590 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:59:18,592 - INFO - HEAD http://localhost:9200/mo3gam_verse [status:200 duration:0.002s]
+2024-11-03 08:59:20,949 - INFO - Client successfully initialized
+2024-11-03 08:59:23,078 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-03 08:59:23,109 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-03 08:59:23,109 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 08:59:23,144 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.034s]
+2024-11-03 08:59:47,649 - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised InternalServerError: 500 An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting.
+2024-11-03 09:00:34,120 - INFO - NumExpr defaulting to 8 threads.
+2024-11-03 09:00:35,436 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-03 09:00:35,436 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 09:00:35,438 - INFO - HEAD http://localhost:9200/mo3gam_verse [status:200 duration:0.002s]
+2024-11-03 09:00:36,905 - INFO - Client successfully initialized
+2024-11-03 09:00:37,826 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-03 09:00:37,857 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.002s]
+2024-11-03 09:00:37,858 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 09:00:37,890 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.032s]
+2024-11-03 09:01:14,048 - INFO - NumExpr defaulting to 8 threads.
+2024-11-03 09:01:15,383 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-03 09:01:15,383 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 09:01:15,385 - INFO - HEAD http://localhost:9200/mo3gam_verse [status:200 duration:0.002s]
+2024-11-03 09:01:17,149 - INFO - Client successfully initialized
+2024-11-03 09:01:18,273 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-03 09:01:18,308 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-03 09:01:18,309 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 09:01:18,345 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.036s]
+2024-11-03 09:02:26,633 - INFO - NumExpr defaulting to 8 threads.
+2024-11-03 09:02:27,946 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-03 09:02:27,946 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 09:02:27,948 - INFO - HEAD http://localhost:9200/mo3gam_verse [status:200 duration:0.002s]
+2024-11-03 09:02:29,751 - INFO - Client successfully initialized
+2024-11-03 09:02:31,492 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-03 09:02:31,528 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-03 09:02:31,528 - INFO - Successfully connected to Elasticsearch.
+2024-11-03 09:02:31,561 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.033s]
