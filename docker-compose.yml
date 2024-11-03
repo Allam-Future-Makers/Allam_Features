@@ -10,7 +10,14 @@ services:
       - "ELASTIC_PASSWORD=A0hMtZ=pRxRwbi1qigAZ"
   app:
     build: .
-    command: uvicorn app:app --reload --host 0.0.0.0 --port 8000
+    # command:
+    command:
+      [
+        "./wait-for-it.sh",
+        "elasticsearch:9200",
+        "--",
+        "uvicorn app:app --reload --host 0.0.0.0 --port 8000",
+      ]
     ports:
       - "8169:8000"
     volumes:
