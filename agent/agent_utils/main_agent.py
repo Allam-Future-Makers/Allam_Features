@@ -97,8 +97,7 @@ class MainAgent:
             str: The improved answer.
         """
         is_good_answer = self.grad_answer_object(query=query, answer=answer)
-        while self.counter < 1:
-            self.counter += 1 
+        while self.counter < 2: 
             if is_good_answer.lower() == "no":
                 print(colored("we are optimizing your answer...", "red"), flush=True) if self.instance.verbose else None
                 answer = self._execute(
@@ -107,7 +106,9 @@ class MainAgent:
                 answer = self.correct_hallucination(query, answer, ReAct_messages)
                 is_good_answer = self.grad_answer_object(query=query, answer=answer)
             else:
+                self.counter += 1
                 return answer
+        self.counter += 1
         return answer
 
     def answer_query(self, query):

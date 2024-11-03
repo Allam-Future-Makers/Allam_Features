@@ -174,7 +174,17 @@ class ReActTemp:
             Final Thought: Now I did the three steps and have the answer. I will output it
             Answer: تَشِيرُ الجَنَّةُ إِلَى الجَنَّةِ فِي القُرْآنِ الكَرِيمِ، وَالَّتِي تُوْصَفُ بِأَنَّهَا مَكَانُ السَّلَامِ الأَبَدِيِّ وَمَكَافَآتِ الصَّالِحِينَ. وَيُعْتَبَرُ الهَدَفُ النِّهَائِيُّ لِلْمُؤْمِنِينَ
 
+            # example session 7:
 
+            Question: could you tell me in arabic words what does I love you mean?
+            First Thought: The user needs to know the meaning of I love you in arabic. I will use one Action which is to_msa.
+            Action: to_msa("I love you")
+            PAUSE
+
+            You will be called again with this:
+            Observation: أنا أحبك
+            Final Thought: Now I know that I love you means 'أنا أحبك' in arabic I will output the answer.
+            Answer: I love you in arabic means أنا أحبك
 
             Mandatory Notes: 
                 1. Always use "Thought:", "Action:", "PAUSE", "Observation:", and "Answer:" in responses.

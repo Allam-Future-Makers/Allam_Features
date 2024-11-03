@@ -39,7 +39,7 @@ class ToMSAChain:
         self.gemini_llm = ChatGoogleGenerativeAI(
             model="gemini-1.5-flash", 
             temperature=0, 
-            api_key=self.gemini_keys[instance.iterator%5]
+            api_key=self.gemini_keys[instance.iterator%len(self.gemini_keys)]
         )
 
 

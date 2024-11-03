@@ -18774,3 +18774,267 @@
 2024-11-01 19:47:46,356 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.016s]
 2024-11-01 19:47:46,357 - INFO - Successfully connected to Elasticsearch.
 2024-11-01 19:47:47,122 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.765s]
+2024-11-02 22:26:35,959 - INFO - Client successfully initialized
+2024-11-02 22:26:37,599 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:26:39,645 - INFO - Client successfully initialized
+2024-11-02 22:26:41,595 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:26:43,956 - INFO - Client successfully initialized
+2024-11-02 22:26:46,506 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:26:47,528 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.755s]
+2024-11-02 22:26:47,528 - INFO - Successfully connected to Elasticsearch.
+2024-11-02 22:26:47,594 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.065s]
+2024-11-02 22:26:48,761 - INFO - Client successfully initialized
+2024-11-02 22:26:49,988 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:28:49,390 - INFO - Client successfully initialized
+2024-11-02 22:28:50,726 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:28:51,863 - INFO - Client successfully initialized
+2024-11-02 22:28:52,927 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:28:54,036 - INFO - Client successfully initialized
+2024-11-02 22:28:54,991 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:28:55,223 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.030s]
+2024-11-02 22:28:55,223 - INFO - Successfully connected to Elasticsearch.
+2024-11-02 22:28:55,235 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.011s]
+2024-11-02 22:28:56,169 - INFO - Client successfully initialized
+2024-11-02 22:28:56,934 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:29:12,840 - INFO - Client successfully initialized
+2024-11-02 22:29:13,759 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:29:14,988 - INFO - Client successfully initialized
+2024-11-02 22:29:16,097 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:29:16,913 - INFO - Client successfully initialized
+2024-11-02 22:29:18,145 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:29:18,330 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.021s]
+2024-11-02 22:29:18,330 - INFO - Successfully connected to Elasticsearch.
+2024-11-02 22:29:18,342 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.011s]
+2024-11-02 22:29:19,244 - INFO - Client successfully initialized
+2024-11-02 22:29:20,003 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:29:33,626 - INFO - Client successfully initialized
+2024-11-02 22:29:34,649 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:29:35,875 - INFO - Client successfully initialized
+2024-11-02 22:29:36,697 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:29:37,628 - INFO - Client successfully initialized
+2024-11-02 22:29:38,516 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:29:38,702 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.025s]
+2024-11-02 22:29:38,702 - INFO - Successfully connected to Elasticsearch.
+2024-11-02 22:29:38,709 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.007s]
+2024-11-02 22:29:39,921 - INFO - Client successfully initialized
+2024-11-02 22:29:40,737 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:29:59,943 - INFO - Client successfully initialized
+2024-11-02 22:30:00,978 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:30:01,872 - INFO - Client successfully initialized
+2024-11-02 22:30:02,642 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:30:03,527 - INFO - Client successfully initialized
+2024-11-02 22:30:04,424 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:30:04,622 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.025s]
+2024-11-02 22:30:04,623 - INFO - Successfully connected to Elasticsearch.
+2024-11-02 22:30:04,631 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.008s]
+2024-11-02 22:30:05,953 - INFO - Client successfully initialized
+2024-11-02 22:30:06,657 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:30:20,323 - INFO - Client successfully initialized
+2024-11-02 22:30:21,224 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:30:22,375 - INFO - Client successfully initialized
+2024-11-02 22:30:23,123 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:30:23,908 - INFO - Client successfully initialized
+2024-11-02 22:30:24,640 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:30:24,868 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.043s]
+2024-11-02 22:30:24,869 - INFO - Successfully connected to Elasticsearch.
+2024-11-02 22:30:24,883 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.012s]
+2024-11-02 22:30:25,701 - INFO - Client successfully initialized
+2024-11-02 22:30:26,441 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:30:40,498 - INFO - Client successfully initialized
+2024-11-02 22:30:41,280 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:30:42,141 - INFO - Client successfully initialized
+2024-11-02 22:30:42,909 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:30:43,617 - INFO - Client successfully initialized
+2024-11-02 22:30:44,321 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:30:44,506 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.023s]
+2024-11-02 22:30:44,507 - INFO - Successfully connected to Elasticsearch.
+2024-11-02 22:30:44,517 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.010s]
+2024-11-02 22:30:45,293 - INFO - Client successfully initialized
+2024-11-02 22:30:45,996 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:30:59,719 - INFO - Client successfully initialized
+2024-11-02 22:31:01,696 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:31:02,745 - INFO - Client successfully initialized
+2024-11-02 22:31:03,619 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:31:05,039 - INFO - Client successfully initialized
+2024-11-02 22:31:05,785 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:31:05,980 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.024s]
+2024-11-02 22:31:05,980 - INFO - Successfully connected to Elasticsearch.
+2024-11-02 22:31:05,994 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.012s]
+2024-11-02 22:31:06,800 - INFO - Client successfully initialized
+2024-11-02 22:42:04,612 - INFO - Client successfully initialized
+2024-11-02 22:42:05,701 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:42:06,928 - INFO - Client successfully initialized
+2024-11-02 22:42:07,669 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:42:08,912 - INFO - Client successfully initialized
+2024-11-02 22:42:10,006 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:42:10,220 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.012s]
+2024-11-02 22:42:10,220 - INFO - Successfully connected to Elasticsearch.
+2024-11-02 22:42:10,229 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.008s]
+2024-11-02 22:42:11,021 - INFO - Client successfully initialized
+2024-11-02 22:42:11,920 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:43:21,018 - INFO - Client successfully initialized
+2024-11-02 22:43:21,994 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:43:23,320 - INFO - Client successfully initialized
+2024-11-02 22:43:24,016 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:43:24,882 - INFO - Client successfully initialized
+2024-11-02 22:43:26,110 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:43:26,305 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.013s]
+2024-11-02 22:43:26,305 - INFO - Successfully connected to Elasticsearch.
+2024-11-02 22:43:26,314 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.009s]
+2024-11-02 22:43:27,091 - INFO - Client successfully initialized
+2024-11-02 22:43:27,821 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:44:18,234 - INFO - Client successfully initialized
+2024-11-02 22:44:20,182 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:44:21,854 - INFO - Client successfully initialized
+2024-11-02 22:44:23,255 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:44:24,892 - INFO - Client successfully initialized
+2024-11-02 22:44:26,634 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:44:26,815 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.012s]
+2024-11-02 22:44:26,815 - INFO - Successfully connected to Elasticsearch.
+2024-11-02 22:44:26,825 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.009s]
+2024-11-02 22:44:27,963 - INFO - Client successfully initialized
+2024-11-02 22:44:29,177 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:44:46,294 - INFO - Client successfully initialized
+2024-11-02 22:44:47,116 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:44:47,911 - INFO - Client successfully initialized
+2024-11-02 22:44:48,658 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:44:49,738 - INFO - Client successfully initialized
+2024-11-02 22:44:50,737 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:44:50,945 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.013s]
+2024-11-02 22:44:50,946 - INFO - Successfully connected to Elasticsearch.
+2024-11-02 22:44:50,960 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.013s]
+2024-11-02 22:44:52,163 - INFO - Client successfully initialized
+2024-11-02 22:44:53,046 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:45:23,256 - INFO - Client successfully initialized
+2024-11-02 22:45:24,698 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:45:26,085 - INFO - Client successfully initialized
+2024-11-02 22:45:26,936 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:45:27,772 - INFO - Client successfully initialized
+2024-11-02 22:45:28,478 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:45:28,673 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.013s]
+2024-11-02 22:45:28,673 - INFO - Successfully connected to Elasticsearch.
+2024-11-02 22:45:28,685 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.011s]
+2024-11-02 22:45:29,467 - INFO - Client successfully initialized
+2024-11-02 22:45:30,228 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:46:49,166 - INFO - Client successfully initialized
+2024-11-02 22:46:50,076 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:46:56,641 - INFO - Client successfully initialized
+2024-11-02 22:46:57,974 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:46:59,306 - INFO - Client successfully initialized
+2024-11-02 22:47:00,123 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:47:00,307 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.013s]
+2024-11-02 22:47:00,308 - INFO - Successfully connected to Elasticsearch.
+2024-11-02 22:47:00,316 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.007s]
+2024-11-02 22:47:01,557 - INFO - Client successfully initialized
+2024-11-02 22:47:02,478 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:47:15,894 - INFO - Client successfully initialized
+2024-11-02 22:47:17,942 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:47:19,355 - INFO - Client successfully initialized
+2024-11-02 22:47:20,050 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:47:21,086 - INFO - Client successfully initialized
+2024-11-02 22:47:21,811 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:47:21,994 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.010s]
+2024-11-02 22:47:21,995 - INFO - Successfully connected to Elasticsearch.
+2024-11-02 22:47:22,004 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.008s]
+2024-11-02 22:47:22,948 - INFO - Client successfully initialized
+2024-11-02 22:47:23,651 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:47:37,006 - INFO - Client successfully initialized
+2024-11-02 22:47:38,216 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:47:39,447 - INFO - Client successfully initialized
+2024-11-02 22:47:40,130 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:47:40,933 - INFO - Client successfully initialized
+2024-11-02 22:47:41,616 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:47:41,795 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.012s]
+2024-11-02 22:47:41,795 - INFO - Successfully connected to Elasticsearch.
+2024-11-02 22:47:41,804 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.008s]
+2024-11-02 22:47:42,654 - INFO - Client successfully initialized
+2024-11-02 22:47:43,562 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:48:48,053 - INFO - Client successfully initialized
+2024-11-02 22:48:48,972 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:48:50,438 - INFO - Client successfully initialized
+2024-11-02 22:48:51,322 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:48:52,439 - INFO - Client successfully initialized
+2024-11-02 22:48:53,449 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:48:53,646 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.015s]
+2024-11-02 22:48:53,647 - INFO - Successfully connected to Elasticsearch.
+2024-11-02 22:48:53,662 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.015s]
+2024-11-02 22:48:54,650 - INFO - Client successfully initialized
+2024-11-02 22:48:55,382 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:49:55,941 - INFO - Client successfully initialized
+2024-11-02 22:49:56,757 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:49:57,937 - INFO - Client successfully initialized
+2024-11-02 22:49:58,621 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:49:59,438 - INFO - Client successfully initialized
+2024-11-02 22:50:00,146 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:50:00,339 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.013s]
+2024-11-02 22:50:00,340 - INFO - Successfully connected to Elasticsearch.
+2024-11-02 22:50:00,350 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.009s]
+2024-11-02 22:50:01,300 - INFO - Client successfully initialized
+2024-11-02 22:50:02,054 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:50:44,885 - INFO - Client successfully initialized
+2024-11-02 22:50:46,118 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:50:47,650 - INFO - Client successfully initialized
+2024-11-02 22:50:49,604 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:50:51,032 - INFO - Client successfully initialized
+2024-11-02 22:50:51,831 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:50:51,997 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.011s]
+2024-11-02 22:50:51,997 - INFO - Successfully connected to Elasticsearch.
+2024-11-02 22:50:52,013 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.016s]
+2024-11-02 22:50:52,976 - INFO - Client successfully initialized
+2024-11-02 22:50:53,668 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:51:31,171 - INFO - Client successfully initialized
+2024-11-02 22:51:32,194 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:51:33,360 - INFO - Client successfully initialized
+2024-11-02 22:51:34,257 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:51:35,062 - INFO - Client successfully initialized
+2024-11-02 22:51:35,818 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:51:36,003 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.009s]
+2024-11-02 22:51:36,004 - INFO - Successfully connected to Elasticsearch.
+2024-11-02 22:51:36,014 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.011s]
+2024-11-02 22:51:36,834 - INFO - Client successfully initialized
+2024-11-02 22:51:37,503 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:52:20,117 - INFO - Client successfully initialized
+2024-11-02 22:52:21,449 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:52:22,782 - INFO - Client successfully initialized
+2024-11-02 22:52:24,555 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:52:25,413 - INFO - Client successfully initialized
+2024-11-02 22:52:26,157 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:52:26,326 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.010s]
+2024-11-02 22:52:26,327 - INFO - Successfully connected to Elasticsearch.
+2024-11-02 22:52:26,338 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.011s]
+2024-11-02 22:52:27,200 - INFO - Client successfully initialized
+2024-11-02 22:52:27,909 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:52:51,660 - INFO - Client successfully initialized
+2024-11-02 22:52:52,782 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:52:53,951 - INFO - Client successfully initialized
+2024-11-02 22:52:54,888 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:52:56,150 - INFO - Client successfully initialized
+2024-11-02 22:52:56,915 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:52:57,100 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.012s]
+2024-11-02 22:52:57,100 - INFO - Successfully connected to Elasticsearch.
+2024-11-02 22:52:57,109 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.008s]
+2024-11-02 22:52:57,879 - INFO - Client successfully initialized
+2024-11-02 22:52:58,603 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:53:16,547 - INFO - Client successfully initialized
+2024-11-02 22:53:17,420 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:53:18,193 - INFO - Client successfully initialized
+2024-11-02 22:53:18,869 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:53:19,708 - INFO - Client successfully initialized
+2024-11-02 22:53:20,392 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:53:20,574 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.012s]
+2024-11-02 22:53:20,575 - INFO - Successfully connected to Elasticsearch.
+2024-11-02 22:53:20,586 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.010s]
+2024-11-02 22:53:21,439 - INFO - Client successfully initialized
+2024-11-02 22:53:22,148 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:53:40,602 - INFO - Client successfully initialized
+2024-11-02 22:53:41,420 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:53:42,855 - INFO - Client successfully initialized
+2024-11-02 22:53:43,611 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:53:44,430 - INFO - Client successfully initialized
+2024-11-02 22:53:45,156 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:53:45,326 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.014s]
+2024-11-02 22:53:45,327 - INFO - Successfully connected to Elasticsearch.
+2024-11-02 22:53:45,335 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.007s]
+2024-11-02 22:53:46,504 - INFO - Client successfully initialized
+2024-11-02 22:53:47,208 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=40481c96-7240-4b7d-8d44-08a21aea2013&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-02 22:53:58,726 - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised InternalServerError: 500 An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting.
