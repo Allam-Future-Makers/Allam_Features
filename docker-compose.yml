@@ -2,8 +2,8 @@ services:
   elasticsearch:
     image: elasticsearch:8.15.3
     ports:
-      - 9200:9200
-      - 9300:9300
+      - 9201:9200
+      - 9301:9300
     environment:
       - discovery.type=single-node
       - xpack.security.enabled=false
