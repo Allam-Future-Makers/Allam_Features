@@ -1,4 +1,4 @@
-import sys,os
+import sys,os,re
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from HolyQuran.scripts.run_search import search_quran
@@ -60,6 +60,8 @@ class HolyQuranChain:
                 | JsonOutputParser()
             )
             result = chain.invoke(query)['answer']
+            links = re.findall(r'http[|s]?://[^\s]+', result)
+
             print("Allam\n")
         except:
             try:
@@ -70,9 +72,10 @@ class HolyQuranChain:
                     | JsonOutputParser()
                 )
                 result = chain.invoke(query)['answer']
+                links = re.findall(r'http[|s]?://[^\s]+', result)
                 print("Gemini\n")
             except Exception as e:
                 print(f"Error has occured:{e}")
         
         self.instance.iterator += 1
-        return result
+        return result, links 
