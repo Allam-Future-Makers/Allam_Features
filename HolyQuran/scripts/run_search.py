@@ -9,10 +9,10 @@ from HolyQuran.elastic.search_manager import SearchManager
 def search_quran(query):
     # Elasticsearch setup
     config = ElasticConfig(
-        host="elasticsearch",
-        port=9200,
-        username="elastic",
-        password="A0hMtZ=pRxRwbi1qigAZ",
+        host=os.getenv("ELASTIC_HOST", "localhost"),
+        port=os.getenv("ELASTIC_PORT", "9200"),
+        username=os.getenv("ELASTIC_USER", "elastic"),
+        password=os.getenv("ELASTIC_PASSWORD", "changeme"),
     )
     es_client = config.get_client()
 

@@ -10,6 +10,10 @@ from irab.chain import IrabChain
 from syntax_enhancer.chain import SyntaxEnhancerChain
 from to_MSA.chain import ToMSAChain
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 watsons = {
     "key": "tBmyiiTXb1TYJQPrYHOCjiek8iIQGZoqqZreZwrpSRCM",
     "project_id": "89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52",
