@@ -28,9 +28,10 @@ class HolyQuranChain:
         for i,hit in enumerate(hits[:3], start=1):
             d = hit["_source"] 
             c = {}
-            c['الآية'] = d['I3rab'] 
-            c['التفسير'] = d['Tafseer_Saadi']
-            c['التلاوة'] = d['telawa']
+            c['نص_الآية'] = d['Ayah'] 
+            c['إعراب_الآية'] = d['I3rab']
+            c['تفسير_الآية'] = d['Tafseer_Saadi']
+            c['التلاوة_و_القراءة_الصحيحة_للآية_عبر_رابط_لمقطع_صوتى'] = d['telawa']
             context = context + "النص_{i}" + str(c)
         return context
     
@@ -59,6 +60,7 @@ class HolyQuranChain:
                 | JsonOutputParser()
             )
             result = chain.invoke(query)['answer']
+            print("Allam\n")
         except:
             try:
                 chain =(
@@ -68,6 +70,7 @@ class HolyQuranChain:
                     | JsonOutputParser()
                 )
                 result = chain.invoke(query)['answer']
+                print("Gemini\n")
             except Exception as e:
                 print(f"Error has occured:{e}")
         

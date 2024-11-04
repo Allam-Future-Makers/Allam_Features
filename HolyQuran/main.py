@@ -22,6 +22,7 @@ class Main:
         
         s = time.time()
         text_result = chain(query) # https://www.everyayah.com/data/Yasser_Ad-Dussary_128kbps/094006.mp3
+        print(text_result)
         e = time.time()
         print(f"Coversion Ellapsed: {e-s : 0.8f} seconds")
 

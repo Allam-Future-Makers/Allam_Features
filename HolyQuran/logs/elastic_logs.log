@@ -19167,3 +19167,346 @@
 2024-11-04 18:33:52,558 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.024s]
 2024-11-04 18:33:55,771 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
 2024-11-04 18:33:55,772 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-04 19:38:55,595 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 19:39:01,133 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.274s]
+2024-11-04 19:39:01,133 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 19:39:01,159 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.026s]
+2024-11-04 19:39:04,702 - INFO - Client successfully initialized
+2024-11-04 19:39:07,058 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 19:39:07,567 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.012s]
+2024-11-04 19:39:07,568 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 19:39:08,136 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.568s]
+2024-11-04 19:39:09,411 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-04 19:39:09,412 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-04 19:40:17,910 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 19:40:19,304 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.010s]
+2024-11-04 19:40:19,305 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 19:40:19,307 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.002s]
+2024-11-04 19:40:21,385 - INFO - Client successfully initialized
+2024-11-04 19:40:22,918 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 19:40:22,984 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.010s]
+2024-11-04 19:40:22,984 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 19:40:23,012 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.027s]
+2024-11-04 19:40:24,509 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-04 19:40:24,511 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-04 19:40:39,017 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 19:40:40,530 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.011s]
+2024-11-04 19:40:40,530 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 19:40:40,532 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.002s]
+2024-11-04 19:40:42,808 - INFO - Client successfully initialized
+2024-11-04 19:40:44,322 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 19:40:44,376 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.010s]
+2024-11-04 19:40:44,377 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 19:40:44,431 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.054s]
+2024-11-04 19:40:45,752 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-04 19:40:45,753 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-04 19:41:37,441 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 19:41:39,151 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.019s]
+2024-11-04 19:41:39,151 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 19:41:39,163 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.012s]
+2024-11-04 19:41:41,665 - INFO - Client successfully initialized
+2024-11-04 19:41:43,201 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 19:41:43,238 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.009s]
+2024-11-04 19:41:43,238 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 19:41:43,288 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.050s]
+2024-11-04 19:41:48,526 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-04 19:41:48,528 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-04 19:44:57,629 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 19:44:59,006 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-04 19:44:59,006 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 19:44:59,009 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.002s]
+2024-11-04 19:45:00,851 - INFO - Client successfully initialized
+2024-11-04 19:45:02,486 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 19:45:02,543 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-04 19:45:02,543 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 19:45:02,587 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.044s]
+2024-11-04 19:45:07,606 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-04 19:45:07,607 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-04 19:45:39,364 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 19:45:41,428 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-04 19:45:41,428 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 19:45:41,431 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.003s]
+2024-11-04 19:45:43,138 - INFO - Client successfully initialized
+2024-11-04 19:45:44,677 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 19:45:44,737 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.008s]
+2024-11-04 19:45:44,737 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 19:45:44,792 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.055s]
+2024-11-04 19:45:47,643 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-04 19:45:47,645 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-04 19:50:04,431 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 19:50:05,838 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-04 19:50:05,838 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 19:50:05,840 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.002s]
+2024-11-04 19:50:07,327 - INFO - Client successfully initialized
+2024-11-04 19:50:08,490 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 19:50:08,541 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-04 19:50:08,541 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 19:50:08,595 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.054s]
+2024-11-04 19:50:13,576 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-04 19:50:13,577 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-04 19:54:46,770 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 19:54:48,132 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-04 19:54:48,132 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 19:54:48,135 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.002s]
+2024-11-04 19:54:50,916 - INFO - Client successfully initialized
+2024-11-04 19:54:52,555 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 19:54:52,584 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-04 19:54:52,584 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 19:54:52,638 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.054s]
+2024-11-04 19:54:54,602 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-04 19:54:54,604 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-04 19:55:45,208 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 19:55:46,726 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-04 19:55:46,726 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 19:55:46,729 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.003s]
+2024-11-04 19:55:48,368 - INFO - Client successfully initialized
+2024-11-04 19:55:50,412 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 19:55:50,541 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.011s]
+2024-11-04 19:55:50,541 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 19:55:50,602 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.060s]
+2024-11-04 19:55:52,457 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-04 19:55:52,458 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-04 19:57:50,513 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 19:57:53,273 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.007s]
+2024-11-04 19:57:53,273 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 19:57:53,282 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.008s]
+2024-11-04 19:57:54,623 - INFO - Client successfully initialized
+2024-11-04 19:57:55,364 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 19:57:55,419 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-04 19:57:55,419 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 19:57:55,466 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.046s]
+2024-11-04 19:57:56,962 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-04 19:57:56,965 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-04 19:59:12,283 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 19:59:13,642 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-04 19:59:13,642 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 19:59:13,645 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.002s]
+2024-11-04 19:59:15,931 - INFO - Client successfully initialized
+2024-11-04 19:59:17,280 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 19:59:17,309 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-04 19:59:17,309 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 19:59:17,347 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.038s]
+2024-11-04 19:59:19,278 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-04 19:59:19,279 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-04 20:00:07,454 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 20:00:08,849 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-04 20:00:08,849 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:00:08,852 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.002s]
+2024-11-04 20:00:11,024 - INFO - Client successfully initialized
+2024-11-04 20:00:12,458 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 20:00:12,545 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.009s]
+2024-11-04 20:00:12,546 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:00:12,601 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.055s]
+2024-11-04 20:00:14,403 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-04 20:00:14,404 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-04 20:00:48,978 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 20:00:50,329 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-04 20:00:50,329 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:00:50,332 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.002s]
+2024-11-04 20:00:51,892 - INFO - Client successfully initialized
+2024-11-04 20:00:52,893 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 20:00:52,921 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-04 20:00:52,922 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:00:52,945 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.024s]
+2024-11-04 20:00:56,489 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-04 20:00:56,490 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-04 20:00:56,526 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.006s]
+2024-11-04 20:00:56,527 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:00:56,563 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.036s]
+2024-11-04 20:02:32,010 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 20:02:33,388 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-04 20:02:33,389 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:02:33,391 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.002s]
+2024-11-04 20:02:35,202 - INFO - Client successfully initialized
+2024-11-04 20:02:36,416 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 20:02:36,449 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-04 20:02:36,449 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:02:36,476 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.027s]
+2024-11-04 20:02:44,010 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-04 20:02:44,012 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-04 20:02:44,074 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-04 20:02:44,074 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:02:44,098 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.023s]
+2024-11-04 20:06:08,747 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 20:06:10,121 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-04 20:06:10,121 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:06:10,124 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.003s]
+2024-11-04 20:06:12,089 - INFO - Client successfully initialized
+2024-11-04 20:06:13,363 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 20:06:13,394 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-04 20:06:13,394 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:06:13,418 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.024s]
+2024-11-04 20:06:25,397 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-04 20:06:25,398 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-04 20:06:25,453 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-04 20:06:25,453 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:06:25,480 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.026s]
+2024-11-04 20:07:28,815 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 20:07:30,215 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-04 20:07:30,215 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:07:30,218 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.003s]
+2024-11-04 20:07:32,120 - INFO - Client successfully initialized
+2024-11-04 20:07:33,597 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 20:07:33,639 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-04 20:07:33,639 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:07:33,667 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.028s]
+2024-11-04 20:07:46,194 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-04 20:07:46,195 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-04 20:07:46,218 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.013s]
+2024-11-04 20:07:46,219 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:07:46,283 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.064s]
+2024-11-04 20:07:52,592 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 20:07:53,957 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-04 20:07:53,957 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:07:53,960 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.002s]
+2024-11-04 20:07:55,718 - INFO - Client successfully initialized
+2024-11-04 20:07:56,469 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 20:07:56,551 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.009s]
+2024-11-04 20:07:56,551 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:07:56,612 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.061s]
+2024-11-04 20:08:09,643 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-04 20:08:09,645 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-04 20:10:18,212 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 20:10:19,663 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-04 20:10:19,664 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:10:19,666 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.002s]
+2024-11-04 20:10:21,847 - INFO - Client successfully initialized
+2024-11-04 20:10:23,173 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 20:10:23,203 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-04 20:10:23,203 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:10:23,229 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.025s]
+2024-11-04 20:10:32,082 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-04 20:10:32,083 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-04 20:11:13,408 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 20:11:15,616 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-04 20:11:15,617 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:11:15,621 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.004s]
+2024-11-04 20:11:17,722 - INFO - Client successfully initialized
+2024-11-04 20:11:19,289 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 20:11:19,349 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-04 20:11:19,349 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:11:19,375 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.025s]
+2024-11-04 20:11:29,017 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-04 20:11:29,018 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-04 20:11:40,618 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 20:11:42,069 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-04 20:11:42,069 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:11:42,072 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.002s]
+2024-11-04 20:11:44,479 - INFO - Client successfully initialized
+2024-11-04 20:11:46,118 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 20:11:46,147 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-04 20:11:46,147 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:11:46,171 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.024s]
+2024-11-04 20:11:50,315 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-04 20:11:50,316 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-04 20:12:18,841 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 20:12:20,335 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.012s]
+2024-11-04 20:12:20,335 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:12:20,341 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.004s]
+2024-11-04 20:12:22,060 - INFO - Client successfully initialized
+2024-11-04 20:12:22,965 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 20:12:23,023 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-04 20:12:23,024 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:12:23,067 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.043s]
+2024-11-04 20:12:32,401 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-04 20:12:32,403 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-04 20:14:58,446 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 20:14:59,880 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-04 20:14:59,880 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:14:59,882 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.002s]
+2024-11-04 20:15:01,527 - INFO - Client successfully initialized
+2024-11-04 20:15:02,868 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 20:15:02,925 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.007s]
+2024-11-04 20:15:02,926 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:15:02,988 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.062s]
+2024-11-04 20:15:04,655 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-04 20:15:04,657 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-04 20:15:38,553 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 20:15:40,211 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-04 20:15:40,211 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:15:40,213 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.002s]
+2024-11-04 20:15:42,154 - INFO - Client successfully initialized
+2024-11-04 20:15:43,486 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 20:15:43,518 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.005s]
+2024-11-04 20:15:43,519 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:15:43,590 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.070s]
+2024-11-04 20:15:46,763 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-04 20:15:46,764 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-04 20:16:25,802 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 20:16:27,156 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-04 20:16:27,156 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:16:27,158 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.002s]
+2024-11-04 20:16:28,858 - INFO - Client successfully initialized
+2024-11-04 20:16:30,497 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 20:16:30,526 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-04 20:16:30,526 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:16:30,566 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.039s]
+2024-11-04 20:16:31,725 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 400 Bad Request"
+2024-11-04 20:16:31,728 - WARNING - Failure during generate. (POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14)
+Status code: 400, body: {"errors":[{"code":"invalid_input_argument","message":"Invalid input argument for Model 'sdaia/allam-1-13b-instruct': the number of input tokens 4289 cannot exceed the total tokens limit 4096 for this model","more_info":"https://cloud.ibm.com/apidocs/watsonx-ai"}],"trace":"2262d0c87ce9ea1e2d537bb8db9b5f58","status_code":400}
+2024-11-04 20:16:31,736 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-04 20:16:31,736 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:16:31,800 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.064s]
+2024-11-04 20:17:48,518 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 20:17:52,680 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.009s]
+2024-11-04 20:17:52,681 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:17:52,690 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.008s]
+2024-11-04 20:17:54,688 - INFO - Client successfully initialized
+2024-11-04 20:17:56,117 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 20:17:56,201 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.013s]
+2024-11-04 20:17:56,202 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:17:56,297 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.094s]
+2024-11-04 20:17:57,554 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 400 Bad Request"
+2024-11-04 20:17:57,558 - WARNING - Failure during generate. (POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14)
+Status code: 400, body: {"errors":[{"code":"invalid_input_argument","message":"Invalid input argument for Model 'sdaia/allam-1-13b-instruct': the number of input tokens 4289 cannot exceed the total tokens limit 4096 for this model","more_info":"https://cloud.ibm.com/apidocs/watsonx-ai"}],"trace":"6d6c2897376be513f39b3cce41ac3850","status_code":400}
+2024-11-04 20:17:57,593 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.013s]
+2024-11-04 20:17:57,594 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:17:57,677 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.082s]
+2024-11-04 20:19:10,390 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 20:19:11,756 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-04 20:19:11,756 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:19:11,758 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.002s]
+2024-11-04 20:19:14,056 - INFO - Client successfully initialized
+2024-11-04 20:19:15,207 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 20:19:15,238 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-04 20:19:15,238 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:19:15,278 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.040s]
+2024-11-04 20:19:16,695 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 400 Bad Request"
+2024-11-04 20:19:16,697 - WARNING - Failure during generate. (POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14)
+Status code: 400, body: {"errors":[{"code":"invalid_input_argument","message":"Invalid input argument for Model 'sdaia/allam-1-13b-instruct': the number of input tokens 4291 cannot exceed the total tokens limit 4096 for this model","more_info":"https://cloud.ibm.com/apidocs/watsonx-ai"}],"trace":"3804dcf86d3e8694abc8edc8c61f9a32","status_code":400}
+2024-11-04 20:19:16,706 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-04 20:19:16,706 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:19:16,759 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.053s]
+2024-11-04 20:20:02,492 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 20:20:03,855 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-04 20:20:03,855 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:20:03,857 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.002s]
+2024-11-04 20:20:05,673 - INFO - Client successfully initialized
+2024-11-04 20:20:06,566 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 20:20:06,623 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-04 20:20:06,623 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:20:06,663 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.040s]
+2024-11-04 20:20:09,301 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-04 20:20:09,302 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-04 20:22:18,899 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 20:22:21,075 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.005s]
+2024-11-04 20:22:21,076 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:22:21,080 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.004s]
+2024-11-04 20:22:23,206 - INFO - Client successfully initialized
+2024-11-04 20:22:24,752 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 20:22:24,783 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-04 20:22:24,783 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:22:24,834 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.051s]
+2024-11-04 20:22:27,508 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-04 20:22:27,509 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-04 20:23:40,079 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 20:23:41,451 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-04 20:23:41,451 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:23:41,453 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.002s]
+2024-11-04 20:23:42,982 - INFO - Client successfully initialized
+2024-11-04 20:23:44,114 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 20:23:44,172 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-04 20:23:44,172 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 20:23:44,216 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.043s]
+2024-11-04 20:23:49,126 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-04 20:23:49,127 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
