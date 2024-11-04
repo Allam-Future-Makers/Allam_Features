@@ -75,7 +75,7 @@ class IrabInput(BaseModel):
 
 class Mo3gamInput(BaseModel):
     word: str
-    helper_sentence: str
+    helper_sentence: str | None = None
 
 
 class SyntaxEnhancerInput(BaseModel):
