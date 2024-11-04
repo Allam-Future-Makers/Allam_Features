@@ -35,7 +35,7 @@ class HolyQuranChain:
             context = context + "النص_{i}" + str(c)
         return context
     
-    def __call__(self, query):
+    def get_results(self, query):
 
         self.watsonx_llm = WatsonxLLM(
             project_id= self.instance.watsons['project_id'],
@@ -79,3 +79,7 @@ class HolyQuranChain:
         
         self.instance.iterator += 1
         return result, links 
+    
+    def __call__(self, query):
+        result, links = self.get_results(query)
+        return result
