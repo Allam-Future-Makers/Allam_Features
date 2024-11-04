@@ -1,5 +1,6 @@
-from agent_utils.handle_multimodality import HandleMultiModality
 import os
+
+from agent.agent_utils.handle_multimodality import HandleMultiModality
 
 
 class AgentMain:
