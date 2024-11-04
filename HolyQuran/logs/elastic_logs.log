@@ -34042,3 +34042,14 @@ Exception: Elasticsearch connection failed
 2024-11-04 15:53:33,050 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-09-16&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
 2024-11-04 15:53:35,182 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-09-16 "HTTP/1.1 200 OK"
 2024-11-04 15:53:35,183 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-09-16'
+2024-11-04 16:08:33,769 - INFO - HEAD http://elasticsearch:9200/ [status:200 duration:0.019s]
+2024-11-04 16:08:33,770 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 16:08:33,780 - INFO - HEAD http://elasticsearch:9200/quran_ayah [status:200 duration:0.009s]
+2024-11-04 16:08:33,899 - INFO - HEAD http://elasticsearch:9200/ [status:200 duration:0.007s]
+2024-11-04 16:08:33,899 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 16:08:33,903 - INFO - HEAD http://elasticsearch:9200/mo3gam_verse [status:200 duration:0.003s]
+2024-11-04 16:08:39,176 - INFO - Client successfully initialized
+2024-11-04 16:08:40,065 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-09-16&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 16:08:40,178 - INFO - HEAD http://elasticsearch:9200/ [status:200 duration:0.020s]
+2024-11-04 16:08:40,178 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 16:08:40,260 - INFO - POST http://elasticsearch:9200/mo3gam_verse/_search [status:200 duration:0.081s]
