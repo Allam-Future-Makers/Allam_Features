@@ -87,6 +87,13 @@ class ToMSAInput(BaseModel):
     paragraph: str
 
 
+class AgentInput(BaseModel):
+    id: str
+    query: str
+    voice_url: str | None = None
+    image_url: str | None = None
+
+
 @app.post("/api/tashkeel", response_model=TashkeelOutput)
 async def tashkeel_endpoint(input: TashkeelInput):
     try:
@@ -166,24 +173,22 @@ def getOrCreateAgent(id):
 # takes query, optional voice_url, optional image_url
 # returns the answer
 @app.post("/api/agent")
-async def agent_endpoint(
-    id: str, query: str, voice_url: str = None, image_url: str = None
-):
+async def agent_endpoint(input: AgentInput):
     try:
         # download voice and image if not none
         voice_path = None
         image_path = None
         timestamp = str(int(time.time()))
 
-        if voice_url:
+        if input.voice_url:
             voice_path = f"voice_{timestamp}.wav"
-            download_file(voice_url, voice_path)
-        if image_url:
+            download_file(input.voice_url, voice_path)
+        if input.image_url:
             image_path = f"image_{timestamp}.png"
-            download_file(image_url, image_path)
+            download_file(input.image_url, image_path)
 
         agent = getOrCreateAgent(id)
-        answer = agent(query, voice_path, image_path)
+        answer = agent(input.query, voice_path, image_path)
         return {"answer": answer}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
