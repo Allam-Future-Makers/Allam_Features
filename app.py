@@ -152,14 +152,23 @@ def download_file(url, filename):
         f.write(response.content)
 
 
-agent = AgentMain()
+# agent map by id to agent instance
+agent_map = {}
+
+
+def getOrCreateAgent(id):
+    if id not in agent_map:
+        agent_map[id] = AgentMain(id)
+    return agent_map[id]
 
 
 # agent
 # takes query, optional voice_url, optional image_url
 # returns the answer
 @app.post("/api/agent")
-async def agent_endpoint(query: str, voice_url: str = None, image_url: str = None):
+async def agent_endpoint(
+    id: str, query: str, voice_url: str = None, image_url: str = None
+):
     try:
         # download voice and image if not none
         voice_path = None
@@ -173,6 +182,7 @@ async def agent_endpoint(query: str, voice_url: str = None, image_url: str = Non
             image_path = f"image_{timestamp}.png"
             download_file(image_url, image_path)
 
+        agent = getOrCreateAgent(id)
         answer = agent(query, voice_path, image_path)
         return {"answer": answer}
     except Exception as e:
