@@ -22,15 +22,15 @@ class HolyQuranChain:
         }
 
     
-    def _get_similar_context(query):
-        result, hits, best_hit = search_quran(query)
+    def _get_similar_context(self, query):
+        res, hits, best_hit = search_quran(query)
         context = ""
-        for i,hit in enumerate(1, hits[:3]):
-            d = hit["_source"]
+        for i,hit in enumerate(hits[:3], start=1):
+            d = hit["_source"] 
             c = {}
-            c['Ayah'] = d['I3rab'] 
-            c['Tafseer_Saadi'] = d['Tafseer_Saadi']
-            c['telawa'] = d['telawa']
+            c['الآية'] = d['I3rab'] 
+            c['التفسير'] = d['Tafseer_Saadi']
+            c['التلاوة'] = d['telawa']
             context = context + "النص_{i}" + str(c)
         return context
     
@@ -62,7 +62,7 @@ class HolyQuranChain:
         except:
             try:
                 chain =(
-                    {"query": RunnablePassthrough(),"context": RunnableLambda(self.get_similar_context)}
+                    {"query": RunnablePassthrough(),"context": RunnableLambda(self._get_similar_context)}
                     | ayah_prompt_gemini
                     | self.gemini_llm
                     | JsonOutputParser()
