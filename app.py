@@ -5,6 +5,7 @@ import uvicorn
 
 from HolyQuran.chain import HolyQuranChain
 from Mo3gam_Search.chain import Mo3gamSearchChain
+from agent.main import AgentMain
 from diacratization.chain import DiacratizeChain
 from irab.chain import IrabChain
 from syntax_enhancer.chain import SyntaxEnhancerChain
@@ -136,6 +137,44 @@ async def to_msa_endpoint(input: ToMSAInput):
     try:
         result = msa_chain(input.paragraph)
         return {"result": result}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+import requests
+import os
+import time
+
+
+def download_file(url, filename):
+    with open(filename, "wb") as f:
+        response = requests.get(url)
+        f.write(response.content)
+
+
+agent = AgentMain()
+
+
+# agent
+# takes query, optional voice_url, optional image_url
+# returns the answer
+@app.post("/api/agent")
+async def agent_endpoint(query: str, voice_url: str = None, image_url: str = None):
+    try:
+        # download voice and image if not none
+        voice_path = None
+        image_path = None
+        timestamp = str(int(time.time()))
+
+        if voice_url:
+            voice_path = f"voice_{timestamp}.wav"
+            download_file(voice_url, voice_path)
+        if image_url:
+            image_path = f"image_{timestamp}.png"
+            download_file(image_url, image_path)
+
+        answer = agent(query, voice_path, image_path)
+        return {"answer": answer}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
