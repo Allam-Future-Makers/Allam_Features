@@ -181,13 +181,13 @@ async def agent_endpoint(input: AgentInput):
         timestamp = str(int(time.time()))
 
         if input.voice_url:
-            voice_path = f"voice_{timestamp}.wav"
+            voice_path = f"agent_inputs/voice_{timestamp}.wav"
             download_file(input.voice_url, voice_path)
         if input.image_url:
-            image_path = f"image_{timestamp}.png"
+            image_path = f"agent_inputs/image_{timestamp}.png"
             download_file(input.image_url, image_path)
 
-        agent = getOrCreateAgent(id)
+        agent = getOrCreateAgent(input.id)
         answer = agent(input.query, voice_path, image_path)
         return {"answer": answer}
     except Exception as e:
