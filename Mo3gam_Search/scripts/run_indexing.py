@@ -16,6 +16,10 @@ def index_mo3gam():
     # Load data
     df = pd.read_pickle(data_file_path)
 
+    print(os.getenv("ELASTIC_HOST", "localhost"))
+    print(os.getenv("ELASTIC_PORT", "9200"))
+    print(os.getenv("ELASTIC_USER", "elastic"))
+    print(os.getenv("ELASTIC_PASSWORD", "changeme"))
     # Elasticsearch setup
     config = ElasticConfig(
         host=os.getenv("ELASTIC_HOST", "localhost"),
