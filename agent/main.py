@@ -1,4 +1,6 @@
 import os
+grandparent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__)))
+print(grandparent_dir)
 
 from agent.agent_utils.handle_multimodality import HandleMultiModality
 
