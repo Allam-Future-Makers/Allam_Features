@@ -1,0 +1,2211 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, user-scalable=no" name="viewport"/>
+<title>الساعة الآن في القاهرة بالتوقيت المحلي - Time Now in Cairo</title>
+<meta content="كم الساعة الآن في القاهرة - جمهورية مصر العربية -  التوقيت المحلي في القاهرة وفارق الوقت بين عواصم الدول العربية والعالمية" name="description"/>
+<link href="https://time-now.me/cairo.html" rel="canonical"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<meta content="https://time-now.me/assets/images/icons/apple-touch-icon.png" property="og:image">
+<meta content="w0MKpwMmsV0kG3GYFeBnlhFWYT0-TnhHHIANFQL_1D4" name="google-site-verification">
+<meta content="981aea6128990f2b31e9" name="wot-verification">
+<link href="https://time-now.me/assets/images/icons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="https://time-now.me/assets/images/icons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="https://time-now.me/assets/images/icons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="https://time-now.me/assets/images/icons/site.webmanifest" rel="manifest"/>
+<link color="#5bbad5" href="https://time-now.me/assets/images/icons/safari-pinned-tab.svg" rel="mask-icon"/>
+<link href="https://time-now.me/assets/images/icons/favicon.ico" rel="shortcut icon"/>
+<meta content="الساعة الآن" name="apple-mobile-web-app-title"/>
+<meta content="الساعة الآن" name="application-name"/>
+<meta content="#da532c" name="msapplication-TileColor"/>
+<meta content="https://time-now.me/assets/images/icons/browserconfig.xml" name="msapplication-config"/>
+<meta content="#ffffff" name="theme-color"/>
+<style>
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: "";
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        textarea,
+        input,
+        button {
+            outline: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            font-family: helveticaneueltarabicbold, Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: #b5a0eb;
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+
+        .form--1 {
+            display: grid;
+            grid-template-rows: repeat(1);
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .form--2 {
+            display: grid;
+            grid-template-rows: repeat(2);
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0 10px;
+        }
+
+        .form--3 {
+            display: grid;
+            grid-template-rows: repeat(3);
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0 10px;
+        }
+
+        .form--4 {
+            display: grid;
+            grid-template-rows: repeat(4);
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0 10px;
+        }
+
+        .form--5 {
+            display: grid;
+            grid-template-rows: repeat(5);
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0 10px;
+        }
+
+        .form--6 {
+            display: grid;
+            grid-template-rows: repeat(6);
+            grid-template-columns: repeat(6, 1fr);
+            gap: 0 10px;
+        }
+
+        .form--7 {
+            display: grid;
+            grid-template-rows: repeat(7);
+            grid-template-columns: repeat(7, 1fr);
+            gap: 0 10px;
+        }
+
+        .form--8 {
+            display: grid;
+            grid-template-rows: repeat(8);
+            grid-template-columns: repeat(8, 1fr);
+            gap: 0 10px;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus,
+        button:focus {
+            outline: none;
+        }
+
+        * {
+            -webkit-tap-highlight-color: transparent;
+            -webkit-overflow-scrolling: touch;
+            touch-action: manipulation;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .overflowHidden {
+            overflow: hidden;
+            touch-action: none;
+            -ms-touch-action: none;
+            height: 100vh;
+        }
+
+
+        .smallFlag {
+    float: right;
+    margin: 10px 6px 8px 0px;
+}
+
+.FlagShow {
+    font-size: 130px;
+    margin: -25px;
+}
+.icon {
+    width: 50px;
+    height: 50px;
+    background-image: url('https://s3.eu-west-2.amazonaws.com/qmasters/flags.png');
+    zoom: 0.6;
+    -ms-zoom: 0.6;
+    -webkit-zoom: 0.6;
+    -moz-transform: scale(0.6, 0.6);
+    -moz-transform-origin: left center;
+}
+
+.flag-ac {
+    background-position: 0 0;
+}
+
+.flag-ad {
+    background-position: 0 -50px;
+}
+
+.flag-ae {
+    background-position: 0 -100px;
+}
+
+.flag-af {
+    background-position: 0 -150px;
+}
+
+.flag-ag {
+    background-position: 0 -200px;
+}
+
+.flag-ai {
+    background-position: 0 -250px;
+}
+
+.flag-al {
+    background-position: 0 -300px;
+}
+
+.flag-am {
+    background-position: 0 -350px;
+}
+
+.flag-an {
+    background-position: 0 -400px;
+}
+
+.flag-ao {
+    background-position: 0 -450px;
+}
+
+.flag-ar {
+    background-position: 0 -500px;
+}
+
+.flag-as {
+    background-position: 0 -550px;
+}
+
+.flag-at {
+    background-position: 0 -600px;
+}
+
+.flag-au {
+    background-position: 0 -650px;
+}
+
+.flag-aw {
+    background-position: 0 -700px;
+}
+
+.flag-az {
+    background-position: 0 -750px;
+}
+
+.flag-ba {
+    background-position: 0 -800px;
+}
+
+.flag-bb {
+    background-position: 0 -850px;
+}
+
+.flag-bd {
+    background-position: 0 -900px;
+}
+
+.flag-be {
+    background-position: 0 -950px;
+}
+
+.flag-bf {
+    background-position: 0 -1000px;
+}
+
+.flag-bg {
+    background-position: 0 -1050px;
+}
+
+.flag-bh {
+    background-position: 0 -1100px;
+}
+
+.flag-bi {
+    background-position: 0 -1150px;
+}
+
+.flag-bj {
+    background-position: 0 -1200px;
+}
+
+.flag-bl {
+    background-position: 0 -1250px;
+}
+
+.flag-bm {
+    background-position: 0 -1300px;
+}
+
+.flag-bn {
+    background-position: 0 -1350px;
+}
+
+.flag-bo {
+    background-position: 0 -1400px;
+}
+
+.flag-br {
+    background-position: 0 -1450px;
+}
+
+.flag-bs {
+    background-position: 0 -1500px;
+}
+
+.flag-bt {
+    background-position: 0 -1550px;
+}
+
+.flag-bw {
+    background-position: 0 -1600px;
+}
+
+.flag-by {
+    background-position: 0 -1650px;
+}
+
+.flag-bz {
+    background-position: 0 -1700px;
+}
+
+.flag-ca {
+    background-position: 0 -1750px;
+}
+
+.flag-cc {
+    background-position: 0 -1800px;
+}
+
+.flag-cd {
+    background-position: 0 -1850px;
+}
+
+.flag-cf {
+    background-position: 0 -1900px;
+}
+
+.flag-cg {
+    background-position: 0 -1950px;
+}
+
+.flag-ch {
+    background-position: 0 -2000px;
+}
+
+.flag-ci {
+    background-position: 0 -2050px;
+}
+
+.flag-ck {
+    background-position: 0 -2100px;
+}
+
+.flag-cl {
+    background-position: 0 -2150px;
+}
+
+.flag-cm {
+    background-position: 0 -2200px;
+}
+
+.flag-cn {
+    background-position: 0 -2250px;
+}
+
+.flag-co {
+    background-position: 0 -2300px;
+}
+
+.flag-cr {
+    background-position: 0 -2350px;
+}
+
+.flag-cu {
+    background-position: 0 -2400px;
+}
+
+.flag-cv {
+    background-position: 0 -2450px;
+}
+
+.flag-cx {
+    background-position: 0 -2500px;
+}
+
+.flag-cy {
+    background-position: 0 -2550px;
+}
+
+.flag-cz {
+    background-position: 0 -2600px;
+}
+
+.flag-de {
+    background-position: 0 -2650px;
+}
+
+.flag-dj {
+    background-position: 0 -2700px;
+}
+
+.flag-dk {
+    background-position: 0 -2750px;
+}
+
+.flag-dm {
+    background-position: 0 -2800px;
+}
+
+.flag-do {
+    background-position: 0 -2850px;
+}
+
+.flag-dz {
+    background-position: 0 -2900px;
+}
+
+.flag-ec {
+    background-position: 0 -2950px;
+}
+
+.flag-ee {
+    background-position: 0 -3000px;
+}
+
+.flag-eg {
+    background-position: 0 -3050px;
+}
+
+.flag-er {
+    background-position: 0 -3100px;
+}
+
+.flag-es {
+    background-position: 0 -3150px;
+}
+
+.flag-et {
+    background-position: 0 -3200px;
+}
+
+.flag-fi {
+    background-position: 0 -3250px;
+}
+
+.flag-fj {
+    background-position: 0 -3300px;
+}
+
+.flag-fk {
+    background-position: 0 -3350px;
+}
+
+.flag-fm {
+    background-position: 0 -3400px;
+}
+
+.flag-fo {
+    background-position: 0 -3450px;
+}
+
+.flag-fr {
+    background-position: 0 -3500px;
+}
+
+.flag-ga {
+    background-position: 0 -3550px;
+}
+
+.flag-gd {
+    background-position: 0 -3600px;
+}
+
+.flag-ge {
+    background-position: 0 -3650px;
+}
+
+.flag-gf {
+    background-position: 0 -3700px;
+}
+
+.flag-gg {
+    background-position: 0 -3750px;
+}
+
+.flag-gh {
+    background-position: 0 -3800px;
+}
+
+.flag-gi {
+    background-position: 0 -3850px;
+}
+
+.flag-gl {
+    background-position: 0 -3900px;
+}
+
+.flag-gm {
+    background-position: 0 -3950px;
+}
+
+.flag-gn {
+    background-position: 0 -4000px;
+}
+
+.flag-gq {
+    background-position: 0 -4050px;
+}
+
+.flag-gr {
+    background-position: 0 -4100px;
+}
+
+.flag-gt {
+    background-position: 0 -4150px;
+}
+
+.flag-gu {
+    background-position: 0 -4200px;
+}
+
+.flag-gw {
+    background-position: 0 -4250px;
+}
+
+.flag-gy {
+    background-position: 0 -4300px;
+}
+
+.flag-hk {
+    background-position: 0 -4350px;
+}
+
+.flag-hn {
+    background-position: 0 -4400px;
+}
+
+.flag-hr {
+    background-position: 0 -4450px;
+}
+
+.flag-ht {
+    background-position: 0 -4500px;
+}
+
+.flag-hu {
+    background-position: 0 -4550px;
+}
+
+.flag-id {
+    background-position: 0 -4600px;
+}
+
+.flag-ie {
+    background-position: 0 -4650px;
+}
+
+.flag-il {
+    background-position: 0 -4700px;
+}
+
+.flag-im {
+    background-position: 0 -4750px;
+}
+
+.flag-in {
+    background-position: 0 -4800px;
+}
+
+.flag-io {
+    background-position: 0 -4850px;
+}
+
+.flag-iq {
+    background-position: 0 -4900px;
+}
+
+.flag-ir {
+    background-position: 0 -4950px;
+}
+
+.flag-is {
+    background-position: 0 -5000px;
+}
+
+.flag-it {
+    background-position: 0 -5050px;
+}
+
+.flag-je {
+    background-position: 0 -5100px;
+}
+
+.flag-jm {
+    background-position: 0 -5150px;
+}
+
+.flag-jo {
+    background-position: 0 -5200px;
+}
+
+.flag-jp {
+    background-position: 0 -5250px;
+}
+
+.flag-ke {
+    background-position: 0 -5300px;
+}
+
+.flag-kg {
+    background-position: 0 -5350px;
+}
+
+.flag-kh {
+    background-position: 0 -5400px;
+}
+
+.flag-ki {
+    background-position: 0 -5450px;
+}
+
+.flag-km {
+    background-position: 0 -5500px;
+}
+
+.flag-kn {
+    background-position: 0 -5550px;
+}
+
+.flag-kp {
+    background-position: 0 -5600px;
+}
+
+.flag-kr {
+    background-position: 0 -5650px;
+}
+
+.flag-ks {
+    background-position: 0 -5700px;
+}
+
+.flag-kw {
+    background-position: 0 -5750px;
+}
+
+.flag-ky {
+    background-position: 0 -5800px;
+}
+
+.flag-kz {
+    background-position: 0 -5850px;
+}
+
+.flag-la {
+    background-position: 0 -5900px;
+}
+
+.flag-lb {
+    background-position: 0 -5950px;
+}
+
+.flag-lc {
+    background-position: 0 -6000px;
+}
+
+.flag-li {
+    background-position: 0 -6050px;
+}
+
+.flag-lk {
+    background-position: 0 -6100px;
+}
+
+.flag-lr {
+    background-position: 0 -6150px;
+}
+
+.flag-ls {
+    background-position: 0 -6200px;
+}
+
+.flag-lt {
+    background-position: 0 -6250px;
+}
+
+.flag-lu {
+    background-position: 0 -6300px;
+}
+
+.flag-lv {
+    background-position: 0 -6350px;
+}
+
+.flag-ly {
+    background-position: 0 -6400px;
+}
+
+.flag-ma {
+    background-position: 0 -6450px;
+}
+
+.flag-mc {
+    background-position: 0 -6500px;
+}
+
+.flag-md {
+    background-position: 0 -6550px;
+}
+
+.flag-me {
+    background-position: 0 -6600px;
+}
+
+.flag-mg {
+    background-position: 0 -6650px;
+}
+
+.flag-mh {
+    background-position: 0 -6700px;
+}
+
+.flag-mk {
+    background-position: 0 -6750px;
+}
+
+.flag-ml {
+    background-position: 0 -6800px;
+}
+
+.flag-mm {
+    background-position: 0 -6850px;
+}
+
+.flag-mn {
+    background-position: 0 -6900px;
+}
+
+.flag-mo {
+    background-position: 0 -6950px;
+}
+
+.flag-mp {
+    background-position: 0 -7000px;
+}
+
+.flag-mr {
+    background-position: 0 -7050px;
+}
+
+.flag-ms {
+    background-position: 0 -7100px;
+}
+
+.flag-mt {
+    background-position: 0 -7150px;
+}
+
+.flag-mu {
+    background-position: 0 -7200px;
+}
+
+.flag-mv {
+    background-position: 0 -7250px;
+}
+
+.flag-mw {
+    background-position: 0 -7300px;
+}
+
+.flag-mx {
+    background-position: 0 -7350px;
+}
+
+.flag-my {
+    background-position: 0 -7400px;
+}
+
+.flag-mz {
+    background-position: 0 -7450px;
+}
+
+.flag-na {
+    background-position: 0 -7500px;
+}
+
+.flag-nc {
+    background-position: 0 -7550px;
+}
+
+.flag-ne {
+    background-position: 0 -7600px;
+}
+
+.flag-nf {
+    background-position: 0 -7650px;
+}
+
+.flag-ng {
+    background-position: 0 -7700px;
+}
+
+.flag-ni {
+    background-position: 0 -7750px;
+}
+
+.flag-nl {
+    background-position: 0 -7800px;
+}
+
+.flag-no {
+    background-position: 0 -7850px;
+}
+
+.flag-np {
+    background-position: 0 -7900px;
+}
+
+.flag-nr {
+    background-position: 0 -7950px;
+}
+
+.flag-nu {
+    background-position: 0 -8000px;
+}
+
+.flag-nz {
+    background-position: 0 -8050px;
+}
+
+.flag-om {
+    background-position: 0 -8100px;
+}
+
+.flag-pa {
+    background-position: 0 -8150px;
+}
+
+.flag-pe {
+    background-position: 0 -8200px;
+}
+
+.flag-pf {
+    background-position: 0 -8250px;
+}
+
+.flag-pg {
+    background-position: 0 -8300px;
+}
+
+.flag-ph {
+    background-position: 0 -8350px;
+}
+
+.flag-pk {
+    background-position: 0 -8400px;
+}
+
+.flag-pl {
+    background-position: 0 -8450px;
+}
+
+.flag-pm {
+    background-position: 0 -8500px;
+}
+
+.flag-ps {
+    background-position: 0 -8550px;
+}
+
+.flag-pt {
+    background-position: 0 -8600px;
+}
+
+.flag-pw {
+    background-position: 0 -8650px;
+}
+
+.flag-py {
+    background-position: 0 -8700px;
+}
+
+.flag-qa {
+    background-position: 0 -8750px;
+}
+
+.flag-ro {
+    background-position: 0 -8800px;
+}
+
+.flag-rs {
+    background-position: 0 -8850px;
+}
+
+.flag-ru {
+    background-position: 0 -8900px;
+}
+
+.flag-rw {
+    background-position: 0 -8950px;
+}
+
+.flag-sa {
+    background-position: 0 -9000px;
+}
+
+.flag-sb {
+    background-position: 0 -9050px;
+}
+
+.flag-sc {
+    background-position: 0 -9100px;
+}
+
+.flag-sd {
+    background-position: 0 -9150px;
+}
+
+.flag-se {
+    background-position: 0 -9200px;
+}
+
+.flag-sg {
+    background-position: 0 -9250px;
+}
+
+.flag-sh {
+    background-position: 0 -9300px;
+}
+
+.flag-si {
+    background-position: 0 -9350px;
+}
+
+.flag-sk {
+    background-position: 0 -9400px;
+}
+
+.flag-sl {
+    background-position: 0 -9450px;
+}
+
+.flag-sm {
+    background-position: 0 -9500px;
+}
+
+.flag-sn {
+    background-position: 0 -9550px;
+}
+
+.flag-so {
+    background-position: 0 -9600px;
+}
+
+.flag-sr {
+    background-position: 0 -9650px;
+}
+
+.flag-ss {
+    background-position: 0 -9700px;
+}
+
+.flag-st {
+    background-position: 0 -9750px;
+}
+
+.flag-sv {
+    background-position: 0 -9800px;
+}
+
+.flag-sx {
+    background-position: 0 -9850px;
+}
+
+.flag-sy {
+    background-position: 0 -9900px;
+}
+
+.flag-sz {
+    background-position: 0 -9950px;
+}
+
+.flag-tc {
+    background-position: 0 -10000px;
+}
+
+.flag-td {
+    background-position: 0 -10050px;
+}
+
+.flag-tg {
+    background-position: 0 -10100px;
+}
+
+.flag-th {
+    background-position: 0 -10150px;
+}
+
+.flag-tj {
+    background-position: 0 -10200px;
+}
+
+.flag-tk {
+    background-position: 0 -10250px;
+}
+
+.flag-tl {
+    background-position: 0 -10300px;
+}
+
+.flag-tm {
+    background-position: 0 -10350px;
+}
+
+.flag-tn {
+    background-position: 0 -10400px;
+}
+
+.flag-to {
+    background-position: 0 -10450px;
+}
+
+.flag-tr {
+    background-position: 0 -10500px;
+}
+
+.flag-tt {
+    background-position: 0 -10550px;
+}
+
+.flag-tv {
+    background-position: 0 -10600px;
+}
+
+.flag-tw {
+    background-position: 0 -10650px;
+}
+
+.flag-tz {
+    background-position: 0 -10700px;
+}
+
+.flag-ua {
+    background-position: 0 -10750px;
+}
+
+.flag-ug {
+    background-position: 0 -10800px;
+}
+
+.flag-uk {
+    background-position: 0 -10850px;
+}
+
+.flag-us {
+    background-position: 0 -10900px;
+}
+
+.flag-uy {
+    background-position: 0 -10950px;
+}
+
+.flag-uz {
+    background-position: 0 -11000px;
+}
+
+.flag-va {
+    background-position: 0 -11050px;
+}
+
+.flag-vc {
+    background-position: 0 -11100px;
+}
+
+.flag-ve {
+    background-position: 0 -11150px;
+}
+
+.flag-vg {
+    background-position: 0 -11200px;
+}
+
+.flag-vi {
+    background-position: 0 -11250px;
+}
+
+.flag-vn {
+    background-position: 0 -11300px;
+}
+
+.flag-vu {
+    background-position: 0 -11350px;
+}
+
+.flag-wf {
+    background-position: 0 -11400px;
+}
+
+.flag-ws {
+    background-position: 0 -11450px;
+}
+
+.flag-ye {
+    background-position: 0 -11500px;
+}
+
+.flag-yt {
+    background-position: 0 -11550px;
+}
+
+.flag-za {
+    background-position: 0 -11600px;
+}
+
+.flag-zm {
+    background-position: 0 -11650px;
+}
+
+.flag-zw {
+    background-position: 0 -11700px;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #17181b;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #402d70;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #17181b;  /* creates padding around scroll thumb */
+}
+
+
+        body {
+            direction: rtl;
+            font-size: 16px;
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
+
+            background-color: #202124;
+            color: #c0c0c0;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-text-size-adjust: none;
+            -moz-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .wrapper {
+            width: 1100px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #454545;
+        }
+
+        header h1 a {
+            color: #fff;
+        }
+
+        header ul {
+ 
+}
+header li {
+    display: inline-block;
+    margin: 7px 5px;
+}
+        section {
+    background-color: #2f2f2f;
+    margin: 20px 0px;
+    padding: 10px 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+
+section h1 {
+    padding: 5px 0px;
+    color: #ffffff;
+    border-bottom: 2px solid #6c6c6c;
+    margin: 5px 0px 10px 0px;
+}
+
+section h2 {
+    padding: 5px;
+    color: #ffffff;
+    border: 2px solid #616161;
+    margin: 5px 0px 10px 0px;
+    background-color: #000000;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    text-align: justify;
+}
+
+#normal {
+    font-size: 15px;
+    color: #d5be42;
+    border: 0px;
+    margin: 5px 0px 10px 0px;
+    background-color: transparent;
+
+}
+
+section h3 {
+    padding: 5px;
+    color: #ffffff;
+    margin: 5px 0px 10px 0px;
+    background-color: #54399b;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.timeCountry .icon {
+    display: block;
+    margin: 4px 0px 0px 5px;
+    float: none;
+    zoom: 0.0;
+}
+
+.time-big {
+    text-align: center;
+}
+
+.time-big h1 {
+border-bottom: 0px;
+    }
+     
+.timeCountry label[for='Diff'] {
+    display: block;
+}
+
+p.Diffv {
+    text-align: center;
+    color: #00ff94;
+    background-color: #125d15;
+    margin: 10px 0px 20px 0px;
+    padding: 5px;
+    font-weight: bold;
+
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+     -webkit-border-radius: 10px;
+}
+.end {
+    padding: 5px;
+    background-color: #a2f58d;
+    margin: 10px 0px;
+    border: 1px solid #3da71d;
+    color: #107517;
+    text-align: center;
+    display: none;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.end a {
+    color: #cb2c2c;
+}
+
+.end p {
+    font-size: 20px;
+    color: #000000;
+}
+.timeCountry, .diff-world {
+    padding: 5px;
+    border: 1px solid #504e4e;
+    margin: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.timeCountry .icon {
+    display: block;
+    margin: 4px 0px 0px 5px;
+}
+
+
+span#digital12, span#digital24 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+div#ChangeFormat {
+    text-align: center;
+    background-color: #402d70;
+    margin: 10px auto;
+
+    color: #d3c2ff;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    cursor: pointer;
+}
+div#ChangeFormat label {
+    margin: -10px 0px 0px 0px;
+    display: block;
+    padding: 3px 0px 10px 0px;
+    color: #aa89ff;
+}
+ 
+
+.stopwatch {
+    font-size: 12vw;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    text-align: center;
+    direction: ltr;
+    border-bottom: 1px solid #6e6e6e;
+    padding: 0px 0px 10px 0px;
+    margin: 0px 0px 10px 0px;
+}
+
+.controls {
+    text-align: center;
+}
+
+.controls a {
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid #7f6f6f;
+    padding: 5px 10px;
+    cursor: pointer;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.note {
+    margin: 10px 0px 0px 0px;
+    text-align: justify;
+    line-height: 2em;
+    border-top: 1px solid #696565;
+    padding: 10px 5px 5px 5px;
+}
+a.button.start {
+    color: #1acf66;
+}
+
+a.button.stop {
+    color: #ff0000;
+}
+.results {
+display: none
+}
+ 
+ul.results li {
+    direction: ltr;
+    background-color: #ffffff2e;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    width: 48.99999999%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+    border-top: 1px solid #3a3a3a;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+footer li {
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+
+#open,#closed  {
+display: none;
+}
+
+table.diff-time {
+    width: 100%;
+    border: 2px solid #454545;
+}
+
+
+.diff-time thead {
+    background-color: #000;
+    /* padding: 5px; */
+}
+
+.diff-time th {
+    padding: 10px;
+    border: 2px solid #454545;
+}
+
+.diff-time td {
+    border: 2px solid #454545;
+    padding: 5px;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+.wrapper {
+    width: 95%;
+    margin: auto;
+}
+header {
+position: fixed;
+width: 100%;
+top: 0;
+left: 0;
+right: 0;
+}
+
+
+section {
+    margin: 70px 0px 0px 0px;
+}
+
+.form--3{
+grid-template-columns: repeat(2, 1fr);
+}
+
+.MobOne {
+grid-template-columns: repeat(1, 1fr);
+}
+section h1  {
+font-size: 20px;
+}
+  section h2, section h3 {
+font-size: 14px;
+}
+
+.timeCountry .icon {
+ 
+    zoom: 0.6;
+}
+
+header h1 a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0px 4px 0px 0px;
+}
+
+#ShowMobile {
+display: block;
+}
+
+
+a#closed {
+    display: none;
+    position: absolute;
+left: 15px;
+top: 13px;
+}
+
+a#open {
+display: block;
+position: absolute;
+left: 15px;
+top: 13px;
+}
+ 
+.scroll {
+display: none;
+    position: fixed;
+    top: 49px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    grid-auto-rows: 50px;
+    overflow: scroll;
+    background-color: rgb(0 0 0 / 94%);
+    padding: 10px;
+}
+
+ul.scroll li {
+    display: block;
+    padding: 5px;
+    font-size: 18px;
+}
+.ul.results li {
+    width: 80%;
+}
+
+footer ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+}
+
+footer li a {
+    padding: 0px;
+    font-size: 14px;
+    /* display: inline-block; 
+    /* margin: 2px 5px; */
+    /* width: 46%; */
+}
+
+footer li {
+     margin: 5px 5px;
+}
+
+}
+    </style>
+</meta></meta></meta></head>
+<body>
+<header>
+<div class="wrapper">
+<h1><a href="https://time-now.me/"> 🕒 الساعة الآن</a></h1>
+<a href="javascript:void(0)" id="open">قائمة المحتوى</a>
+<a href="javascript:void(0)" id="closed"> X</a>
+<ul class="scroll menu">
+<li><a href="https://time-now.me/zones-gmt.html">توقيت غرينتش</a></li>
+<li><a href="https://time-now.me/zones-utc.html">التوقيت العالمي</a></li>
+<li><a href="https://time-now.me/stopwatch.html" style="color: #ff9393;">ساعة الإيقاف</a></li>
+<li><a href="https://time-now.me/pomodoro-timer.html">برنامج المؤقت</a></li>
+<li><a href="https://time-now.me/continent/arabic.html">الدول العربية</a></li>
+<li><a href="https://time-now.me/continent/asia.html">آسيا</a></li>
+<li><a href="https://time-now.me/continent/africa.html">أفريقيا</a></li>
+<li><a href="https://time-now.me/continent/europe.html">أوروبا</a></li>
+<li><a href="https://time-now.me/continent/oceania.html">أوقيانوسيا</a></li>
+<li><a href="https://time-now.me/continent/north-america.html">أمريكا الشمالية</a></li>
+<li><a href="https://time-now.me/continent/south-america.html">أمريكا الجنوبية</a></li>
+</ul>
+</div>
+</header>
+<div class="wrapper">
+<section>
+<div class="time-big">
+<img src="https://s3.eu-west-2.amazonaws.com/qmasters/flags/svg/eg.svg" width="100px"/>
+<h1>
+                     الوقت الآن في القاهرة -
+            مصر
+         </h1>
+</div>
+<div class="clock">
+<div id="ChangeFormat">
+<span id="cccshow">01:25:21</span>
+<span id="digital12"></span>
+<label id="dateHed12">صباح الخميس، 07-11-2024</label>
+<span id="digital24" style="display: none;">01:25:21</span>
+<label id="dateHed24" style="display: none;">الخميس،07-11-2024</label>
+</div>
+</div>
+<p class="Diffv">التوقيت في الرياض يسبق التوقيت في القاهرة بمقدار ساعة واحدة (<a href="https://time-now.me/diff-2-9.html">عرض جدول</a>)</p>
+<h3>فارق الوقت بين القاهرة/مصر والأوقات العالمية</h3>
+<div class="form--2 MobOne">
+<div class="diff-world"><a href="https://time-now.me/zones-gmt.html">غرينتش GMT</a> : متاخر بـ ساعتين</div>
+<div class="diff-world"><a href="https://time-now.me/zones-utc.html">العالمي UTC</a> : متاخر بـ ساعتين</div>
+<div class="diff-world"><a href="https://time-now.me/zones-pdt.html">الباسيفيكي PDT</a> : متاخر بـ 10 ساعات</div>
+<div class="diff-world"><a href="https://time-now.me/zones-edt.html">الصيفي الشرقي EDT</a> : متاخر بـ 7 ساعات</div>
+<div class="diff-world"><a href="https://time-now.me/zones-pst.html">المحيط الهادئ PST</a> : متاخر بـ 10 ساعات</div>
+<div class="diff-world"><a href="https://time-now.me/zones-est.html">المنطقة الزمنية الشرقية EST</a> : متاخر بـ 7 ساعات
+      </div>
+</div>
+<h3>تاريخ اليوم في القاهرة/مصر</h3>
+<div class="form--3 MobOne">
+<div class="diff-world"><a href="https://hijri.today/" target="_blank">التاريخ الهجري </a> : 05 جمادى الأولى 1446</div>
+<div class="diff-world">التاريخ الميلادي - انجليزي : 7 نوفمبر 2024</div>
+<div class="diff-world">التاريخ الميلادي - سريانية : 7 تشرين الثاني 2024</div>
+</div>
+<h3>معلومات عامة عن مصر</h3>
+<div class="form--2 MobOne">
+<div class="diff-world"> التوقيت الصيفي : غير مفعل</div>
+<div class="diff-world"> العاصمة : <a href="https://time-now.me/cairo.html">القاهرة
+            (Cairo)</a> </div>
+<div class="diff-world">
+         العملة: جنيه مصري
+                     (<a href="https://arcurrency.net/rates-EGP.html" target="_blank">سعر الجنيه المصري
+               اليوم</a>)
+               </div>
+<div class="diff-world"> المفتاح الدولي : <a href="https://dialingcodes.me/eg.html" target="_blank">مفتاح
+            20+</a> </div>
+<div class="diff-world"> المنطقة الزمنية : Africa/Cairo </div>
+<div class="diff-world"> تتواجد ضمن : <a href="https://time-now.me/continent/arabic.html">الدول العربية</a>
+</div>
+</div>
+<h2>الساعة الآن في مدن مصر</h2>
+<div class="form--3">
+<div class="timeCountry">
+<a href="https://time-now.me/alexandria.html">الإسكندرية</a>
+</div>
+<div class="timeCountry">
+<a href="https://time-now.me/sohag.html">سوهاج</a>
+</div>
+<div class="timeCountry">
+<a href="https://time-now.me/giza.html">الجيزة</a>
+</div>
+<div class="timeCountry">
+<a href="https://time-now.me/port-said.html">بورسعيد</a>
+</div>
+<div class="timeCountry">
+<a href="https://time-now.me/luxor.html">الأقصر</a>
+</div>
+<div class="timeCountry">
+<a href="https://time-now.me/suez.html">السويس</a>
+</div>
+</div>
+<h3>
+               فارق الوقت بين القاهرة -
+         مصر
+       وعواصم العالم</h3>
+<div class="form--2 MobOne">
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-ru smallFlag"></i></label>
+<label for="Diff">يسبق بـ ساعة واحدة</label>
+<a href="https://time-now.me/moscow.html"> الساعة الآن في موسكو</a> [02:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-ca smallFlag"></i></label>
+<label for="Diff">متاخر بـ 7 ساعات</label>
+<a href="https://time-now.me/ottawa.html"> الساعة الآن في أوتاوا</a> [06:25 مساءً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-us smallFlag"></i></label>
+<label for="Diff">متاخر بـ 7 ساعات</label>
+<a href="https://time-now.me/washington.html"> الساعة الآن في واشنطن العاصمة</a> [06:25 مساءً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-cn smallFlag"></i></label>
+<label for="Diff">يسبق بـ 6 ساعات</label>
+<a href="https://time-now.me/beijing.html"> الساعة الآن في بكين</a> [07:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-br smallFlag"></i></label>
+<label for="Diff">متاخر بـ 5 ساعات</label>
+<a href="https://time-now.me/brasilia.html"> الساعة الآن في برازيليا</a> [08:25 مساءً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-au smallFlag"></i></label>
+<label for="Diff">يسبق بـ 9 ساعات</label>
+<a href="https://time-now.me/canberra.html"> الساعة الآن في كانبرا</a> [10:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-in smallFlag"></i></label>
+<label for="Diff">يسبق بـ 3 ساعات و30 دقيقة</label>
+<a href="https://time-now.me/new-delhi.html"> الساعة الآن في نيودلهي</a> [04:55 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-ar smallFlag"></i></label>
+<label for="Diff">متاخر بـ 5 ساعات</label>
+<a href="https://time-now.me/buenos-aires.html"> الساعة الآن في بوينس آيرس</a> [08:25 مساءً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-dz smallFlag"></i></label>
+<label for="Diff">متاخر بـ ساعة واحدة</label>
+<a href="https://time-now.me/algiers.html"> الساعة الآن في الجزائر العاصمة</a> [12:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-sa smallFlag"></i></label>
+<label for="Diff">يسبق بـ ساعة واحدة</label>
+<a href="https://time-now.me/riyadh.html"> الساعة الآن في الرياض</a> [02:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-mx smallFlag"></i></label>
+<label for="Diff">متاخر بـ 8 ساعات</label>
+<a href="https://time-now.me/mexico-city.html"> الساعة الآن في مكسيكو سيتي</a> [05:25 مساءً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-id smallFlag"></i></label>
+<label for="Diff">يسبق بـ 5 ساعات</label>
+<a href="https://time-now.me/jakarta.html"> الساعة الآن في جاكرتا</a> [06:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-sd smallFlag"></i></label>
+<label for="Diff">لا يوجد فارق</label>
+<a href="https://time-now.me/khartoum.html"> الساعة الآن في الخرطوم</a> [01:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-ly smallFlag"></i></label>
+<label for="Diff">لا يوجد فارق</label>
+<a href="https://time-now.me/tripoli.html"> الساعة الآن في طرابلس</a> [01:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-ir smallFlag"></i></label>
+<label for="Diff">يسبق بـ ساعة و 30 دقيقة</label>
+<a href="https://time-now.me/tehran.html"> الساعة الآن في طهران</a> [02:55 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-za smallFlag"></i></label>
+<label for="Diff">لا يوجد فارق</label>
+<a href="https://time-now.me/pretoria.html"> الساعة الآن في بريتوريا</a> [01:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-mr smallFlag"></i></label>
+<label for="Diff">متاخر بـ ساعتين</label>
+<a href="https://time-now.me/nouakchott.html"> الساعة الآن في نواكشوط</a> [11:25 مساءً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-pk smallFlag"></i></label>
+<label for="Diff">يسبق بـ 3 ساعات</label>
+<a href="https://time-now.me/islamabad.html"> الساعة الآن في إسلام آباد</a> [04:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-tr smallFlag"></i></label>
+<label for="Diff">يسبق بـ ساعة واحدة</label>
+<a href="https://time-now.me/ankara.html"> الساعة الآن في أنقرة</a> [02:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-so smallFlag"></i></label>
+<label for="Diff">يسبق بـ ساعة واحدة</label>
+<a href="https://time-now.me/mogadishu.html"> الساعة الآن في مقديشو</a> [02:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-fr smallFlag"></i></label>
+<label for="Diff">متاخر بـ ساعة واحدة</label>
+<a href="https://time-now.me/paris.html"> الساعة الآن في باريس</a> [12:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-ye smallFlag"></i></label>
+<label for="Diff">يسبق بـ ساعة واحدة</label>
+<a href="https://time-now.me/sanaa.html"> الساعة الآن في صنعاء</a> [02:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-th smallFlag"></i></label>
+<label for="Diff">يسبق بـ 5 ساعات</label>
+<a href="https://time-now.me/bangkok.html"> الساعة الآن في بانكوك</a> [06:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-es smallFlag"></i></label>
+<label for="Diff">متاخر بـ ساعة واحدة</label>
+<a href="https://time-now.me/madrid.html"> الساعة الآن في مدريد</a> [12:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-se smallFlag"></i></label>
+<label for="Diff">متاخر بـ ساعة واحدة</label>
+<a href="https://time-now.me/stockholm.html"> الساعة الآن في ستوكهولم</a> [12:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-ma smallFlag"></i></label>
+<label for="Diff">متاخر بـ ساعة واحدة</label>
+<a href="https://time-now.me/rabat.html"> الساعة الآن في الرباط</a> [12:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-iq smallFlag"></i></label>
+<label for="Diff">يسبق بـ ساعة واحدة</label>
+<a href="https://time-now.me/baghdad.html"> الساعة الآن في بغداد</a> [02:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-jp smallFlag"></i></label>
+<label for="Diff">يسبق بـ 7 ساعات</label>
+<a href="https://time-now.me/tokyo.html"> الساعة الآن في طوكيو</a> [08:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-de smallFlag"></i></label>
+<label for="Diff">متاخر بـ ساعة واحدة</label>
+<a href="https://time-now.me/berlin.html"> الساعة الآن في برلين</a> [12:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-fi smallFlag"></i></label>
+<label for="Diff">لا يوجد فارق</label>
+<a href="https://time-now.me/helsinki.html"> الساعة الآن في هلسنكي</a> [01:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-my smallFlag"></i></label>
+<label for="Diff">يسبق بـ 6 ساعات</label>
+<a href="https://time-now.me/kuala-lumpur.html"> الساعة الآن في كوالالمبور</a> [07:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-no smallFlag"></i></label>
+<label for="Diff">متاخر بـ ساعة واحدة</label>
+<a href="https://time-now.me/oslo.html"> الساعة الآن في أوسلو</a> [12:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-pl smallFlag"></i></label>
+<label for="Diff">متاخر بـ ساعة واحدة</label>
+<a href="https://time-now.me/warsaw.html"> الساعة الآن في وارسو</a> [12:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-it smallFlag"></i></label>
+<label for="Diff">متاخر بـ ساعة واحدة</label>
+<a href="https://time-now.me/rome.html"> الساعة الآن في روما</a> [12:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-ph smallFlag"></i></label>
+<label for="Diff">يسبق بـ 6 ساعات</label>
+<a href="https://time-now.me/manila.html"> الساعة الآن في مانيلا</a> [07:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-nz smallFlag"></i></label>
+<label for="Diff">يسبق بـ 11 ساعة</label>
+<a href="https://time-now.me/wellington.html"> الساعة الآن في ويلينغتون</a> [12:25 مساءً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-uk smallFlag"></i></label>
+<label for="Diff">متاخر بـ ساعتين</label>
+<a href="https://time-now.me/london.html"> الساعة الآن في لندن</a> [11:25 مساءً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-om smallFlag"></i></label>
+<label for="Diff">يسبق بـ ساعتين</label>
+<a href="https://time-now.me/muscat.html"> الساعة الآن في مسقط</a> [03:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-sn smallFlag"></i></label>
+<label for="Diff">متاخر بـ ساعتين</label>
+<a href="https://time-now.me/dakar.html"> الساعة الآن في داكار</a> [11:25 مساءً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-sy smallFlag"></i></label>
+<label for="Diff">يسبق بـ ساعة واحدة</label>
+<a href="https://time-now.me/damascus.html"> الساعة الآن في دمشق</a> [02:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-tn smallFlag"></i></label>
+<label for="Diff">متاخر بـ ساعة واحدة</label>
+<a href="https://time-now.me/tunis.html"> الساعة الآن في تونس العاصمة</a> [12:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-np smallFlag"></i></label>
+<label for="Diff">يسبق بـ 3 ساعات و45 دقيقة</label>
+<a href="https://time-now.me/kathmandu.html"> الساعة الآن في كاتماندو</a> [05:10 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-gr smallFlag"></i></label>
+<label for="Diff">لا يوجد فارق</label>
+<a href="https://time-now.me/athens.html"> الساعة الآن في أثينا</a> [01:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-kp smallFlag"></i></label>
+<label for="Diff">يسبق بـ 7 ساعات</label>
+<a href="https://time-now.me/pyongyang.html"> الساعة الآن في بيونغ يانغ</a> [08:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-bg smallFlag"></i></label>
+<label for="Diff">لا يوجد فارق</label>
+<a href="https://time-now.me/sofia.html"> الساعة الآن في صوفيا</a> [01:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-cu smallFlag"></i></label>
+<label for="Diff">متاخر بـ 7 ساعات</label>
+<a href="https://time-now.me/havana.html"> الساعة الآن في هافانا</a> [06:25 مساءً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-kr smallFlag"></i></label>
+<label for="Diff">يسبق بـ 7 ساعات</label>
+<a href="https://time-now.me/seoul.html"> الساعة الآن في سيول</a> [08:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-pt smallFlag"></i></label>
+<label for="Diff">متاخر بـ ساعتين</label>
+<a href="https://time-now.me/lisbon.html"> الساعة الآن في لشبونة</a> [11:25 مساءً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-jo smallFlag"></i></label>
+<label for="Diff">يسبق بـ ساعة واحدة</label>
+<a href="https://time-now.me/amman.html"> الساعة الآن في عمّان</a> [02:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-at smallFlag"></i></label>
+<label for="Diff">متاخر بـ ساعة واحدة</label>
+<a href="https://time-now.me/vienna.html"> الساعة الآن في فينا</a> [12:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-ae smallFlag"></i></label>
+<label for="Diff">يسبق بـ ساعتين</label>
+<a href="https://time-now.me/abu-dhabi.html"> الساعة الآن في أبوظبي</a> [03:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-cz smallFlag"></i></label>
+<label for="Diff">متاخر بـ ساعة واحدة</label>
+<a href="https://time-now.me/prague.html"> الساعة الآن في براغ</a> [12:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-ie smallFlag"></i></label>
+<label for="Diff">متاخر بـ ساعتين</label>
+<a href="https://time-now.me/dublin.html"> الساعة الآن في دبلن</a> [11:25 مساءً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-ge smallFlag"></i></label>
+<label for="Diff">يسبق بـ ساعتين</label>
+<a href="https://time-now.me/tbilisi.html"> الساعة الآن في تبليسي</a> [03:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-lk smallFlag"></i></label>
+<label for="Diff">يسبق بـ 3 ساعات و30 دقيقة</label>
+<a href="https://time-now.me/colombo.html"> الساعة الآن في كولومبو</a> [04:55 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-dk smallFlag"></i></label>
+<label for="Diff">متاخر بـ ساعة واحدة</label>
+<a href="https://time-now.me/copenhagen.html"> الساعة الآن في كوبنهاغن</a> [12:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-nl smallFlag"></i></label>
+<label for="Diff">متاخر بـ ساعة واحدة</label>
+<a href="https://time-now.me/amsterdam.html"> الساعة الآن في أمستردام</a> [12:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-ch smallFlag"></i></label>
+<label for="Diff">متاخر بـ ساعة واحدة</label>
+<a href="https://time-now.me/bern.html"> الساعة الآن في برن</a> [12:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-be smallFlag"></i></label>
+<label for="Diff">متاخر بـ ساعة واحدة</label>
+<a href="https://time-now.me/brussels.html"> الساعة الآن في بروكسل</a> [12:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-dj smallFlag"></i></label>
+<label for="Diff">يسبق بـ ساعة واحدة</label>
+<a href="https://time-now.me/djibouti.html"> الساعة الآن في جيبوتي العاصمة</a> [02:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-il smallFlag"></i></label>
+<label for="Diff">لا يوجد فارق</label>
+<a href="https://time-now.me/tel-aviv.html"> الساعة الآن في تل أبيب</a> [01:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-kw smallFlag"></i></label>
+<label for="Diff">يسبق بـ ساعة واحدة</label>
+<a href="https://time-now.me/kuwait-city.html"> الساعة الآن في الكويت العاصمة</a> [02:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-qa smallFlag"></i></label>
+<label for="Diff">يسبق بـ ساعة واحدة</label>
+<a href="https://time-now.me/doha.html"> الساعة الآن في الدوحة</a> [02:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-lb smallFlag"></i></label>
+<label for="Diff">لا يوجد فارق</label>
+<a href="https://time-now.me/beirut.html"> الساعة الآن في بيروت</a> [01:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-ps smallFlag"></i></label>
+<label for="Diff">لا يوجد فارق</label>
+<a href="https://time-now.me/alquds.html"> الساعة الآن في القدس</a> [01:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-km smallFlag"></i></label>
+<label for="Diff">يسبق بـ ساعة واحدة</label>
+<a href="https://time-now.me/moroni.html"> الساعة الآن في موروني</a> [02:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-hk smallFlag"></i></label>
+<label for="Diff">يسبق بـ 6 ساعات</label>
+<a href="https://time-now.me/hong-kong.html"> الساعة الآن في هونغ كونغ</a> [07:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-sg smallFlag"></i></label>
+<label for="Diff">يسبق بـ 6 ساعات</label>
+<a href="https://time-now.me/singapore.html"> الساعة الآن في سنغافورة</a> [07:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-bh smallFlag"></i></label>
+<label for="Diff">يسبق بـ ساعة واحدة</label>
+<a href="https://time-now.me/manama.html"> الساعة الآن في المنامة</a> [02:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-sc smallFlag"></i></label>
+<label for="Diff">يسبق بـ ساعتين</label>
+<a href="https://time-now.me/victoria.html"> الساعة الآن في فيكتوريا</a> [03:25 صباحاً]
+
+         </div>
+<div class="timeCountry">
+<label for="flag"><i class="icon flag-mv smallFlag"></i></label>
+<label for="Diff">يسبق بـ 3 ساعات</label>
+<a href="https://time-now.me/male.html"> الساعة الآن في ماليه</a> [04:25 صباحاً]
+
+         </div>
+</div>
+</section>
+</div>
+<footer>
+<div class="wrapper">
+<ul>
+<li><a href="https://time-now.me/zones-gmt.html">توقيت غرينتش GMT</a></li>
+<li><a href="https://time-now.me/stopwatch.html" style="color: #f90000;">ساعة الإيقاف</a></li>
+<li><a href="https://time-now.me/pomodoro-timer.html" style="color: #f90000;">برنامج المؤقت</a></li> <li><a href="https://time-now.me/zones-pdt.html">توقيت PDT</a></li>
+<li><a href="https://time-now.me/zones-utc.html">توقيت UTC</a></li>
+<li><a href="https://time-now.me/zones-est.html">توقيت EST</a></li>
+<li><a href="https://time-now.me/zones-edt.html">توقيت EDT</a></li>
+<li><a href="https://time-now.me/zones-cst.html">توقيت CST</a></li>
+<li><a href="https://time-now.me/zones-pst.html">توقيت PST</a></li>
+<li><a href="https://arcurrency.net/rates-USD.html" target="_blank">سعر الدولار اليوم</a></li>
+<li><a href="https://dialingcodes.me/allcodes.html" target="_blank">مفاتيح الدول</a></li>
+<br/>
+<li><a href="https://time-now.me/continent/arabic.html">الدول العربية</a></li>
+<li><a href="https://time-now.me/continent/asia.html">آسيا</a></li>
+<li><a href="https://time-now.me/continent/africa.html">أفريقيا</a></li>
+<li><a href="https://time-now.me/continent/europe.html">أوروبا</a></li>
+<li><a href="https://time-now.me/continent/oceania.html">أوقيانوسيا</a></li>
+<li><a href="https://time-now.me/continent/north-america.html">أمريكا الشمالية</a></li>
+<li><a href="https://time-now.me/continent/south-america.html">أمريكا الجنوبية</a></li>
+<li><a href="https://hijri.today/dateconversion.html" target="_blank">تحويل التاريخ</a></li>
+<li><a href="https://hijri.today/calendar.html" target="_blank">التقويم الهجري/ الميلادي</a></li>
+<li><a href="https://time-now.me/pages/privacy-policy.html">سياسة الخصوصية</a></li>
+</ul>
+<p>موقع الساعة الآن 2024 / v2</p>
+</div>
+</footer>
+<script crossorigin="anonymous" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://time-now.me/assets/jsclock.min.js"></script>
+<script data-domain="time-now.me" defer="" src="https://v.pppana.com/js/script.js"></script>
+<script>
+  $( document ).ready(function() {
+      $('#digital12').jsclock("01:25:21");
+  $('#digital24').jsclock("01:25:21");
+  $("#cccshow").hide();
+
+
+
+$("#ChangeFormat").click(function () {
+      if ($("#digital24").is(":visible")) {
+        $("#digital24").hide();
+        $("#dateHed24").hide();
+
+        $("#digital12").show();
+        $("#dateHed12").show();
+
+     } else {
+       $("#digital12").hide();
+       $("#dateHed12").hide();
+
+       $("#digital24").show();
+       $("#dateHed24").show();
+     }
+   });
+
+
+   
+
+ 
+$('a#open').bind('click', function () {
+$('.menu,#closed').show();
+$('#open').hide();
+
+$('#closed').bind('click', function () {
+        $('.menu,#closed').hide();
+        $('#open').show();
+    });
+     });
+
+});
+
+
+ 
+</script>
+<!-- BEGIN SHAREAHOLIC CODE -->
+<link as="script" href="https://cdn.shareaholic.net/assets/pub/shareaholic.js" rel="preload">
+<meta content="a91c3d4f58ea8c83aedfaf36700b7e1e" name="shareaholic:site_id">
+<script async="" data-cfasync="false" src="https://cdn.shareaholic.net/assets/pub/shareaholic.js"></script>
+<!-- END SHAREAHOLIC CODE -->
+</meta></link></body>
+</html>

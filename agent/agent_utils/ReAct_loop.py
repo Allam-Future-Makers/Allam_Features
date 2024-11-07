@@ -66,7 +66,7 @@ class ReActLoop:
             self.messages.append(("user", message))
 
         result = self.ReAct_model.invoke(ChatPromptTemplate(self.messages).invoke({}))
-    
+        print(result.content) if self.instance.verbose else None
         self.instance.iterator +=1
 
         self.messages.append(("ai", result.content))
@@ -151,7 +151,7 @@ class ReActLoop:
 
             # Send the response (given from above) to the LLM to continue its ReAct loop.
             response = self._execute(response)
-            print(colored(response, "cyan"))
+            print(colored(response, "cyan")) if self.instance.verbose else None
         return response
 
     def __call__(self, Query):

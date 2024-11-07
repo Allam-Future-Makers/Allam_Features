@@ -1,4 +1,4 @@
-import requests
+import requests, re
 from bs4 import BeautifulSoup
 
 class ScrapLink:
@@ -7,7 +7,7 @@ class ScrapLink:
     """
     headers = {'user-agent': 'my-app/0.0.1'}
     
-    def __init__(self, max_chars = 5000,headers=headers, set_max_chars=False):
+    def __init__(self, max_chars = 5000,headers=headers, set_max_chars=True):
         self.headers = headers
         self.max_chars = max_chars
         self.set_max_chars = set_max_chars
@@ -20,10 +20,15 @@ class ScrapLink:
 
         if soup and hidden_link:             
             soup = self._get_soup_from_link(hidden_link)
+
         text = ""
         try:
             for par in soup.findAll('p'):
                 text= text + " " + par.get_text()
+                text = re.sub(r'\n{2,}', '\n', text)
+            if len(text) < 1000:
+                text = soup.get_text()
+                text = re.sub(r'\n{2,}', '\n', text)
             if self.set_max_chars:
                 return text[: self.max_chars].strip()
             else:
