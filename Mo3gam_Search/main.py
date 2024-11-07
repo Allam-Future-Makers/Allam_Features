@@ -22,6 +22,7 @@ class Main:
         
         s = time.time()
         text_result = chain(word, helper_sentence)
+        print(text_result)
         e = time.time()
         print(f"Coversion Ellapsed: {e-s : 0.8f} seconds")
 

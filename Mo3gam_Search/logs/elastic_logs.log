@@ -20773,3 +20773,12 @@ Status code: 400, body: {"errors":[{"code":"invalid_input_argument","message":"I
 2024-11-03 09:02:31,528 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
 2024-11-03 09:02:31,528 - INFO - Successfully connected to Elasticsearch.
 2024-11-03 09:02:31,561 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.033s]
+2024-11-04 21:10:30,253 - INFO - NumExpr defaulting to 8 threads.
+2024-11-04 21:10:44,270 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.011s]
+2024-11-04 21:10:44,270 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 21:10:44,278 - INFO - HEAD http://localhost:9200/mo3gam_verse [status:200 duration:0.007s]
+2024-11-04 21:10:46,707 - INFO - Client successfully initialized
+2024-11-04 21:10:48,100 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-04 21:10:48,512 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-04 21:10:48,513 - INFO - Successfully connected to Elasticsearch.
+2024-11-04 21:10:48,591 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.078s]
