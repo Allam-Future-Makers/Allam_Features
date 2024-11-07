@@ -105,10 +105,11 @@ class MainAgent:
                 )
                 answer = self.correct_hallucination(query, answer, ReAct_messages)
                 is_good_answer = self.grad_answer_object(query=query, answer=answer)
+                self.counter += 1
             else:
                 self.counter += 1
                 return answer
-        self.counter += 1
+            self.counter += 1
         return answer
 
     def answer_query(self, query):

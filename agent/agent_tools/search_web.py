@@ -17,7 +17,7 @@ class WebSearch(ScrapLink):
 
     Inherits from the `ScrapLink` class for getting text from any website link.
     """
-    def __init__(self, num_top_links = 2):
+    def __init__(self, num_top_links = 3):
         """
         Initializes the WebSearch object.
 
@@ -53,7 +53,13 @@ class WebSearch(ScrapLink):
                 
                 # Store title-link pair and scrape summary for each top link
                 self.search_result[title] = link
-                self.result_text += f"from {title}: {super().scrap(link)}\n"
+                print("-------Link: ",link)
+                self.result_text += f"From {title}: {super().scrap(link)}\n"
+                print("-------Results: ", len(self.result_text))
 
         return self.result_text
     
+object = WebSearch()
+results = object.search_query("الساعة الآن بتوقيت القاهرة")
+with open ("results.txt", 'w') as f:
+    f.write(results)

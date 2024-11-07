@@ -1,0 +1,608 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--[if IE 6]><html class="ie6" xmlns="http://www.w3.org/1999/xhtml"><![endif]-->
+<!--[if IE 7]><html class="lt-ie8 lt-ie9" xmlns="http://www.w3.org/1999/xhtml"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9" xmlns="http://www.w3.org/1999/xhtml"><![endif]-->
+<!--[if gt IE 8]><!--><html xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]-->
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1" name="viewport"/>
+<meta content="origin" name="referrer"/>
+<meta content="true" name="HandheldFriendly"/>
+<meta content="noindex, nofollow" name="robots"/>
+<title>الساعة الآن بتوقيت القاهرة at DuckDuckGo</title>
+<link href="//duckduckgo.com/opensearch_html_v2.xml" rel="search" title="DuckDuckGo (HTML)" type="application/opensearchdescription+xml"/>
+<link href="//duckduckgo.com/favicon.ico" rel="shortcut icon"/>
+<link href="//duckduckgo.com/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_60x60.png?v=2" id="icon60" rel="apple-touch-icon"/>
+<link href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_76x76.png?v=2" id="icon76" rel="apple-touch-icon" sizes="76x76"/>
+<link href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_120x120.png?v=2" id="icon120" rel="apple-touch-icon" sizes="120x120"/>
+<link href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_152x152.png?v=2" id="icon152" rel="apple-touch-icon" sizes="152x152"/>
+<link href="//duckduckgo.com/assets/icons/meta/DDG-icon_256x256.png" rel="image_src"/>
+<link href="//duckduckgo.com/dist/h.51c24868002f9c7b2a2c.css" media="handheld, all" rel="stylesheet" type="text/css">
+</link></head>
+<body class="body--html">
+<a id="top" name="top"></a>
+<form action="/html/" method="post">
+<input id="state_hidden" name="state_hidden" type="text"/>
+</form>
+<div>
+<div class="site-wrapper-border"></div>
+<div class="header cw header--html" id="header">
+<a class="header__logo-wrap" href="/html/" title="DuckDuckGo"></a>
+<form action="/html/" class="header__form" method="post" name="x">
+<div class="search search--header">
+<input autocomplete="off" class="search__input" id="search_form_input_homepage" name="q" type="text" value="الساعة الآن بتوقيت القاهرة"/>
+<input alt="Search" class="search__button search__button--html" id="search_button_homepage" name="b" title="Search" type="submit" value=""/>
+</div>
+<div class="frm__select">
+<select name="kl">
+<option value="">All Regions</option>
+<option value="ar-es">Argentina</option>
+<option value="au-en">Australia</option>
+<option value="at-de">Austria</option>
+<option value="be-fr">Belgium (fr)</option>
+<option value="be-nl">Belgium (nl)</option>
+<option value="br-pt">Brazil</option>
+<option value="bg-bg">Bulgaria</option>
+<option value="ca-en">Canada (en)</option>
+<option value="ca-fr">Canada (fr)</option>
+<option value="ct-ca">Catalonia</option>
+<option value="cl-es">Chile</option>
+<option value="cn-zh">China</option>
+<option value="co-es">Colombia</option>
+<option value="hr-hr">Croatia</option>
+<option value="cz-cs">Czech Republic</option>
+<option value="dk-da">Denmark</option>
+<option value="ee-et">Estonia</option>
+<option value="fi-fi">Finland</option>
+<option value="fr-fr">France</option>
+<option value="de-de">Germany</option>
+<option value="gr-el">Greece</option>
+<option value="hk-tzh">Hong Kong</option>
+<option value="hu-hu">Hungary</option>
+<option value="is-is">Iceland</option>
+<option value="in-en">India (en)</option>
+<option value="id-en">Indonesia (en)</option>
+<option value="ie-en">Ireland</option>
+<option value="il-en">Israel (en)</option>
+<option value="it-it">Italy</option>
+<option value="jp-jp">Japan</option>
+<option value="kr-kr">Korea</option>
+<option value="lv-lv">Latvia</option>
+<option value="lt-lt">Lithuania</option>
+<option value="my-en">Malaysia (en)</option>
+<option value="mx-es">Mexico</option>
+<option value="nl-nl">Netherlands</option>
+<option value="nz-en">New Zealand</option>
+<option value="no-no">Norway</option>
+<option value="pk-en">Pakistan (en)</option>
+<option value="pe-es">Peru</option>
+<option value="ph-en">Philippines (en)</option>
+<option value="pl-pl">Poland</option>
+<option value="pt-pt">Portugal</option>
+<option value="ro-ro">Romania</option>
+<option value="ru-ru">Russia</option>
+<option value="xa-ar">Saudi Arabia</option>
+<option value="sg-en">Singapore</option>
+<option value="sk-sk">Slovakia</option>
+<option value="sl-sl">Slovenia</option>
+<option value="za-en">South Africa</option>
+<option value="es-ca">Spain (ca)</option>
+<option value="es-es">Spain (es)</option>
+<option value="se-sv">Sweden</option>
+<option value="ch-de">Switzerland (de)</option>
+<option value="ch-fr">Switzerland (fr)</option>
+<option value="tw-tzh">Taiwan</option>
+<option value="th-en">Thailand (en)</option>
+<option value="tr-tr">Turkey</option>
+<option value="us-en">US (English)</option>
+<option value="us-es">US (Spanish)</option>
+<option value="ua-uk">Ukraine</option>
+<option value="uk-en">United Kingdom</option>
+<option value="vn-en">Vietnam (en)</option>
+</select>
+</div>
+<div class="frm__select frm__select--last">
+<select class="" name="df">
+<option selected="" value="">Any Time</option>
+<option value="d">Past Day</option>
+<option value="w">Past Week</option>
+<option value="m">Past Month</option>
+<option value="y">Past Year</option>
+</select>
+</div>
+</form>
+</div>
+<!-- Web results are present -->
+<div>
+<div class="serp__results">
+<div class="results" id="links">
+<div class="result results_links results_links_deep web-result">
+<div class="links_main links_deep result__body"> <!-- This is the visible part -->
+<h2 class="result__title">
+<a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftime.is%2Far%2FCairo&amp;rut=b3c5794b06e4cfa2c6b1ece639ba4917d2575ad74a35c08c922e0a782a1ca773" rel="nofollow">الوقت في القاهرة , مصر الآن - Time.is</a>
+</h2>
+<div class="result__extras">
+<div class="result__extras__url">
+<span class="result__icon">
+<a href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftime.is%2Far%2FCairo&amp;rut=b3c5794b06e4cfa2c6b1ece639ba4917d2575ad74a35c08c922e0a782a1ca773" rel="nofollow">
+<img alt="" class="result__icon__img" height="16" name="i15" src="//external-content.duckduckgo.com/ip3/time.is.ico" width="16"/>
+</a>
+</span>
+<a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftime.is%2Far%2FCairo&amp;rut=b3c5794b06e4cfa2c6b1ece639ba4917d2575ad74a35c08c922e0a782a1ca773">
+                  time.is/ar/Cairo
+                  </a>
+</div>
+</div>
+<a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftime.is%2Far%2FCairo&amp;rut=b3c5794b06e4cfa2c6b1ece639ba4917d2575ad74a35c08c922e0a782a1ca773">الوقت في القاهرة, مصر الآن. معلومات التوقيت الزمني لـ القاهرة. UTC +2. Egypt Standard Time (GMT +2) <b>الآن</b> 6 ساعات تسبق نيويورك. من 25 إبريل 2025: UTC +3 / Egypt Daylight Time (GMT +3)</a>
+<div class="clear"></div>
+</div>
+</div>
+<div class="result results_links results_links_deep web-result">
+<div class="links_main links_deep result__body"> <!-- This is the visible part -->
+<h2 class="result__title">
+<a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftime%2Dnow.me%2Fcairo.html&amp;rut=b85bae0164c3402feb13080b424f20e0faa286bfd3587804b9566f14667d3766" rel="nofollow">الساعة الآن في القاهرة بالتوقيت المحلي - Time Now in Cairo</a>
+</h2>
+<div class="result__extras">
+<div class="result__extras__url">
+<span class="result__icon">
+<a href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftime%2Dnow.me%2Fcairo.html&amp;rut=b85bae0164c3402feb13080b424f20e0faa286bfd3587804b9566f14667d3766" rel="nofollow">
+<img alt="" class="result__icon__img" height="16" name="i15" src="//external-content.duckduckgo.com/ip3/time-now.me.ico" width="16"/>
+</a>
+</span>
+<a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftime%2Dnow.me%2Fcairo.html&amp;rut=b85bae0164c3402feb13080b424f20e0faa286bfd3587804b9566f14667d3766">
+                  time-now.me/cairo.html
+                  </a>
+</div>
+</div>
+<a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftime%2Dnow.me%2Fcairo.html&amp;rut=b85bae0164c3402feb13080b424f20e0faa286bfd3587804b9566f14667d3766">الوقت <b>الآن</b> في <b>القاهرة</b> - مصر 12:16:24 صباح السبت، 02-11-2024 00:16:24 السبت،02-11-2024 التوقيت في واشنطن العاصمة متأخر عن التوقيت في <b>القاهرة</b> بمقدار 6 ساعات ( عرض جدول )</a>
+<div class="clear"></div>
+</div>
+</div>
+<div class="result results_links results_links_deep web-result">
+<div class="links_main links_deep result__body"> <!-- This is the visible part -->
+<h2 class="result__title">
+<a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftime.is%2Far%2FEgypt&amp;rut=035b241c806654159ff69fd5ba98165c642f7e493ee4577c2db3820db437386a" rel="nofollow">الوقت في مصر الآن - Time.is</a>
+</h2>
+<div class="result__extras">
+<div class="result__extras__url">
+<span class="result__icon">
+<a href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftime.is%2Far%2FEgypt&amp;rut=035b241c806654159ff69fd5ba98165c642f7e493ee4577c2db3820db437386a" rel="nofollow">
+<img alt="" class="result__icon__img" height="16" name="i15" src="//external-content.duckduckgo.com/ip3/time.is.ico" width="16"/>
+</a>
+</span>
+<a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftime.is%2Far%2FEgypt&amp;rut=035b241c806654159ff69fd5ba98165c642f7e493ee4577c2db3820db437386a">
+                  time.is/ar/Egypt
+                  </a>
+</div>
+</div>
+<a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftime.is%2Far%2FEgypt&amp;rut=035b241c806654159ff69fd5ba98165c642f7e493ee4577c2db3820db437386a">الوقت في مصر الآن. معلومات التوقيت الزمني لـ مصر. UTC +2. Egypt Standard Time (GMT +2) <b>الآن</b> 6 ساعات تسبق نيويورك. من 25 إبريل 2025: UTC +3 / Egypt Daylight Time (GMT +3)</a>
+<div class="clear"></div>
+</div>
+</div>
+<div class="result results_links results_links_deep web-result">
+<div class="links_main links_deep result__body"> <!-- This is the visible part -->
+<h2 class="result__title">
+<a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.now%2Dtime.com%2FCairo.html&amp;rut=c2c415961e692d164ce312b6a7256b177489488f89b839d887d4c2585d9aaeb7" rel="nofollow">الساعة الان في القاهرة مصر</a>
+</h2>
+<div class="result__extras">
+<div class="result__extras__url">
+<span class="result__icon">
+<a href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.now%2Dtime.com%2FCairo.html&amp;rut=c2c415961e692d164ce312b6a7256b177489488f89b839d887d4c2585d9aaeb7" rel="nofollow">
+<img alt="" class="result__icon__img" height="16" name="i15" src="//external-content.duckduckgo.com/ip3/www.now-time.com.ico" width="16"/>
+</a>
+</span>
+<a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.now%2Dtime.com%2FCairo.html&amp;rut=c2c415961e692d164ce312b6a7256b177489488f89b839d887d4c2585d9aaeb7">
+                  www.now-time.com/Cairo.html
+                  </a>
+</div>
+</div>
+<a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.now%2Dtime.com%2FCairo.html&amp;rut=c2c415961e692d164ce312b6a7256b177489488f89b839d887d4c2585d9aaeb7">الوقت <b>الان</b> في <b>القاهرة</b> ووقت الشروق والغروب وعرض <b>الساعة</b> <b>الان</b> حسب التوقيت المحلي لمدينة <b>القاهرة</b> مصر.</a>
+<div class="clear"></div>
+</div>
+</div>
+<div class="result results_links results_links_deep web-result">
+<div class="links_main links_deep result__body"> <!-- This is the visible part -->
+<h2 class="result__title">
+<a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.now%2Dtime.com%2FZone%2FEgypt_Saudi%2DArabia&amp;rut=73d2c7167856d50c92c377359bfb0fcd3a36b40a40c89f771c62f4f338c88132" rel="nofollow">فرق التوقيت بين مصر و السعودية</a>
+</h2>
+<div class="result__extras">
+<div class="result__extras__url">
+<span class="result__icon">
+<a href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.now%2Dtime.com%2FZone%2FEgypt_Saudi%2DArabia&amp;rut=73d2c7167856d50c92c377359bfb0fcd3a36b40a40c89f771c62f4f338c88132" rel="nofollow">
+<img alt="" class="result__icon__img" height="16" name="i15" src="//external-content.duckduckgo.com/ip3/www.now-time.com.ico" width="16"/>
+</a>
+</span>
+<a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.now%2Dtime.com%2FZone%2FEgypt_Saudi%2DArabia&amp;rut=73d2c7167856d50c92c377359bfb0fcd3a36b40a40c89f771c62f4f338c88132">
+                  www.now-time.com/Zone/Egypt_Saudi-Arabia
+                  </a>
+</div>
+</div>
+<a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.now%2Dtime.com%2FZone%2FEgypt_Saudi%2DArabia&amp;rut=73d2c7167856d50c92c377359bfb0fcd3a36b40a40c89f771c62f4f338c88132">فارق التوقيت بين مصر والسعودية ومقارنة الوقت بينهم بالضبط بين العواصم <b>القاهرة</b> والرياض وتوقيتها الرسمي وايضا حساب المسافة.</a>
+<div class="clear"></div>
+</div>
+</div>
+<div class="result results_links results_links_deep web-result">
+<div class="links_main links_deep result__body"> <!-- This is the visible part -->
+<h2 class="result__title">
+<a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftime%2Dnow.me%2Fegypt&amp;rut=42567431b401c1714b299ab9d0350e542836ee857aaf193604427b7d0e9ecf93" rel="nofollow">الساعة الآن في مصر - Time Now in Egypt</a>
+</h2>
+<div class="result__extras">
+<div class="result__extras__url">
+<span class="result__icon">
+<a href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftime%2Dnow.me%2Fegypt&amp;rut=42567431b401c1714b299ab9d0350e542836ee857aaf193604427b7d0e9ecf93" rel="nofollow">
+<img alt="" class="result__icon__img" height="16" name="i15" src="//external-content.duckduckgo.com/ip3/time-now.me.ico" width="16"/>
+</a>
+</span>
+<a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftime%2Dnow.me%2Fegypt&amp;rut=42567431b401c1714b299ab9d0350e542836ee857aaf193604427b7d0e9ecf93">
+                  time-now.me/egypt
+                  </a>
+</div>
+</div>
+<a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftime%2Dnow.me%2Fegypt&amp;rut=42567431b401c1714b299ab9d0350e542836ee857aaf193604427b7d0e9ecf93">الوقت <b>الآن</b> في مصر (القاهرة) 02:51:18 صباح السبت، 02-11-2024 02:51:18 السبت،02-11-2024 التوقيت في الولايات المتحدة متأخر عن التوقيت في مصر بمقدار 6 ساعات ( عرض جدول )</a>
+<div class="clear"></div>
+</div>
+</div>
+<div class="result results_links results_links_deep web-result">
+<div class="links_main links_deep result__body"> <!-- This is the visible part -->
+<h2 class="result__title">
+<a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fthetime.zone%2FSaudi%2DArabia%2Dto%2DCairo&amp;rut=80ad28c81f81ca6040aa7dfe390d83ba634bcd6616c07e51a83940c550e11d1d" rel="nofollow">فرق التوقيت بين السعودية و القاهرة</a>
+</h2>
+<div class="result__extras">
+<div class="result__extras__url">
+<span class="result__icon">
+<a href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fthetime.zone%2FSaudi%2DArabia%2Dto%2DCairo&amp;rut=80ad28c81f81ca6040aa7dfe390d83ba634bcd6616c07e51a83940c550e11d1d" rel="nofollow">
+<img alt="" class="result__icon__img" height="16" name="i15" src="//external-content.duckduckgo.com/ip3/thetime.zone.ico" width="16"/>
+</a>
+</span>
+<a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fthetime.zone%2FSaudi%2DArabia%2Dto%2DCairo&amp;rut=80ad28c81f81ca6040aa7dfe390d83ba634bcd6616c07e51a83940c550e11d1d">
+                  thetime.zone/Saudi-Arabia-to-Cairo
+                  </a>
+</div>
+</div>
+<a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fthetime.zone%2FSaudi%2DArabia%2Dto%2DCairo&amp;rut=80ad28c81f81ca6040aa7dfe390d83ba634bcd6616c07e51a83940c550e11d1d">فرق الوقت بين السعودية و <b>القاهرة</b> بالساعات من موقع <b>الساعة</b> زون.</a>
+<div class="clear"></div>
+</div>
+</div>
+<div class="result results_links results_links_deep web-result">
+<div class="links_main links_deep result__body"> <!-- This is the visible part -->
+<h2 class="result__title">
+<a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.calenup.com%2Far%2Ftime%2Dnow%2Fcairo%2Degypt&amp;rut=dc31f618e9099ef59c47d68cc3f6a4afb83140d882ed69d4c6ede9a0d60ba93c" rel="nofollow">ما هي الساعة الآن في القاهرة، مصر؟ | CalenUP</a>
+</h2>
+<div class="result__extras">
+<div class="result__extras__url">
+<span class="result__icon">
+<a href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.calenup.com%2Far%2Ftime%2Dnow%2Fcairo%2Degypt&amp;rut=dc31f618e9099ef59c47d68cc3f6a4afb83140d882ed69d4c6ede9a0d60ba93c" rel="nofollow">
+<img alt="" class="result__icon__img" height="16" name="i15" src="//external-content.duckduckgo.com/ip3/www.calenup.com.ico" width="16"/>
+</a>
+</span>
+<a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.calenup.com%2Far%2Ftime%2Dnow%2Fcairo%2Degypt&amp;rut=dc31f618e9099ef59c47d68cc3f6a4afb83140d882ed69d4c6ede9a0d60ba93c">
+                  www.calenup.com/ar/time-now/cairo-egypt
+                  </a>
+</div>
+</div>
+<a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.calenup.com%2Far%2Ftime%2Dnow%2Fcairo%2Degypt&amp;rut=dc31f618e9099ef59c47d68cc3f6a4afb83140d882ed69d4c6ede9a0d60ba93c">اكتشف <b>الآن</b> الساعات في <b>القاهرة</b> - مصر بدقة! تعرف على المنطقة الزمنية واستكشف التاريخ الغني وتطور المدينة على مر الزمن.</a>
+<div class="clear"></div>
+</div>
+</div>
+<div class="result results_links results_links_deep web-result">
+<div class="links_main links_deep result__body"> <!-- This is the visible part -->
+<h2 class="result__title">
+<a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.now%2Dtime.com%2FZone%2FEgypt_EST&amp;rut=7c1b35465493b472030b37162792b129ace52d2cd8f8982dee66232043e30724" rel="nofollow">فرق التوقيت بين Est و مصر - موقع الساعة الان</a>
+</h2>
+<div class="result__extras">
+<div class="result__extras__url">
+<span class="result__icon">
+<a href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.now%2Dtime.com%2FZone%2FEgypt_EST&amp;rut=7c1b35465493b472030b37162792b129ace52d2cd8f8982dee66232043e30724" rel="nofollow">
+<img alt="" class="result__icon__img" height="16" name="i15" src="//external-content.duckduckgo.com/ip3/www.now-time.com.ico" width="16"/>
+</a>
+</span>
+<a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.now%2Dtime.com%2FZone%2FEgypt_EST&amp;rut=7c1b35465493b472030b37162792b129ace52d2cd8f8982dee66232043e30724">
+                  www.now-time.com/Zone/Egypt_EST
+                  </a>
+</div>
+</div>
+<a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.now%2Dtime.com%2FZone%2FEgypt_EST&amp;rut=7c1b35465493b472030b37162792b129ace52d2cd8f8982dee66232043e30724">توقيت مصر يسبق توقيت EST بمقدار 7 ساعات. جدول يوضح فارق التوقيت بينهم وبالضبط بين <b>القاهرة</b> و EST: EST. القاهرة. 12:00 صباحاً. = 07:00 صباحاً. 1:00 صباحاً. = 08:00 صباحاً. 2:00 صباحاً.</a>
+<div class="clear"></div>
+</div>
+</div>
+<div class="result results_links results_links_deep web-result">
+<div class="links_main links_deep result__body"> <!-- This is the visible part -->
+<h2 class="result__title">
+<a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fv%2Dclock.com%2Ftime%2F%25D8%25A7%25D9%2584%25D9%2582%25D8%25A7%25D9%2587%25D8%25B1%25D8%25A9%2D%25D9%2585%25D8%25B5%25D8%25B1%2F&amp;rut=4725abf5025b37acaacc2c685573d8239420d857ab46684c00ff451dc38a2558" rel="nofollow">الوقت في القاهرة، مصر - الساعة - vClock</a>
+</h2>
+<div class="result__extras">
+<div class="result__extras__url">
+<span class="result__icon">
+<a href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fv%2Dclock.com%2Ftime%2F%25D8%25A7%25D9%2584%25D9%2582%25D8%25A7%25D9%2587%25D8%25B1%25D8%25A9%2D%25D9%2585%25D8%25B5%25D8%25B1%2F&amp;rut=4725abf5025b37acaacc2c685573d8239420d857ab46684c00ff451dc38a2558" rel="nofollow">
+<img alt="" class="result__icon__img" height="16" name="i15" src="//external-content.duckduckgo.com/ip3/v-clock.com.ico" width="16"/>
+</a>
+</span>
+<a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fv%2Dclock.com%2Ftime%2F%25D8%25A7%25D9%2584%25D9%2582%25D8%25A7%25D9%2587%25D8%25B1%25D8%25A9%2D%25D9%2585%25D8%25B5%25D8%25B1%2F&amp;rut=4725abf5025b37acaacc2c685573d8239420d857ab46684c00ff451dc38a2558">
+                  v-clock.com/time/القاهرة-مصر/
+                  </a>
+</div>
+</div>
+<a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fv%2Dclock.com%2Ftime%2F%25D8%25A7%25D9%2584%25D9%2582%25D8%25A7%25D9%2587%25D8%25B1%25D8%25A9%2D%25D9%2585%25D8%25B5%25D8%25B1%2F&amp;rut=4725abf5025b37acaacc2c685573d8239420d857ab46684c00ff451dc38a2558">كم الوقت في مدينة <b>القاهرة</b> الآن؟ في هذا الموقع يمكنك العثور على الوقت الحالي والتاريخ في أي دولة ومدينة في العالم. ويمكنك أيضًا عرض فرق التوقيت بين موقعك وتلك المدينة الأخرى. تعرض الصفحة الرئيسية <b>الساعة</b> بالوقت الفعلي في منطقتك، بالإضافة إلى قائمة مثبتة مسبقًا من الساعات للمدن الرئيسية. يمكنك تعديل هذه القائمة كما تشاء.</a>
+<div class="clear"></div>
+</div>
+</div>
+<div class="result results_links results_links_deep web-result">
+<div class="links_main links_deep result__body"> <!-- This is the visible part -->
+<h2 class="result__title">
+<a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftime%2Dnow.me%2Fzones%2Dutc.html&amp;rut=c5da6b0f2e0b88685bf42564867fbc8a891a88ee003e00427eb2a47c83b2f383" rel="nofollow">توقيت العالمي Utc - الآن - الوقت حالياً</a>
+</h2>
+<div class="result__extras">
+<div class="result__extras__url">
+<span class="result__icon">
+<a href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftime%2Dnow.me%2Fzones%2Dutc.html&amp;rut=c5da6b0f2e0b88685bf42564867fbc8a891a88ee003e00427eb2a47c83b2f383" rel="nofollow">
+<img alt="" class="result__icon__img" height="16" name="i15" src="//external-content.duckduckgo.com/ip3/time-now.me.ico" width="16"/>
+</a>
+</span>
+<a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftime%2Dnow.me%2Fzones%2Dutc.html&amp;rut=c5da6b0f2e0b88685bf42564867fbc8a891a88ee003e00427eb2a47c83b2f383">
+                  time-now.me/zones-utc.html
+                  </a>
+</div>
+</div>
+<a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftime%2Dnow.me%2Fzones%2Dutc.html&amp;rut=c5da6b0f2e0b88685bf42564867fbc8a891a88ee003e00427eb2a47c83b2f383">يسبق بـ 3 ساعات <b>الساعة</b> <b>الآن</b> في <b>القاهرة</b> [12:48 مساءً]</a>
+<div class="clear"></div>
+</div>
+</div>
+<div class="result results_links results_links_deep web-result">
+<div class="links_main links_deep result__body"> <!-- This is the visible part -->
+<h2 class="result__title">
+<a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.almasryalyoum.com%2Fnews%2Fdetails%2F3266439&amp;rut=18dc794995f08c274ad737d1b535b87496272f9fd246b7f80a65648433392641" rel="nofollow">رسميًا.. موعد بدء التوقيت الشتوي 2024 وتغيير الساعة في مصر (الموعد وعدد ...</a>
+</h2>
+<div class="result__extras">
+<div class="result__extras__url">
+<span class="result__icon">
+<a href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.almasryalyoum.com%2Fnews%2Fdetails%2F3266439&amp;rut=18dc794995f08c274ad737d1b535b87496272f9fd246b7f80a65648433392641" rel="nofollow">
+<img alt="" class="result__icon__img" height="16" name="i15" src="//external-content.duckduckgo.com/ip3/www.almasryalyoum.com.ico" width="16"/>
+</a>
+</span>
+<a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.almasryalyoum.com%2Fnews%2Fdetails%2F3266439&amp;rut=18dc794995f08c274ad737d1b535b87496272f9fd246b7f80a65648433392641">
+                  www.almasryalyoum.com/news/details/3266439
+                  </a>
+</div>
+</div>
+<a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.almasryalyoum.com%2Fnews%2Fdetails%2F3266439&amp;rut=18dc794995f08c274ad737d1b535b87496272f9fd246b7f80a65648433392641">عن اليوم المحدد رسميًا لعودة التوقيت الشتوي 2024 وموعد إلغاء التوقيت الصيفي ، وبحساب عدد الأيام، نجد أنه يتبقى 38 يومًا أيام على وقف العمل بـ التوقيت الصيفي في مصر و تطبيق التوقيت الشتوي 2024 ...</a>
+<div class="clear"></div>
+</div>
+</div>
+<div class="result results_links results_links_deep web-result">
+<div class="links_main links_deep result__body"> <!-- This is the visible part -->
+<h2 class="result__title">
+<a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftime.is%2Far%2FSaudi_Arabia&amp;rut=dd555ac0c274cb668a876dee22f1818afaad7960f225100c9b556cff78bac155" rel="nofollow">الوقت في المملكة العربية السعودية الآن</a>
+</h2>
+<div class="result__extras">
+<div class="result__extras__url">
+<span class="result__icon">
+<a href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftime.is%2Far%2FSaudi_Arabia&amp;rut=dd555ac0c274cb668a876dee22f1818afaad7960f225100c9b556cff78bac155" rel="nofollow">
+<img alt="" class="result__icon__img" height="16" name="i15" src="//external-content.duckduckgo.com/ip3/time.is.ico" width="16"/>
+</a>
+</span>
+<a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftime.is%2Far%2FSaudi_Arabia&amp;rut=dd555ac0c274cb668a876dee22f1818afaad7960f225100c9b556cff78bac155">
+                  time.is/ar/Saudi_Arabia
+                  </a>
+</div>
+</div>
+<a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftime.is%2Far%2FSaudi_Arabia&amp;rut=dd555ac0c274cb668a876dee22f1818afaad7960f225100c9b556cff78bac155">معلومات التوقيت الزمني لـ المملكة العربية السعودية. UTC +3. Arabia Standard Time (AST) <b>الآن</b> 8 ساعات تسبق نيويورك. الوقت في المملكة العربية السعودية هي 8 ساعات تسبق الوقت في نيويورك عندما تكون نيويورك في التوقيت القياسي، و 7 ساعات تسبق الوقت في نيويورك عندما نيويورك تكون في التوقيت الصيفي. المملكة العربية السعودية لا تتغير بين الوقت الصيفي والشتوي.</a>
+<div class="clear"></div>
+</div>
+</div>
+<div class="result results_links results_links_deep web-result">
+<div class="links_main links_deep result__body"> <!-- This is the visible part -->
+<h2 class="result__title">
+<a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftimesprayer.com%2Fprayer%2Dtimes%2Din%2Dcairo.html&amp;rut=944c2bc428c384c3ab39ebc36ce997268b417ba49a0b402e7bba693ee6cd37bf" rel="nofollow">مواقيت الصلاة في القاهرة</a>
+</h2>
+<div class="result__extras">
+<div class="result__extras__url">
+<span class="result__icon">
+<a href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftimesprayer.com%2Fprayer%2Dtimes%2Din%2Dcairo.html&amp;rut=944c2bc428c384c3ab39ebc36ce997268b417ba49a0b402e7bba693ee6cd37bf" rel="nofollow">
+<img alt="" class="result__icon__img" height="16" name="i15" src="//external-content.duckduckgo.com/ip3/timesprayer.com.ico" width="16"/>
+</a>
+</span>
+<a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftimesprayer.com%2Fprayer%2Dtimes%2Din%2Dcairo.html&amp;rut=944c2bc428c384c3ab39ebc36ce997268b417ba49a0b402e7bba693ee6cd37bf">
+                  timesprayer.com/prayer-times-in-cairo.html
+                  </a>
+</div>
+</div>
+<a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftimesprayer.com%2Fprayer%2Dtimes%2Din%2Dcairo.html&amp;rut=944c2bc428c384c3ab39ebc36ce997268b417ba49a0b402e7bba693ee6cd37bf">مواقيت الصلاة اليوم في مدينة <b>القاهرة</b> تبداء <b>الساعة</b> ٤:٤٤ ص بوقت صلاة الفجر وتنتهي <b>الساعة</b> ٦:٢٤ م لصلاة العشاء. وبنسبة إلى عدد ساعات الصيام لهذا اليوم فأنها 12 ساعة و21 دقيقة.</a>
+<div class="clear"></div>
+</div>
+</div>
+<div class="result results_links results_links_deep web-result">
+<div class="links_main links_deep result__body"> <!-- This is the visible part -->
+<h2 class="result__title">
+<a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2F%D8%A7%D9%84%D8%B3%D8%A7%D8%B9%D8%A9.net%2F%D8%A7%D9%84%D8%B3%D8%A7%D8%B9%D8%A9%2D%D8%A7%D9%84%D8%A2%D9%86%2D%D9%81%D9%8A%2D%D9%85%D8%AF%D9%8A%D9%86%D8%A9%2D%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9%2F&amp;rut=ae4d41be4334aff9a78f13ea3a36999221506c99b88c6152ec16619348c6e366" rel="nofollow">الساعة الآن في مدينة القاهرة في مصر</a>
+</h2>
+<div class="result__extras">
+<div class="result__extras__url">
+<span class="result__icon">
+<a href="//duckduckgo.com/l/?uddg=https%3A%2F%2F%D8%A7%D9%84%D8%B3%D8%A7%D8%B9%D8%A9.net%2F%D8%A7%D9%84%D8%B3%D8%A7%D8%B9%D8%A9%2D%D8%A7%D9%84%D8%A2%D9%86%2D%D9%81%D9%8A%2D%D9%85%D8%AF%D9%8A%D9%86%D8%A9%2D%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9%2F&amp;rut=ae4d41be4334aff9a78f13ea3a36999221506c99b88c6152ec16619348c6e366" rel="nofollow">
+<img alt="" class="result__icon__img" height="16" name="i15" src="//external-content.duckduckgo.com/ip3/xn--mgbag2b5a4d.net.ico" width="16"/>
+</a>
+</span>
+<a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2F%D8%A7%D9%84%D8%B3%D8%A7%D8%B9%D8%A9.net%2F%D8%A7%D9%84%D8%B3%D8%A7%D8%B9%D8%A9%2D%D8%A7%D9%84%D8%A2%D9%86%2D%D9%81%D9%8A%2D%D9%85%D8%AF%D9%8A%D9%86%D8%A9%2D%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9%2F&amp;rut=ae4d41be4334aff9a78f13ea3a36999221506c99b88c6152ec16619348c6e366">
+                  الساعة.net/الساعة-الآن-في-مدينة-القاهرة/
+                  </a>
+</div>
+</div>
+<a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2F%D8%A7%D9%84%D8%B3%D8%A7%D8%B9%D8%A9.net%2F%D8%A7%D9%84%D8%B3%D8%A7%D8%B9%D8%A9%2D%D8%A7%D9%84%D8%A2%D9%86%2D%D9%81%D9%8A%2D%D9%85%D8%AF%D9%8A%D9%86%D8%A9%2D%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9%2F&amp;rut=ae4d41be4334aff9a78f13ea3a36999221506c99b88c6152ec16619348c6e366"><b>الساعة</b> <b>الآن</b> في مدينة <b>القاهرة</b> في مصر. كم <b>الساعة</b> <b>الآن</b> في <b>القاهرة</b> ( Cairo Egypt ) مع تاريخ اليوم الهجري و الميلادي و القبطي و السرياني و فارق الوقت بين مدينة <b>القاهرة</b> وباقي الدول والمدن العالمية، الوقت <b>الآن</b> في مدينة <b>القاهرة</b> في دولة مصر بالتوقيت المحلي والعالمي غرينتش. 10: 32: 28. 10:32:28 AM. الأربعاء 05 ربيع الثاني 1446 صباحاً.</a>
+<div class="clear"></div>
+</div>
+</div>
+<div class="result results_links results_links_deep web-result">
+<div class="links_main links_deep result__body"> <!-- This is the visible part -->
+<h2 class="result__title">
+<a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fshuruqalshshams.com%2Fsun%2F%25D8%25A7%25D9%2584%25D9%2582%25D8%25A7%25D9%2587%25D8%25B1%25D8%25A9&amp;rut=b950b0809a745fd1b58ad445116486e6abcce5c67ca7aac2070e0474c08e5312" rel="nofollow">أوقات شروق وغروب الشمس في القاهرة (محافظة القاهرة, مصر) لهذا اليوم ...</a>
+</h2>
+<div class="result__extras">
+<div class="result__extras__url">
+<span class="result__icon">
+<a href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fshuruqalshshams.com%2Fsun%2F%25D8%25A7%25D9%2584%25D9%2582%25D8%25A7%25D9%2587%25D8%25B1%25D8%25A9&amp;rut=b950b0809a745fd1b58ad445116486e6abcce5c67ca7aac2070e0474c08e5312" rel="nofollow">
+<img alt="" class="result__icon__img" height="16" name="i15" src="//external-content.duckduckgo.com/ip3/shuruqalshshams.com.ico" width="16"/>
+</a>
+</span>
+<a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fshuruqalshshams.com%2Fsun%2F%25D8%25A7%25D9%2584%25D9%2582%25D8%25A7%25D9%2587%25D8%25B1%25D8%25A9&amp;rut=b950b0809a745fd1b58ad445116486e6abcce5c67ca7aac2070e0474c08e5312">
+                  shuruqalshshams.com/sun/القاهرة
+                  </a>
+</div>
+</div>
+<a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fshuruqalshshams.com%2Fsun%2F%25D8%25A7%25D9%2584%25D9%2582%25D8%25A7%25D9%2587%25D8%25B1%25D8%25A9&amp;rut=b950b0809a745fd1b58ad445116486e6abcce5c67ca7aac2070e0474c08e5312">حساب وقت غروب الشمس وشروقها <b>القاهرة</b> (محافظة القاهرة, مصر) ل شهر نوفمبر 2024, طول اليوم. حاسبة الفلك (الجدول الزمني ، التقويم ، الرسم البياني).</a>
+<div class="clear"></div>
+</div>
+</div>
+<div class="result results_links results_links_deep web-result">
+<div class="links_main links_deep result__body"> <!-- This is the visible part -->
+<h2 class="result__title">
+<a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.now%2Dtime.com%2FZone%2FEgypt_UTC&amp;rut=185ea00f60a0bf5da46755af8935b3d59bd5e21d10adbd961e6ad69d995255ab" rel="nofollow">فرق التوقيت بين التوقيت العالمي Utc و مصر</a>
+</h2>
+<div class="result__extras">
+<div class="result__extras__url">
+<span class="result__icon">
+<a href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.now%2Dtime.com%2FZone%2FEgypt_UTC&amp;rut=185ea00f60a0bf5da46755af8935b3d59bd5e21d10adbd961e6ad69d995255ab" rel="nofollow">
+<img alt="" class="result__icon__img" height="16" name="i15" src="//external-content.duckduckgo.com/ip3/www.now-time.com.ico" width="16"/>
+</a>
+</span>
+<a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.now%2Dtime.com%2FZone%2FEgypt_UTC&amp;rut=185ea00f60a0bf5da46755af8935b3d59bd5e21d10adbd961e6ad69d995255ab">
+                  www.now-time.com/Zone/Egypt_UTC
+                  </a>
+</div>
+</div>
+<a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.now%2Dtime.com%2FZone%2FEgypt_UTC&amp;rut=185ea00f60a0bf5da46755af8935b3d59bd5e21d10adbd961e6ad69d995255ab">عندما تكون <b>الساعة</b> في التوقيت العالمي UTC 11:13 مساءً اليوم الجمعة 01 نوفمبر 2024 تكون <b>الساعة</b> في مصر 01:13 صباحاً السبت 02 نوفمبر 2024. توقيت مصر يسبق توقيت التوقيت العالمي UTC بمقدار ساعتين. جدول يوضح فارق ...</a>
+<div class="clear"></div>
+</div>
+</div>
+<div class="result results_links results_links_deep web-result">
+<div class="links_main links_deep result__body"> <!-- This is the visible part -->
+<h2 class="result__title">
+<a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftimesprayer.com%2Fegypt%2Deg%2Fcairo%2F&amp;rut=889a08c49363f5b91efa83cba19279153b72f17a4b094c543f9b637c242373c3" rel="nofollow">مواقيت الصلاة اليوم في القاهرة ولهذا الأسبوع</a>
+</h2>
+<div class="result__extras">
+<div class="result__extras__url">
+<span class="result__icon">
+<a href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftimesprayer.com%2Fegypt%2Deg%2Fcairo%2F&amp;rut=889a08c49363f5b91efa83cba19279153b72f17a4b094c543f9b637c242373c3" rel="nofollow">
+<img alt="" class="result__icon__img" height="16" name="i15" src="//external-content.duckduckgo.com/ip3/timesprayer.com.ico" width="16"/>
+</a>
+</span>
+<a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftimesprayer.com%2Fegypt%2Deg%2Fcairo%2F&amp;rut=889a08c49363f5b91efa83cba19279153b72f17a4b094c543f9b637c242373c3">
+                  timesprayer.com/egypt-eg/cairo/
+                  </a>
+</div>
+</div>
+<a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftimesprayer.com%2Fegypt%2Deg%2Fcairo%2F&amp;rut=889a08c49363f5b91efa83cba19279153b72f17a4b094c543f9b637c242373c3">الوقت <b>الأن</b> في <b>القاهرة</b> 12:18:03 am; الأذان القادم: الفجْر; وقت أذان الفجْر: 4:44 صباحًا</a>
+<div class="clear"></div>
+</div>
+</div>
+<div class="result results_links results_links_deep web-result">
+<div class="links_main links_deep result__body"> <!-- This is the visible part -->
+<h2 class="result__title">
+<a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cairo24.com%2F1996224&amp;rut=5f162b60de8bbd499493d01ff730f9796fcb67954612d267bd146abec41fa10a" rel="nofollow">بدء التوقيت الصيفي.. الساعة كام الان في مصر؟</a>
+</h2>
+<div class="result__extras">
+<div class="result__extras__url">
+<span class="result__icon">
+<a href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cairo24.com%2F1996224&amp;rut=5f162b60de8bbd499493d01ff730f9796fcb67954612d267bd146abec41fa10a" rel="nofollow">
+<img alt="" class="result__icon__img" height="16" name="i15" src="//external-content.duckduckgo.com/ip3/www.cairo24.com.ico" width="16"/>
+</a>
+</span>
+<a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cairo24.com%2F1996224&amp;rut=5f162b60de8bbd499493d01ff730f9796fcb67954612d267bd146abec41fa10a">
+                  www.cairo24.com/1996224
+                  </a>
+</div>
+</div>
+<a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.cairo24.com%2F1996224&amp;rut=5f162b60de8bbd499493d01ff730f9796fcb67954612d267bd146abec41fa10a">بدأ تطبيق التوقيت الصيفي في مصر 2024 ليتم تقديم <b>الساعة</b> في مصر 60 دقيقة، وفقًا لقرار الريس عبد الفتاح السيسي رئيس الجمهورية، فتصبح <b>الساعة</b> في مصر <b>الآن</b> 1 صباحًا <b>بتوقيت</b> القاهرة.</a>
+<div class="clear"></div>
+</div>
+</div>
+<div class="result results_links results_links_deep web-result">
+<div class="links_main links_deep result__body"> <!-- This is the visible part -->
+<h2 class="result__title">
+<a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.almasryalyoum.com%2Fnews%2Fdetails%2F3287209&amp;rut=53c01b5a089576588dcee8a3c062cfb64534da811f7a93d3f8e6a27be03791e2" rel="nofollow">القنوات المفتوحة الناقلة لمباراة الأهلي وسيراميكا مباشر في كأس السوبر ...</a>
+</h2>
+<div class="result__extras">
+<div class="result__extras__url">
+<span class="result__icon">
+<a href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.almasryalyoum.com%2Fnews%2Fdetails%2F3287209&amp;rut=53c01b5a089576588dcee8a3c062cfb64534da811f7a93d3f8e6a27be03791e2" rel="nofollow">
+<img alt="" class="result__icon__img" height="16" name="i15" src="//external-content.duckduckgo.com/ip3/www.almasryalyoum.com.ico" width="16"/>
+</a>
+</span>
+<a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.almasryalyoum.com%2Fnews%2Fdetails%2F3287209&amp;rut=53c01b5a089576588dcee8a3c062cfb64534da811f7a93d3f8e6a27be03791e2">
+                  www.almasryalyoum.com/news/details/3287209
+                  </a>
+</div>
+</div>
+<a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.almasryalyoum.com%2Fnews%2Fdetails%2F3287209&amp;rut=53c01b5a089576588dcee8a3c062cfb64534da811f7a93d3f8e6a27be03791e2">ويوافق موعد مباراة الأهلي وسيراميكا كليوباترا <b>الساعة</b> 8 <b>بتوقيت</b> القاهرة. ... الآن.. سعر الذهب عيار 21 اليوم الثلاثاء 5-11-2024 منتصف التعاملات بالصاغة . 14:44.</a>
+<div class="clear"></div>
+</div>
+</div>
+<div class="result results_links results_links_deep web-result">
+<div class="links_main links_deep result__body"> <!-- This is the visible part -->
+<h2 class="result__title">
+<a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.aljazeera.net%2Fsport%2Fliveblog%2F2024%2F11%2F6%2Fbarcelona%2Dv%2Dcrvena%2Dzvezda&amp;rut=4d3a3dd127677db3e39639cd3298abe0398703131f66e7a569b3fbe5823a509c" rel="nofollow">مباشر مباراة برشلونة ضد سرفينا زفيزدا في دوري أبطال أوروبا</a>
+</h2>
+<div class="result__extras">
+<div class="result__extras__url">
+<span class="result__icon">
+<a href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.aljazeera.net%2Fsport%2Fliveblog%2F2024%2F11%2F6%2Fbarcelona%2Dv%2Dcrvena%2Dzvezda&amp;rut=4d3a3dd127677db3e39639cd3298abe0398703131f66e7a569b3fbe5823a509c" rel="nofollow">
+<img alt="" class="result__icon__img" height="16" name="i15" src="//external-content.duckduckgo.com/ip3/www.aljazeera.net.ico" width="16"/>
+</a>
+</span>
+<a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.aljazeera.net%2Fsport%2Fliveblog%2F2024%2F11%2F6%2Fbarcelona%2Dv%2Dcrvena%2Dzvezda&amp;rut=4d3a3dd127677db3e39639cd3298abe0398703131f66e7a569b3fbe5823a509c">
+                  www.aljazeera.net/sport/liveblog/2024/11/6/barcelona-v-crvena-zvezda
+                  </a>
+</div>
+</div>
+<a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.aljazeera.net%2Fsport%2Fliveblog%2F2024%2F11%2F6%2Fbarcelona%2Dv%2Dcrvena%2Dzvezda&amp;rut=4d3a3dd127677db3e39639cd3298abe0398703131f66e7a569b3fbe5823a509c">تبدأ المباراة <b>الساعة</b> الـ11 (23:00) <b>بتوقيت</b> مكة المكرمة والدوحة، العاشرة مساءً <b>بتوقيت</b> القاهرة، ويديرها الحكم النرويجي إيسبين إيسكاس.</a>
+<div class="clear"></div>
+</div>
+</div>
+<div class="result results_links results_links_deep web-result">
+<div class="links_main links_deep result__body"> <!-- This is the visible part -->
+<h2 class="result__title">
+<a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.bbc.com%2Farabic%2Farticles%2Fcvgw7n4xlp2o&amp;rut=ebe25a516d4bb6c5d8a750ca9bd4a621c5718cc6c7dc15571fcab2addddc8672" rel="nofollow">متى سنتعرف على الفائز، هاريس أم ترامب؟</a>
+</h2>
+<div class="result__extras">
+<div class="result__extras__url">
+<span class="result__icon">
+<a href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.bbc.com%2Farabic%2Farticles%2Fcvgw7n4xlp2o&amp;rut=ebe25a516d4bb6c5d8a750ca9bd4a621c5718cc6c7dc15571fcab2addddc8672" rel="nofollow">
+<img alt="" class="result__icon__img" height="16" name="i15" src="//external-content.duckduckgo.com/ip3/www.bbc.com.ico" width="16"/>
+</a>
+</span>
+<a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.bbc.com%2Farabic%2Farticles%2Fcvgw7n4xlp2o&amp;rut=ebe25a516d4bb6c5d8a750ca9bd4a621c5718cc6c7dc15571fcab2addddc8672">
+                  www.bbc.com/arabic/articles/cvgw7n4xlp2o
+                  </a>
+</div>
+</div>
+<a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.bbc.com%2Farabic%2Farticles%2Fcvgw7n4xlp2o&amp;rut=ebe25a516d4bb6c5d8a750ca9bd4a621c5718cc6c7dc15571fcab2addddc8672"><b>الساعة</b> 19:00 <b>بتوقيت</b> شرق الولايات المتحدة (23:00 <b>بتوقيت</b> جرينتش): تغلق مراكز الاقتراع في جورجيا وخمس ولايات أخرى ...</a>
+<div class="clear"></div>
+</div>
+</div>
+<div class="nav-link">
+<form action="/html/" method="post">
+<input class="btn btn--alt" type="submit" value="Next"/>
+<input name="q" type="hidden" value="الساعة الآن بتوقيت القاهرة"/>
+<input name="s" type="hidden" value="22"/>
+<input name="nextParams" type="hidden" value=""/>
+<input name="v" type="hidden" value="l"/>
+<input name="o" type="hidden" value="json"/>
+<input name="dc" type="hidden" value="23"/>
+<input name="api" type="hidden" value="d.js"/>
+<input name="vqd" type="hidden" value="4-53644232596865080666472224169202629636"/>
+<input name="kl" type="hidden" value="wt-wt"/>
+</form>
+</div>
+<div class="feedback-btn">
+<a href="//duckduckgo.com/feedback.html" rel="nofollow" target="_new">Feedback</a>
+</div>
+<div class="clear"></div>
+</div>
+</div> <!-- links wrapper //-->
+</div>
+</div>
+<div id="bottom_spacing2"></div>
+<img src="//duckduckgo.com/t/sl_h"/>
+</body>
+</html>

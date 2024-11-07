@@ -1,0 +1,4 @@
+user_personal_info : []
+user_areas_of_interest : ['Arabic language', 'Arabic grammar', 'idioms', 'colloquial expressions', 'time', 'current time', 'Cairo time', 'date']
+short_term_memory : ['Query: ما هو تاريخ اليوم', 'Answer: Answer:  التاريخ اليوم هو 2023-10-26.', 'Query: ما هى الساعة الآن بتوقيت القاهرة؟', 'Answer: Answer: الساعة الآن بتوقيت القاهرة هى 07:11 مساءً ']
+long_term_memory : ['The user seems to be interested in Islamic teachings and interpretations of the Quran.', 'The user might be interested in understanding Arabic idioms and colloquial expressions.', 'The user may be seeking clarification on Arabic phrases and their meanings.', 'The user is interested in Arabic grammar and the correct formation of words.', 'The user might be interested in knowing the current time, particularly in Cairo.', 'The user is interested in knowing the current time in Cairo.', 'The user is interested in knowing the current date.']
