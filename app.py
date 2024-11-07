@@ -106,8 +106,11 @@ async def tashkeel_endpoint(input: TashkeelInput):
 @app.post("/api/quran", response_model=QuranOutput)
 async def quran_endpoint(input: QuranInput):
     try:
-        result = quran_chain(input.query)
-        return QuranOutput(answer=result)
+        text_result, links = quran_chain.get_results(input.query)
+        print(text_result)
+        print(links)
+        return QuranOutput(answer=text_result)
+
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 

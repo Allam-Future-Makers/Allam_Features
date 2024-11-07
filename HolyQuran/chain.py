@@ -1,4 +1,4 @@
-import sys, os
+import sys, os, re
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
@@ -29,13 +29,14 @@ class HolyQuranChain:
         for i, hit in enumerate(hits[:3], start=1):
             d = hit["_source"]
             c = {}
-            c["الآية"] = d["I3rab"]
-            c["التفسير"] = d["Tafseer_Saadi"]
-            c["التلاوة"] = d["telawa"]
+            c["نص_الآية"] = d["Ayah"]
+            c["إعراب_الآية"] = d["I3rab"]
+            c["تفسير_الآية"] = d["Tafseer_Saadi"]
+            c["التلاوة_و_القراءة_الصحيحة_للآية_عبر_رابط_لمقطع_صوتى"] = d["telawa"]
             context = context + "النص_{i}" + str(c)
         return context
 
-    def __call__(self, query):
+    def get_results(self, query):
 
         self.watsonx_llm = WatsonxLLM(
             project_id=self.instance.watsons["project_id"],
@@ -64,6 +65,9 @@ class HolyQuranChain:
                 | JsonOutputParser()
             )
             result = chain.invoke(query)["answer"]
+            links = re.findall(r"http[|s]?://[^\s]+", result)
+
+            print("Allam\n")
         except:
             try:
                 chain = (
@@ -76,8 +80,14 @@ class HolyQuranChain:
                     | JsonOutputParser()
                 )
                 result = chain.invoke(query)["answer"]
+                links = re.findall(r"http[|s]?://[^\s]+", result)
+                print("Gemini\n")
             except Exception as e:
                 print(f"Error has occured:{e}")
 
         self.instance.iterator += 1
+        return result, links
+
+    def __call__(self, query):
+        result, links = self.get_results(query)
         return result
