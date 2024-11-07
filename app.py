@@ -68,6 +68,7 @@ class QuranInput(BaseModel):
 
 class QuranOutput(BaseModel):
     answer: str
+    links: list[str]
 
 
 class IrabInput(BaseModel):
@@ -109,7 +110,7 @@ async def quran_endpoint(input: QuranInput):
         text_result, links = quran_chain.get_results(input.query)
         print(text_result)
         print(links)
-        return QuranOutput(answer=text_result)
+        return QuranOutput(answer=text_result, links=links)
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
