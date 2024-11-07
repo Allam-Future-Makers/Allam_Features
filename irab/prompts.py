@@ -159,6 +159,7 @@ json_parse_prompt = PromptTemplate(
     ```json
     {{
         "original_sentence": "{sentence}",
+        "diacratized_sentence": "{diacratized}",
         "irab_results": [
             {{"word": "{{word1}}", "irab": "{{irab1}}"}}{{
                 # Add the rest of the irab results in the same format
@@ -194,6 +195,7 @@ json_parse_prompt = PromptTemplate(
     ```json
     {{
         "original_sentence": "الطالبُ لم يسعَ إلى النجاحِ بنفسه سريعًا.",
+        "diacratized_sentence": "الطَّالِبُ لَمْ يَسْعَ إِلَى النَّجَاحِ بِنَفْسِهِ سَرِيعًا.",
         "irab_results": [
             {{"word": "الطالبُ", "irab": "مبتدأ مرفوع وعلامة رفعه الضمة الظاهرة"}},
             {{"word": "لم", "irab": "حرف نفي وجزم"}},
