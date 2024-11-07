@@ -2,8 +2,8 @@ import sys, os
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from config.elastic_config import ElasticConfig
-from elastic.search_manager import SearchManager
+from Mo3gam_Search.config.elastic_config import ElasticConfig
+from Mo3gam_Search.elastic.search_manager import SearchManager
 
 
 def search_mo3gam(query):

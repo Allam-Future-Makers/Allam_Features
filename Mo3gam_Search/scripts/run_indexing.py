@@ -3,8 +3,8 @@ import sys, os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 import pandas as pd
-from config.elastic_config import ElasticConfig
-from elastic.index_manager import IndexManager
+from Mo3gam_Search.config.elastic_config import ElasticConfig
+from Mo3gam_Search.elastic.index_manager import IndexManager
 
 parent_directory = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
