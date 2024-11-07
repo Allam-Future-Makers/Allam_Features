@@ -154,14 +154,14 @@ class IrabChain:
 
         self.instance.iterator += 1
 
-        output_as_text = " ".join(
-            [
-                f'كلمة "{item["word"]}" هي {item["irab"]}.'
-                for item in gemini_result["irab_results"]
-            ]
-        )
+        # output_as_text = " ".join(
+        #     [
+        #         f'كلمة "{item["word"]}" هي {item["irab"]}.'
+        #         for item in gemini_result["irab_results"]
+        #     ]
+        # )
 
-        return gemini_result, output_as_text
+        return gemini_result  # , output_as_text
 
     def __call__(self, paragraph):
         text_result = self.process_irab(paragraph)[

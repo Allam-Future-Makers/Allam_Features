@@ -159,7 +159,7 @@ json_parse_prompt = PromptTemplate(
     ```json
     {{
         "original_sentence": "{sentence}",
-        "diacratized_sentence": "{diacratized}",
+        "diacratized_sentence": "{{sentence after arabic diacratization}}",
         "irab_results": [
             {{"word": "{{word1}}", "irab": "{{irab1}}"}}{{
                 # Add the rest of the irab results in the same format
