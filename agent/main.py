@@ -37,7 +37,7 @@ class AgentMain:
 
         parent_directory = os.path.dirname(os.path.abspath(__file__))
         data_file_path = os.path.join(
-            parent_directory, "agent_memory", f"memory_for_user_{id}.txt"
+            parent_directory, "agent_memory", f"memory_for_user_{self.id}.txt"
         )
         if not os.path.exists(data_file_path):
             with open(data_file_path, "w") as f:
