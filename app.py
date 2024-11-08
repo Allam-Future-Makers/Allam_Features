@@ -10,6 +10,8 @@ from diacratization.chain import DiacratizeChain
 from irab.chain import IrabChain
 from syntax_enhancer.chain import SyntaxEnhancerChain
 from to_MSA.chain import ToMSAChain
+from fastapi import FastAPI, File, Form, UploadFile
+from typing import Optional
 
 from dotenv import load_dotenv
 
@@ -193,6 +195,35 @@ async def agent_endpoint(input: AgentInput):
 
         agent = getOrCreateAgent(input.id)
         answer = agent(input.query, voice_path, image_path)
+        return {"answer": answer}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/api/chat")
+async def upload_files(
+    id: str,
+    image: Optional[UploadFile] = File(None, description="Optional image file"),
+    voice: Optional[UploadFile] = File(None, description="Optional voice file"),
+    text_input: Optional[str] = Form(None, description="Optional text input"),
+):
+    try:
+        # download voice and image if not none
+        voice_path = None
+        image_path = None
+
+        if voice:
+            voice_path = f"agent_inputs/voice_{voice.filename}"
+            with open(voice_path, "wb") as f:
+                f.write(voice.file.read())
+
+        if image:
+            image_path = f"agent_inputs/image_{image.filename}"
+            with open(image_path, "wb") as f:
+                f.write(image.file.read())
+
+        agent = getOrCreateAgent(id)
+        answer = agent(text_input, voice_path, image_path)
         return {"answer": answer}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
