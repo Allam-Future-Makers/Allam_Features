@@ -1,1 +1,4 @@
-There memory file is currently empty because no past query-answer interactions exist
+user_personal_info : []
+user_areas_of_interest : ['prayer times', 'location']
+short_term_memory : [['كم ساعة متبقية على آذان الظهر', 'From llm knowledge tool 🤖 >> لا يمكنني معرفة الوقت المتبقي على اذان الظهر بدقة بدون معرفة موقعك الجغرافي.'], ['كم ساعة متبقية على آذان الظهر', 'From get current datetime tool🗓️ >> أنا آسف، لا يمكنني معرفة الوقت المتبقي على اذان الظهر بدون معرفة موقعك الجغرافي.']]
+long_term_memory : []

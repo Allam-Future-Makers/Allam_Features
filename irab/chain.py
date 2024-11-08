@@ -164,9 +164,7 @@ class IrabChain:
         return gemini_result  # , output_as_text
 
     def __call__(self, paragraph):
-        text_result = self.process_irab(paragraph)[
-            1
-        ]  # this 1 is used with the agent tool calling.
+        text_result = self.process_irab(paragraph)  # this 1 is used with the agent tool calling.
         return text_result
 
 
