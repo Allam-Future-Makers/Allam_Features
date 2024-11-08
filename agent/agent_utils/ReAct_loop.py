@@ -96,6 +96,7 @@ class ReActLoop:
 
         # Execute the initial prompt
         response = self._execute(Query)
+        print(response) if self.instance.verbose else None
         tool = "None"
 
         # Main ReAct loop
@@ -135,13 +136,14 @@ class ReActLoop:
 
                 try:
                     if tool != "None":
-                        print("Current Response:--------",response)
                         response = f"From {tool} >> " + re.findall("Answer: .*", response, re.DOTALL)[0]
                         response = re.sub(r'Answer:\s*', '', response)
                         response = re.sub(r'\s{2,}', ' ', response)
+                        print(response) if self.instance.verbose else None
 
                     else:
                         response = re.findall("Answer: .*", response, re.DOTALL)[0]
+                        print(response) if self.instance.verbose else None
                     
                 except Exception as e:
                     try:
