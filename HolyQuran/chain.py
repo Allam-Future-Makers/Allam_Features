@@ -23,18 +23,22 @@ class HolyQuranChain:
             "temperature": 0.00,
         }
 
+
     def _get_similar_context(self, query):
         res, hits, best_hit = search_quran(query)
-        context = ""
-        for i, hit in enumerate(hits[:3], start=1):
-            d = hit["_source"]
-            c = {}
-            c["نص_الآية"] = d["Ayah"]
-            c["إعراب_الآية"] = d["I3rab"]
-            c["تفسير_الآية"] = d["Tafseer_Saadi"]
-            c["التلاوة_و_القراءة_الصحيحة_للآية_عبر_رابط_لمقطع_صوتى"] = d["telawa"]
-            context = context + "النص_{i}" + str(c)
-        return context
+        context = []
+        c = ""
+        for i,hit in enumerate(hits[:3], start=1):
+            d = hit["_source"] 
+            c = c + 'نص_الآية' + " " + d['Ayah'] + " " 
+            c = c + 'إعراب_الآية' +  d['I3rab'] + " "
+            c = c + 'تفسير_الآية' + d['Tafseer_Saadi'] + " "
+            c = c + 'التلاوة_و_القراءة_الصحيحة_للآية_عبر_رابط_لمقطع_صوتى' + d['telawa'] + " "
+            context.append(f"النص_{i}" + str(c))
+            with open("test.txt", "a") as f:
+                f.write(str(context)) 
+
+        return "\n".join(context)
 
     def get_results(self, query):
 
@@ -55,6 +59,10 @@ class HolyQuranChain:
         )
 
         try:
+            def log(x):
+                print("From Allam: --- ", x)
+                return x
+
             chain = (
                 {
                     "query": RunnablePassthrough(),
@@ -62,6 +70,7 @@ class HolyQuranChain:
                 }
                 | ayah_prompt_allam
                 | self.watsonx_llm
+                | RunnableLambda(lambda x: log)
                 | JsonOutputParser()
             )
             result = chain.invoke(query)["answer"]
