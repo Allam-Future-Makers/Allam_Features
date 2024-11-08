@@ -1,6 +1,8 @@
-import os
-grandparent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__)))
-print(grandparent_dir)
+import os, sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+grandparent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+sys.path.append(grandparent_dir)
 
 from agent.agent_utils.handle_multimodality import HandleMultiModality
 
