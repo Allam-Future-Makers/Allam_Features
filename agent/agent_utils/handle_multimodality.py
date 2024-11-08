@@ -4,7 +4,6 @@ from langchain_core.output_parsers import JsonOutputParser
 
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-grandparent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 
 from agent_prompts import image_modality_prompt 
 from agent_utils.ocr_api_tool import ScanDocFlowOcr
@@ -42,7 +41,10 @@ class HandleMultiModality:
             image_data = base64.b64encode(image_file.read()).decode("utf-8")
         
         chain = image_modality_prompt.prompt | self.gemini_llm | JsonOutputParser()
-        result = chain.invoke({"query":self.query, "image_data":image_data})
+        try:
+            result = chain.invoke({"query":self.query, "image_data":image_data})
+        except:
+            return self.img2txt(image_path)
         self.instance.iterator +=1
         description = result['precise_description'] 
         query_answer = result['query_answer']
@@ -117,4 +119,3 @@ class HandleMultiModality:
     
     def __call__(self):
         return self.invoke()
-
