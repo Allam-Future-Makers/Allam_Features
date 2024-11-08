@@ -7,3 +7,4 @@ draft/*
 *.log
 memory_for_**.txt
 agent_inputs/**
+.env
