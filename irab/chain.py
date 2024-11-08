@@ -154,18 +154,18 @@ class IrabChain:
 
         self.instance.iterator += 1
 
-        # output_as_text = " ".join(
-        #     [
-        #         f'كلمة "{item["word"]}" هي {item["irab"]}.'
-        #         for item in gemini_result["irab_results"]
-        #     ]
-        # )
+        self.output_as_text = " ".join(
+             [
+                 f'كلمة "{item["word"]}" هي {item["irab"]}.'
+                 for item in gemini_result["irab_results"]
+             ]
+        )
 
-        return gemini_result  # , output_as_text
+        return gemini_result
 
     def __call__(self, paragraph):
-        text_result = self.process_irab(paragraph)  # this 1 is used with the agent tool calling.
-        return text_result
+        _ = self.process_irab(paragraph)  
+        return self.output_as_text
 
 
 # Usage
