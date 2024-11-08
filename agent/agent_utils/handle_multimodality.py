@@ -50,6 +50,10 @@ class HandleMultiModality:
         query_answer = result['query_answer']
         needs_ocr = result['needed_ocr']
         language = result['language']
+        print("description: ", description)
+        print("query_answer: ", query_answer)
+        print("needs_ocr: ", str(needs_ocr))
+        print("language: ", language)
 
         if needs_ocr and (language.lower() == 'arabic'):
             text_in_image = self.get_text_via_ocr(image_path)
