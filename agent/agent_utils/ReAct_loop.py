@@ -118,6 +118,7 @@ class ReActLoop:
 
             # Extract the final answer (Answer:)from the response if the ReAct loop reached its end by the LLM
             elif "answer:" in response.lower():
+                print("the toool name, ------", tool)
                 if tool == "to_msa":
                     tool = tool + " 🕵️"
                 elif tool == "irab":

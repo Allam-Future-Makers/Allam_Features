@@ -20855,3 +20855,9 @@ Exception: Elasticsearch connection failed
 2024-11-08 08:40:16,252 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.058s]
 2024-11-08 08:40:16,253 - INFO - Successfully connected to Elasticsearch.
 2024-11-08 08:40:16,261 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.008s]
+2024-11-08 08:56:47,157 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.024s]
+2024-11-08 08:56:47,158 - INFO - Successfully connected to Elasticsearch.
+2024-11-08 08:56:47,167 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.008s]
+2024-11-08 08:57:08,846 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.012s]
+2024-11-08 08:57:08,846 - INFO - Successfully connected to Elasticsearch.
+2024-11-08 08:57:08,850 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.003s]
