@@ -21,9 +21,10 @@ class Main:
         chain = HolyQuranChain(self)
         
         s = time.time()
-        text_result, links = chain.get_results(query) # links = [https://www.everyayah.com/data/Yasser_Ad-Dussary_128kbps/094006.mp3]
+        print(chain._get_similar_context(query))
+        # text_result, links = chain.get_results(query) # links = [https://www.everyayah.com/data/Yasser_Ad-Dussary_128kbps/094006.mp3]
         # links is a list of links and can sometimes be empty
-        
+        #print(text_result)
         e = time.time()
         print(f"Coversion Ellapsed: {e-s : 0.8f} seconds")
 

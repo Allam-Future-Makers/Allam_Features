@@ -24,7 +24,8 @@ class HolyQuranChain:
     
     def _get_similar_context(self, query):
         res, hits, best_hit = search_quran(query)
-        context = ""
+        print(hits)
+        context = []
         for i,hit in enumerate(hits[:3], start=1):
             d = hit["_source"] 
             c = {}
@@ -32,8 +33,11 @@ class HolyQuranChain:
             c['إعراب_الآية'] = d['I3rab']
             c['تفسير_الآية'] = d['Tafseer_Saadi']
             c['التلاوة_و_القراءة_الصحيحة_للآية_عبر_رابط_لمقطع_صوتى'] = d['telawa']
-            context = context + "النص_{i}" + str(c)
-        return context
+            context.append(f"النص_{i}" + str(c))
+            with open("test.txt", "a") as f:
+                f.write(str(context))
+
+        return len(context)
     
     def get_results(self, query):
 
