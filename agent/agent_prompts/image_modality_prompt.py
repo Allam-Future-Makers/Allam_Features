@@ -10,7 +10,7 @@ prompt = ChatPromptTemplate.from_messages(
         3. 'needed_ocr': Boolean value True if the answer relies mainly on text in the image, otherwise False.
         4. 'language': The primary language in the image, one of ['English', 'Arabic', 'Other', '']. Use 'Other' for mixed or unknown languages, and '' if there’s no text.
 
-        Return your response as JSON with only these four keys: ['precise_description', 'query_answer', 'needed_ocr', 'language'].
+        Return your response as valid JSON with only these four keys: ['precise_description', 'query_answer', 'needed_ocr', 'language'].
         """),
         (
             "user",

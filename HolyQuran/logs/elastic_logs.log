@@ -20907,3 +20907,18 @@ Exception: Elasticsearch connection failed
 2024-11-08 12:33:06,455 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
 2024-11-08 12:33:06,456 - INFO - Successfully connected to Elasticsearch.
 2024-11-08 12:33:06,457 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.002s]
+2024-11-08 13:02:22,119 - INFO - NumExpr defaulting to 8 threads.
+2024-11-08 13:02:35,611 - INFO - NumExpr defaulting to 8 threads.
+2024-11-08 13:02:36,980 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-08 13:02:36,980 - INFO - Successfully connected to Elasticsearch.
+2024-11-08 13:02:36,984 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.004s]
+2024-11-08 13:02:41,228 - INFO - Client successfully initialized
+2024-11-08 13:02:43,845 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-08 13:02:43,933 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.013s]
+2024-11-08 13:02:43,933 - INFO - Successfully connected to Elasticsearch.
+2024-11-08 13:02:44,482 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.549s]
+2024-11-08 13:02:48,496 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-08 13:02:48,498 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-08 13:02:48,511 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-08 13:02:48,511 - INFO - Successfully connected to Elasticsearch.
+2024-11-08 13:02:48,554 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.042s]

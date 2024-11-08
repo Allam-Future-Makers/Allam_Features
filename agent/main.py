@@ -19,7 +19,8 @@ class Main:
             "AIzaSyDof2hE1nOYkSx3vslyRl696NVoBeXCKH8",
             "AIzaSyC57_NvRsktnNgLvtyutDclVkCS2I4MKDI",
             "AIzaSyDzyMWZB82YyWKzf21k6qdiAn4JG6DXL-Q",
-            "AIzaSyC2YG-msSXWXOxnzaxSlEPnQE4scpNLOAc"
+            "AIzaSyC2YG-msSXWXOxnzaxSlEPnQE4scpNLOAc",
+            "AIzaSyDpscRru_hfu_2KSa_pWFDSmiHfp3Tj7jM", #hos
         ]
         self.ocr_keys = ["V54R51Hw76NjxTksiDS7BjxOOBuVJcKoZQEcLkGvio8Qn9D09KCisTkqDDaKBUGV"]
         self.iterator = 0

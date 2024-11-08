@@ -41,7 +41,10 @@ class HandleMultiModality:
             image_data = base64.b64encode(image_file.read()).decode("utf-8")
         
         chain = image_modality_prompt.prompt | self.gemini_llm | JsonOutputParser()
-        result = chain.invoke({"query":self.query, "image_data":image_data})
+        try:
+            result = chain.invoke({"query":self.query, "image_data":image_data})
+        except:
+            return self.img2txt(image_path)
         self.instance.iterator +=1
         description = result['precise_description'] 
         query_answer = result['query_answer']
