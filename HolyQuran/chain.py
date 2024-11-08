@@ -86,6 +86,10 @@ class HolyQuranChain:
                 print(f"Error has occured:{e}")
 
         self.instance.iterator += 1
+        if links:
+            pattern = r"http[s]?://\S+"
+            # Remove the URL from the text
+            result = re.sub(pattern, "", result).replace("الرابط","المقطع الصوتي")
         return result, links
 
     def __call__(self, query):

@@ -4,6 +4,7 @@ from langchain_core.output_parsers import JsonOutputParser
 
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+grandparent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 
 from agent_prompts import image_modality_prompt 
 from agent_utils.ocr_api_tool import ScanDocFlowOcr

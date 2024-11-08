@@ -121,7 +121,7 @@ async def quran_endpoint(input: QuranInput):
 @app.post("/api/irab")
 async def irab_endpoint(input: IrabInput):
     try:
-        result = irab_chain.process_irab(input.paragraph)[0]
+        result = irab_chain.process_irab(input.paragraph)
         return result
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

@@ -2,6 +2,9 @@ import sys, os
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
+grandparent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+sys.path.append(grandparent_dir)
+
 from Mo3gam_Search.config.elastic_config import ElasticConfig
 from Mo3gam_Search.elastic.search_manager import SearchManager
 

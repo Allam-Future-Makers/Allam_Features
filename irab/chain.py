@@ -1,5 +1,6 @@
-import sys,os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+import sys, os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from importlib import reload
 from irab import prompts
@@ -23,10 +24,9 @@ import os, time  # noqa: E402, F401
 
 class IrabChain:
     def __init__(self, instance):
-        
         # Set up variables
-        self.instance = instance 
-                
+        self.instance = instance
+
         # Initialize models
         self.model_params = {
             "max_new_tokens": 600,
@@ -50,9 +50,23 @@ class IrabChain:
         split_results = split_chain.invoke({"sentence": sentence})
         sentences = split_results.replace("-", "").split("\n")
         try:
-            sentences = list(set([sentence.strip() for sentence in sentences[sentences.index("Output:") + 1 :]]))
+            sentences = list(
+                set(
+                    [
+                        sentence.strip()
+                        for sentence in sentences[sentences.index("Output:") + 1 :]
+                    ]
+                )
+            )
         except:
-            sentences = list(set([sentence.strip() for sentence in sentences[sentences.index(" Output:") + 1 :]]))
+            sentences = list(
+                set(
+                    [
+                        sentence.strip()
+                        for sentence in sentences[sentences.index(" Output:") + 1 :]
+                    ]
+                )
+            )
         return sentences
 
     def build_mini_chain(self, sentence, original_sentence):
@@ -96,11 +110,10 @@ class IrabChain:
         return result
 
     def process_irab(self, paragraph):
-
-                # Initialize models
+        # Initialize models
         self.allam_model = WatsonxLLM(
-            project_id= self.instance.watsons['project_id'],
-            apikey= self.instance.watsons['key'],
+            project_id=self.instance.watsons["project_id"],
+            apikey=self.instance.watsons["key"],
             model_id="sdaia/allam-1-13b-instruct",
             url="https://eu-de.ml.cloud.ibm.com",
             params=self.model_params,
@@ -109,9 +122,10 @@ class IrabChain:
             model="gemini-1.5-pro",
             max_output_tokens=None,
             temperature=0.18,
-            api_key= self.instance.gemini_keys[self.instance.iterator%(len(self.instance.gemini_keys))]
+            api_key=self.instance.gemini_keys[
+                self.instance.iterator % (len(self.instance.gemini_keys))
+            ],
         )
-
 
         self.paragraph = paragraph
 
@@ -132,26 +146,32 @@ class IrabChain:
         # print(json.dumps(results, indent=4, ensure_ascii=False))
         # print("\n" + "#" * 50 + "\n")
         # Step 4: Parse results using the Gemini model
-        
+
         json_parse_chain = json_parse_prompt | self.gemini_model | JsonOutputParser()
         gemini_result = json_parse_chain.invoke(
             {"sentence": self.paragraph, "irab_results": results}
         )
-        
+
         self.instance.iterator += 1
 
-        output_as_text = " ".join([f'كلمة "{item["word"]}" هي {item["irab"]}.' for item in gemini_result["irab_results"]])
+        # output_as_text = " ".join(
+        #     [
+        #         f'كلمة "{item["word"]}" هي {item["irab"]}.'
+        #         for item in gemini_result["irab_results"]
+        #     ]
+        # )
 
-        return gemini_result, output_as_text
-    
+        return gemini_result  # , output_as_text
 
     def __call__(self, paragraph):
-        text_result = self.process_irab(paragraph)[1] # this 1 is used with the agent tool calling.
-        return text_result 
+        text_result = self.process_irab(paragraph)[
+            1
+        ]  # this 1 is used with the agent tool calling.
+        return text_result
 
 
 # Usage
-#processor = IrabProcessor()
+# processor = IrabProcessor()
 # long_sentence = "إنَّ العلمَ نورٌ يهتدي به الإنسانُ في ظلماتِ الجهلِ، ولن ينالَ المجدَ من لم يسع إليه بجدٍّ وإصرارٍ"
-#long_sentence = "ذهبَ الطِّفلُ إلى المدرسةِ صباحًا. قرأَ في الكتابِ الجديدِ. شرحَ المعلمُ الدرسَ بوضوحٍ. استمعَ الطُّلابُ بانتباهٍ. وعادَ الجميعُ إلى منازلِهم بعد انتهاءِ الدرسِ."
-#final_result = processor.process_irab(long_sentence)
+# long_sentence = "ذهبَ الطِّفلُ إلى المدرسةِ صباحًا. قرأَ في الكتابِ الجديدِ. شرحَ المعلمُ الدرسَ بوضوحٍ. استمعَ الطُّلابُ بانتباهٍ. وعادَ الجميعُ إلى منازلِهم بعد انتهاءِ الدرسِ."
+# final_result = processor.process_irab(long_sentence)
