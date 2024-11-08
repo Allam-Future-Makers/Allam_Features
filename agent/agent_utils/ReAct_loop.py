@@ -114,6 +114,7 @@ class ReActLoop:
                 if tool != "None":
                     tool_res = eval(f'{tool}("{tool_input}")')
                     response = f"Observation: {tool_res}"
+                    print(response) if self.instance.verbose else None
                 else:
                     response = "Observation: I cannot answer using my available actions. so I will inform the user to explain more its query as I cannot answer it"
 
