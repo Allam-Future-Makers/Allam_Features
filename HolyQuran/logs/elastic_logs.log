@@ -21006,3 +21006,17 @@ Exception: Elasticsearch connection failed
 2024-11-08 15:57:19,292 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
 2024-11-08 15:57:19,292 - INFO - Successfully connected to Elasticsearch.
 2024-11-08 15:57:19,323 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.030s]
+2024-11-08 16:19:57,294 - INFO - NumExpr defaulting to 8 threads.
+2024-11-08 16:20:10,906 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.012s]
+2024-11-08 16:20:10,966 - INFO - Successfully connected to Elasticsearch.
+2024-11-08 16:20:10,973 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.007s]
+2024-11-08 16:20:10,990 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.009s]
+2024-11-08 16:20:10,991 - INFO - Successfully connected to Elasticsearch.
+2024-11-08 16:20:11,070 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.079s]
+2024-11-08 16:20:35,646 - INFO - NumExpr defaulting to 8 threads.
+2024-11-08 16:20:43,282 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-08 16:20:43,282 - INFO - Successfully connected to Elasticsearch.
+2024-11-08 16:20:43,285 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.003s]
+2024-11-08 16:20:43,293 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-08 16:20:43,293 - INFO - Successfully connected to Elasticsearch.
+2024-11-08 16:20:43,327 - INFO - POST http://localhost:9200/quran_ayah/_search [status:200 duration:0.034s]
