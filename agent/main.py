@@ -26,6 +26,7 @@ class Main:
                          "G9qqBe1J4tApneH71ibEANapegkACA79gD8KCFAFWd1EWd9C7THN2YWljCcK85Ap",
                          "5208xzxrCgD0ToV0LWZA1KEoR4GFu6CPKwqpMFMFFRHw88iWxoS1NvSS4XQSHNpA"]
         self.iterator = 0
+        self.iterator_pro = 0
         self.id = id
         self.verbose = verbose
         self.grade_answer = grade_answer

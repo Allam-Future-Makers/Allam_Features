@@ -21,11 +21,11 @@ class HallucinationChain:
         self.ReAct_temp_object = ReActTemp(self.instance)
         self.system = self.ReAct_temp_object.update_system_template()
 
-        gemini_llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", api_key=self.instance.gemini_keys[self.instance.iterator % len(self.instance.gemini_keys)])
+        gemini_llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro", api_key=self.instance.gemini_keys[self.instance.iterator_pro % len(self.instance.gemini_keys)])
         
         hallucination_grader = prompt | gemini_llm | JsonOutputParser()
         
         result = hallucination_grader.invoke({"query": query, "answer": answer, "messages":ReAct_messages, "ReAct_system_template": self.system})['is_hallucinating']
 
-        self.instance.iterator +=1
+        self.instance.iterator_pro +=1
         return result
