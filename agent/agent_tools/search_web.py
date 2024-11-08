@@ -53,13 +53,6 @@ class WebSearch(ScrapLink):
                 
                 # Store title-link pair and scrape summary for each top link
                 self.search_result[title] = link
-                print("-------Link: ",link)
                 self.result_text += f"From {title}: {super().scrap(link)}\n"
-                print("-------Results: ", len(self.result_text))
 
         return self.result_text
-    
-object = WebSearch()
-results = object.search_query("الساعة الآن بتوقيت القاهرة")
-with open ("results.txt", 'w') as f:
-    f.write(results)

@@ -90,13 +90,13 @@ class ReActTemp:
             Action: to_msa: "الطفل الصغير بيلعب" 
             PAUSE
 
-            سوف يتم استدعائك مرة أخرى مع هذا:
+            You will be called again with:
             Observation: "الطفل الصغير يلعب"
             Second Thought: النص الآن بالعربية الفصحى، وسأقوم بخطوة ثانية لإعراب الجملة.
             Action: irab: "الطفل الصغير يلعب"
             PAUSE
 
-            سوف يتم استدعائك مرة أخرى مع هذا:
+            You will be called again with:
             Observation: "الطفل: مبتدأ مرفوع وعلامة رفعه الضمة الظاهرة على آخره\nالصغير: نعت مرفوع وعلامة رفعه الضمة\nيلعب: فعل مضارع مرفوع بالضمة"
             Final Thought: الآن قد قمت بالخطوات و لدي الإجابة سأخرجها
             Answer: "إعراب الجملة المعطاة هو كالآتى: الطفل: مبتدأ مرفوع وعلامة رفعه الضمة الظاهرة على آخره\nالصغير: نعت مرفوع وعلامة رفعه الضمة\nيلعب: فعل مضارع مرفوع بالضمة"
@@ -108,14 +108,12 @@ class ReActTemp:
             First Thought: يجب أن أشكل النص المعطى . هذا النص المعطى به كلمات ليست باللغة العربية الفصحى لذلك سوف أقوم بخطوتين: أولا تصحيح  النص إلى اللغة العربية الفصحى. ثانيا: سوف أقوم بتشكيل النص المصحح. سوف أقوم بالخطوة الأولى الآن.
             Action: to_msa: " جيت ،وجبت الحياة معاك بكل أنواعها وألوانها : فالنبات ينبت ، والأشجار مثمرة ، والقطة بتنونو ."
             PAUSE
-            سيتم استدعائك مرة أخرى مع هذا:
-
+            Your response stops here and you will be called again with:
             Observation:  أقبلت ،وأقبلت الحياة معك بكل أنواعها وألوانها : فالنبات ينبت ، والأشجار مثمرة ، والقطة تموء .
             second Thought: الآن قمت بتحويل النص إلى اللغة العربية الفصحى. والآن سوف أقوم بالخطوة الثانية وهى تشكيل النص المصحح.
             Actoin: diacratize: "أقبلت ،وأقبلت الحياة معك بكل أنواعها وألوانها : فالنبات ينبت ، والأشجار مثمرة ، والقطة تموء .
             PAUSE
-
-            سيتم استدعائك مرة أخرى مع هذا:
+            Your response stops here and You will be called again with:
             Observation: أقبَلْتَ ،وأقبَلَتِ الحياةُ معَكَ بكُلَّ أنواعِهَا وألوانِهَا : فالنَّباتُ يَنبُتْ ، والأَشْجَارُ مثمِرَةٌ ، والقِطَةُ تَمُوءُ .
             Final Thought: الآن لقد قمت بجميع الخطوات المطلوبة ولدى الإجابة. سوف أخرجها
             Answer: تشكيل النص المعطى بعد تحويله إلى اللغة العربية الفصحى هو: أقبَلْتَ ،وأقبَلَتِ الحياةُ معَكَ بكُلَّ أنواعِهَا وألوانِهَا : فالنَّباتُ يَنبُتْ ، والأَشْجَارُ مثمِرَةٌ ، والقِطَةُ تَمُوءُ 
@@ -127,8 +125,7 @@ class ReActTemp:
             First Thought: I need exactly one step to answer. The step is to convert the english sentence "The cat is on the roof" to the Modern Standard Arabic. I will use one of my available actions (to_msa). Then output the answer
             Action: to_msa: "The cat is on the roof"
             PAUSE
-            سيتم استدعائك مرة أخرى مع هذا:
-
+            Your response stops here and you will be called again with:
             Observation: القطة على السطح
             Final Thought: Now I converted the sentence to arabic. I have the answer and will output it.
             Answer: The sentnce after converting it to arabic is "القطة على السطح"
@@ -140,8 +137,7 @@ class ReActTemp:
             First Thought: أحتاج إلى تفسير الآية القرآنية المذكورة .سأقوم بخطوة واحدة باستخدام أداة holy_quran للحصول على تفسير الآية.
             Action: holy_quran: "تفسير إن مع العسر يسرا"
             PAUSE
-            سيتم استدعائك مرة أخرى مع هذا:
-
+            Your response stops here and you will be called again with:
             Observation: تفسير الآية الكريمة "إن مع العسر يسرا" يُظهر عظمة الله ولطفه بعباده، فهي بشرى للمؤمنين بأن مع الشدة والمشقة سيأتي التيسير والفرج. تكرار الجملة يؤكد هذا المعنى ويعزز الأمل.
             Final Thought: لقد حصلت على التفسير المطلوب ويمكنني الآن تقديم الإجابة.
             Answer: تفسير الآية "إن مع العسر يسرا" هو بشرى للمؤمنين بأن بعد كل شدة يأتي تيسير وفرج من الله. تكرار الجملة يعزز هذا المعنى ويؤكد لطف الله بعباده.
@@ -153,20 +149,17 @@ class ReActTemp:
             First Thought: I need to do three actions in order (1- explain what is Jannah. 2- convert the answer in arabic. 3- diacratize the arabic answer). For the first step, since this is not asking for telawa, irab or tafseer of the Holy Quran and only asks for a meaning of "Jannah". I can search the web for this.
             Action: web_search: "explain what is Jannah".
             PAUSE
-
-            سيتم استدعائك مرة أخرى مع هذا:
+            Your response stops here and you will be called again with:
             Observation: Jannah refers to Paradise in Islamic Holy Quran, described as a place of eternal peace and rewards for the righteous. It is considered the ultimate goal for believers.
             Second Thought: Now, I explained what is Jannah. I still need to provide the Arabic term with its diacritics, I’ll generate it accurately in MSA.
             Action: to_msa: "Jannah refers to Paradise in Islamic Holy Quran, described as a place of eternal peace and rewards for the righteous. It is considered the ultimate goal for believers.".
             PAUSE
-
-            سيتم استدعائك مرة أخرى مع هذا:
+            Your response stops here and you will be called again with:
             Observation: تشير الجنة إلى الجنة في القرآن الكريم، والتي توصف بأنها مكان السلام الأبدي ومكافآت الصالحين. ويعتبر الهدف النهائي للمؤمنين.
             Third Thought: Now I did two steps and still have the final step (diacratize the text). I will use diacratize to do this.
             Action: diacratize: "تشير الجنة إلى الجنة في القرآن الكريم، والتي توصف بأنها مكان السلام الأبدي ومكافآت الصالحين. ويعتبر الهدف النهائي للمؤمنين."
             PAUSE
-
-            You will be called again with this:
+            Your response stops here and you will be called again with this:
             Observation: تَشِيرُ الجَنَّةُ إِلَى الجَنَّةِ فِي القُرْآنِ الكَرِيمِ، وَالَّتِي تُوْصَفُ بِأَنَّهَا مَكَانُ السَّلَامِ الأَبَدِيِّ وَمَكَافَآتِ الصَّالِحِينَ. وَيُعْتَبَرُ الهَدَفُ النِّهَائِيُّ لِلْمُؤْمِنِينَ
             Final Thought: Now I did the three steps and have the answer. I will output it
             Answer: تَشِيرُ الجَنَّةُ إِلَى الجَنَّةِ فِي القُرْآنِ الكَرِيمِ، وَالَّتِي تُوْصَفُ بِأَنَّهَا مَكَانُ السَّلَامِ الأَبَدِيِّ وَمَكَافَآتِ الصَّالِحِينَ. وَيُعْتَبَرُ الهَدَفُ النِّهَائِيُّ لِلْمُؤْمِنِينَ
@@ -177,8 +170,7 @@ class ReActTemp:
             First Thought: The user needs to know the meaning of I love you in arabic. I will use one Action which is to_msa.
             Action: to_msa: "I love you"
             PAUSE
-
-            سيتم استدعائك مرة أخرى مع هذا:
+            Your response stops here and you will be called again with:
             Observation: أنا أحبك
             Final Thought: Now I know that I love you means 'أنا أحبك' in arabic I will output the answer.
             Answer: I love you in arabic means أنا أحبك
@@ -189,8 +181,7 @@ class ReActTemp:
             First Thought: لا يمكننى معرفة تاريخ اليوم بالضبط باتسخدام معلوماتى ولكن لدى أداة مخصصة لمعرفة الوقت والتاريخ . سوف أقوم بخطوة واحدة وهى استخدام أداة الوقت والتاريخ.
             Action: get_current_datetime: "None"
             PAUSE
-
-            سيتم استدعائك مرة أخرى مع هذا:
+            Your response stops here and you will be called again with:
             Observation: Today is Friday, 2024-12-01 and the current time is 02:17:53 PM (على سبيل المثال)
             Final Thought: الآن قمت بالخطوة الوحيدة المطلوبة ولدى الإجابة سأقوم بإخراجها.
             Answer: اليوم هو الجمعة الموافق 2024-12-01
@@ -202,8 +193,7 @@ class ReActTemp:
             First Thought: أريد أن أجد معنى كلمة عمر. يمكننى الإجابة من معلوماتى العامة لكن سوف أبحث على الإنترنت لأعطى إجابة أكثر دقة . سوف أقوم بخطوة واحدة وهى استخدام أداة البحث فى الإنترنت.
             Action: web_search: "معنى كلمة عمر فى جملة عمر علام رجل"
             PAUSE
-
-            سيتم استدعائك مرة أخرى مع هذا:
+            Your response stops here and you will be called again with:
             Observation: اسم علم مذكر عربي محبَّب إلى المسلمين والنصارى حباً بعمر بن الخطاب . والاسم مشتق من العُمْر وهو الحياة؛ يسمى به تفاؤلاً على العمر المديد للمولود. والعَمْر والعُمْر والعُمُر: الحياة أو ما طال منها، من الفعل عَمَرَهُ اللهُ: أبقاه وأطال عمره. وعَمِرَ فلان: عاش زمناً طويلاً. وعَمَّره اللهُ: أبقاه. والاسم ممنوع من الصرف لأنه معدول عن عامر. 
             Final Thought: الآن قمت بالخطوة الوحيدة المطلوبة ولدى الإجابة سأقوم بإخراجها.
             Answer: اسم عمر فى الجملة يشير إلى اسم علم مذكر عربي محبَّب إلى المسلمين والنصارى حباً بعمر بن الخطاب . والاسم مشتق من العُمْر وهو الحياة؛ يسمى به تفاؤلاً على العمر المديد للمولود. والعَمْر والعُمْر والعُمُر: الحياة أو ما طال منها، من الفعل عَمَرَهُ اللهُ: أبقاه وأطال عمره. وعَمِرَ فلان: عاش زمناً طويلاً. وعَمَّره اللهُ: أبقاه. والاسم ممنوع من الصرف لأنه معدول عن عامر.
@@ -214,12 +204,11 @@ class ReActTemp:
 
 
             Mandatory Notes: 
-                1. Always use "Thought:", "Action:", "PAUSE", "Observation:", and "Answer:" in responses.
-                2. "PAUSE" must follow an Action in the same response, and Observation must be followed by Thought.
-                3. Give Answer only if Observation has been provided just before.
-                4. Use actions for answers when possible; rely on own knowledge only if actions or web search don't apply.
-                5. For social/greeting questions, use own knowledge, formatted as Answer: with a friendly response.
-                6. Preserve action inputs exactly as given; replace only double quotes with single quotes.
+                1. "PAUSE" must follow an Action in the same response, and Observation must be followed by Thought.
+                2. Give Answer only if Observation has been provided just before.
+                3. Use actions for answers when possible; rely on own knowledge only if actions or web search don't apply.
+                4. For social/greeting questions, use own knowledge, formatted as Answer: with a friendly response.
+                5. Preserve action inputs exactly as given; replace only double quotes with single quotes.
 
             Now it's your turn:
             """.strip()

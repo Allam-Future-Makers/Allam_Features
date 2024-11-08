@@ -101,14 +101,14 @@ class ReActLoop:
         # Main ReAct loop
         for i in range(20):
             # Check for PAUSE in the output and extract the tool and tool input returend from (Action:)
-            if "PAUSE" in response and "answer:" not in response.lower():
+            if "PAUSE" in response and ("answer:" not in response.lower()):
                 match = re.findall(
-                    r'Action: (to_msa|irab|tashkeel|holy_quran|web_search|llm_knowledge|get_current_datetime): "(.*?)"',
+                    r'Action: (to_msa|irab|diacratize|holy_quran|web_search|llm_knowledge|get_current_datetime): (?:\'|")(.*?)(?:\'|")',
                     response,
                 )
                 if match:
                     tool, tool_input = match[0][0], match[0][1]
-
+                
                 # Execute the tool and update the response to be given back to the LLM to continue ReAct loop
                 if tool != "None":
                     tool_res = eval(f'{tool}("{tool_input}")')
@@ -118,29 +118,31 @@ class ReActLoop:
 
             # Extract the final answer (Answer:)from the response if the ReAct loop reached its end by the LLM
             elif "answer:" in response.lower():
-                print("the toool name, ------", tool)
                 if tool == "to_msa":
-                    tool = tool + " 🕵️"
+                    tool = "to Modern Standard Arabic tool" + " 🕵️"
                 elif tool == "irab":
-                    tool = tool + " 📚"
+                    tool = "irab tool" + " 📚"
                 elif tool == "diacratize":
-                    tool = tool + " 🇵🇸"
+                    tool = "diacratize tool" + " 🇵🇸"
                 elif tool == "holy_quran":
-                    tool = tool + " 🕌"
+                    tool = "holy quran tool" + " 🕌"
                 elif tool == "web_search":
-                    tool = tool + " 🌐"
+                    tool = "web search tool" + " 🌐"
                 elif tool == "llm_knowledge":
-                    tool = tool + " 🤖"
+                    tool = "llm knowledge tool" + " 🤖"
                 elif tool == "get_current_datetime":
-                    tool = tool + "🗓️"
+                    tool = "get current datetime tool" + "🗓️"
 
                 try:
-                    response = (
-                        f"From {tool} >> "
-                        + re.findall("Answer: .*", response, re.DOTALL)[0]
-                        if tool != "None"
-                        else re.findall("Answer: .*", response, re.DOTALL)[0]
-                    )
+                    if tool != "None":
+                        print("Current Response:--------",response)
+                        response = f"From {tool} >> " + re.findall("Answer: .*", response, re.DOTALL)[0]
+                        response = re.sub(r'Answer:\s*', '', response)
+                        response = re.sub(r'\s{2,}', ' ', response)
+
+                    else:
+                        response = re.findall("Answer: .*", response, re.DOTALL)[0]
+                    
                 except Exception as e:
                     try:
                         response = (
