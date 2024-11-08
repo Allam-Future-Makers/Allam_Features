@@ -12,7 +12,7 @@ from syntax_enhancer.chain import SyntaxEnhancerChain
 from to_MSA.chain import ToMSAChain
 from fastapi import FastAPI, File, Form, UploadFile
 from typing import Optional
-
+from fastapi.staticfiles import StaticFiles
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -38,6 +38,8 @@ class DiacratizeInstance:
 
 
 app = FastAPI()
+app.mount("/static", StaticFiles(directory="agent/agent_inputs"), name="static")
+
 
 app.add_middleware(
     CORSMiddleware,
@@ -202,28 +204,29 @@ async def agent_endpoint(input: AgentInput):
 
 @app.post("/api/chat")
 async def upload_files(
-    id: str,
+    id: str = Form(..., description="Agent ID"),
     image: Optional[UploadFile] = File(None, description="Optional image file"),
     voice: Optional[UploadFile] = File(None, description="Optional voice file"),
-    text_input: Optional[str] = Form(None, description="Optional text input"),
+    query: Optional[str] = Form(None, description="Optional text input"),
 ):
+    print(id, image, voice, query)
     try:
         # download voice and image if not none
         voice_path = None
         image_path = None
 
         if voice:
-            voice_path = f"agent_inputs/voice_{voice.filename}"
+            voice_path = f"agent/agent_inputs/voice_{voice.filename}"
             with open(voice_path, "wb") as f:
                 f.write(voice.file.read())
 
         if image:
-            image_path = f"agent_inputs/image_{image.filename}"
+            image_path = f"agent/agent_inputs/image_{image.filename}"
             with open(image_path, "wb") as f:
                 f.write(image.file.read())
 
         agent = getOrCreateAgent(id)
-        answer = agent(text_input, voice_path, image_path)
+        answer = agent(query, voice_path, image_path)
         return {"answer": answer}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
