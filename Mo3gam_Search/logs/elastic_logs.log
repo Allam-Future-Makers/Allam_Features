@@ -22179,3 +22179,17 @@ Traceback (most recent call last):
   File "/home/omar71023/Documents/Allam_Features/Mo3gam_Search/config/elastic_config.py", line 37, in get_client
     raise Exception("Elasticsearch connection failed")
 Exception: Elasticsearch connection failed
+2024-11-09 00:11:33,623 - INFO - NumExpr defaulting to 8 threads.
+2024-11-09 00:11:40,946 - ERROR - An error occurred while trying to connect to Elasticsearch.
+Traceback (most recent call last):
+  File "/home/omar71023/Documents/Allam_Features/Mo3gam_Search/config/elastic_config.py", line 29, in get_client
+    es = Elasticsearch(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/elasticsearch/_sync/client/__init__.py", line 336, in __init__
+    node_configs = client_node_configs(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/elasticsearch/_sync/client/utils.py", line 110, in client_node_configs
+    node_configs = hosts_to_node_configs(hosts)
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/elasticsearch/_sync/client/utils.py", line 156, in hosts_to_node_configs
+    node_configs.append(url_to_node_config(host))
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/elastic_transport/client_utils.py", line 215, in url_to_node_config
+    raise ValueError(
+ValueError: URL must include a 'scheme', 'host', and 'port' component (ie 'https://localhost:9200')
