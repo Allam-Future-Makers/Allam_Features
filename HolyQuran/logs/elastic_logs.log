@@ -20539,3 +20539,319 @@ Exception: Elasticsearch connection failed
 2024-11-08 03:12:05,100 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
 2024-11-08 03:12:05,100 - INFO - Successfully connected to Elasticsearch.
 2024-11-08 03:12:05,102 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.003s]
+2024-11-08 04:59:07,938 - INFO - HEAD http://localhost:9200/ [status:N/A duration:0.000s]
+2024-11-08 04:59:07,938 - WARNING - Node <Urllib3HttpNode(http://localhost:9200)> has failed for 1 times in a row, putting on 1 second timeout
+2024-11-08 04:59:07,938 - WARNING - Retrying request after failure (attempt 0 of 3)
+Traceback (most recent call last):
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 167, in perform_request
+    response = self.pool.urlopen(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/util/retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connectionpool.py", line 495, in _make_request
+    conn.request(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connection.py", line 441, in request
+    self.endheaders()
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connection.py", line 279, in connect
+    self.sock = self._new_conn()
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connection.py", line 214, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x789b2d55d1e0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/elastic_transport/_transport.py", line 342, in perform_request
+    resp = node.perform_request(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 202, in perform_request
+    raise err from e
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x789b2d55d1e0>: Failed to establish a new connection: [Errno 111] Connection refused)
+2024-11-08 04:59:07,940 - INFO - HEAD http://localhost:9200/ [status:N/A duration:0.000s]
+2024-11-08 04:59:07,940 - WARNING - Node <Urllib3HttpNode(http://localhost:9200)> has failed for 2 times in a row, putting on 2 second timeout
+2024-11-08 04:59:07,940 - WARNING - Retrying request after failure (attempt 1 of 3)
+Traceback (most recent call last):
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 167, in perform_request
+    response = self.pool.urlopen(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/util/retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connectionpool.py", line 495, in _make_request
+    conn.request(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connection.py", line 441, in request
+    self.endheaders()
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connection.py", line 279, in connect
+    self.sock = self._new_conn()
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connection.py", line 214, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x789b2d55d420>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/elastic_transport/_transport.py", line 342, in perform_request
+    resp = node.perform_request(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 202, in perform_request
+    raise err from e
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x789b2d55d420>: Failed to establish a new connection: [Errno 111] Connection refused)
+2024-11-08 04:59:07,941 - INFO - HEAD http://localhost:9200/ [status:N/A duration:0.000s]
+2024-11-08 04:59:07,941 - WARNING - Node <Urllib3HttpNode(http://localhost:9200)> has failed for 3 times in a row, putting on 4 second timeout
+2024-11-08 04:59:07,941 - WARNING - Retrying request after failure (attempt 2 of 3)
+Traceback (most recent call last):
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 167, in perform_request
+    response = self.pool.urlopen(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/util/retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connectionpool.py", line 495, in _make_request
+    conn.request(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connection.py", line 441, in request
+    self.endheaders()
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connection.py", line 279, in connect
+    self.sock = self._new_conn()
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connection.py", line 214, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x789b2d55d7e0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/elastic_transport/_transport.py", line 342, in perform_request
+    resp = node.perform_request(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 202, in perform_request
+    raise err from e
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x789b2d55d7e0>: Failed to establish a new connection: [Errno 111] Connection refused)
+2024-11-08 04:59:07,942 - INFO - HEAD http://localhost:9200/ [status:N/A duration:0.000s]
+2024-11-08 04:59:07,942 - WARNING - Node <Urllib3HttpNode(http://localhost:9200)> has failed for 4 times in a row, putting on 8 second timeout
+2024-11-08 04:59:07,942 - ERROR - Elasticsearch connection failed.
+2024-11-08 04:59:07,942 - ERROR - An error occurred while trying to connect to Elasticsearch.
+Traceback (most recent call last):
+  File "/home/omar71023/Documents/Allam_Features/HolyQuran/config/elastic_config.py", line 37, in get_client
+    raise Exception("Elasticsearch connection failed")
+Exception: Elasticsearch connection failed
+2024-11-08 05:02:07,997 - INFO - HEAD http://localhost:9200/ [status:N/A duration:0.021s]
+2024-11-08 05:02:08,001 - WARNING - Node <Urllib3HttpNode(http://localhost:9200)> has failed for 1 times in a row, putting on 1 second timeout
+2024-11-08 05:02:08,001 - WARNING - Retrying request after failure (attempt 0 of 3)
+Traceback (most recent call last):
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 167, in perform_request
+    response = self.pool.urlopen(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/util/retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connectionpool.py", line 495, in _make_request
+    conn.request(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connection.py", line 441, in request
+    self.endheaders()
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connection.py", line 279, in connect
+    self.sock = self._new_conn()
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connection.py", line 214, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7ee4e3554dc0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/elastic_transport/_transport.py", line 342, in perform_request
+    resp = node.perform_request(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 202, in perform_request
+    raise err from e
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7ee4e3554dc0>: Failed to establish a new connection: [Errno 111] Connection refused)
+2024-11-08 05:02:08,100 - INFO - HEAD http://localhost:9200/ [status:N/A duration:0.001s]
+2024-11-08 05:02:08,100 - WARNING - Node <Urllib3HttpNode(http://localhost:9200)> has failed for 2 times in a row, putting on 2 second timeout
+2024-11-08 05:02:08,100 - WARNING - Retrying request after failure (attempt 1 of 3)
+Traceback (most recent call last):
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 167, in perform_request
+    response = self.pool.urlopen(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/util/retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connectionpool.py", line 495, in _make_request
+    conn.request(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connection.py", line 441, in request
+    self.endheaders()
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connection.py", line 279, in connect
+    self.sock = self._new_conn()
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connection.py", line 214, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7ee4e3555000>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/elastic_transport/_transport.py", line 342, in perform_request
+    resp = node.perform_request(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 202, in perform_request
+    raise err from e
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7ee4e3555000>: Failed to establish a new connection: [Errno 111] Connection refused)
+2024-11-08 05:02:08,102 - INFO - HEAD http://localhost:9200/ [status:N/A duration:0.001s]
+2024-11-08 05:02:08,103 - WARNING - Node <Urllib3HttpNode(http://localhost:9200)> has failed for 3 times in a row, putting on 4 second timeout
+2024-11-08 05:02:08,103 - WARNING - Retrying request after failure (attempt 2 of 3)
+Traceback (most recent call last):
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 167, in perform_request
+    response = self.pool.urlopen(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/util/retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connectionpool.py", line 495, in _make_request
+    conn.request(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connection.py", line 441, in request
+    self.endheaders()
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connection.py", line 279, in connect
+    self.sock = self._new_conn()
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/urllib3/connection.py", line 214, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7ee4e35553c0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/elastic_transport/_transport.py", line 342, in perform_request
+    resp = node.perform_request(
+  File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/elastic_transport/_node/_http_urllib3.py", line 202, in perform_request
+    raise err from e
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7ee4e35553c0>: Failed to establish a new connection: [Errno 111] Connection refused)
+2024-11-08 05:02:08,105 - INFO - HEAD http://localhost:9200/ [status:N/A duration:0.001s]
+2024-11-08 05:02:08,105 - WARNING - Node <Urllib3HttpNode(http://localhost:9200)> has failed for 4 times in a row, putting on 8 second timeout
+2024-11-08 05:02:08,105 - ERROR - Elasticsearch connection failed.
+2024-11-08 05:02:08,106 - ERROR - An error occurred while trying to connect to Elasticsearch.
+Traceback (most recent call last):
+  File "/home/omar71023/Documents/Allam_Features/HolyQuran/config/elastic_config.py", line 37, in get_client
+    raise Exception("Elasticsearch connection failed")
+Exception: Elasticsearch connection failed
+2024-11-08 08:39:51,811 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.471s]
+2024-11-08 08:39:51,826 - INFO - Successfully connected to Elasticsearch.
+2024-11-08 08:39:51,871 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.045s]
+2024-11-08 08:40:16,252 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.058s]
+2024-11-08 08:40:16,253 - INFO - Successfully connected to Elasticsearch.
+2024-11-08 08:40:16,261 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.008s]

@@ -27,10 +27,10 @@ prompt = PromptTemplate(
             Bad Answer Examples
                 1. Query: قم بتشكيل الجملة الآتية : ذهبت إلى البيت، فطرقت الباب بقوة، ولكن لم أجد أحدًا. عدت خائبًا، ولم أتمكن من تحقيق ما أردت
                 Answer: أنا لا أعرف الإجابة برجاء تزويدي بمعلومات أخرى.
-
+                Reason for being bad: violates Specificity (لم يقم بالإجابة المخصصة للسءؤال مع العلم أن الإجابة صحيحة)
                 2. Query: أعرب الجملة الآتية كاملة: ضرب المعلم الطالب
                 Answer: \nالمعلم: فاعل مرفوع وعلامة رفعه الضمة الظاهرة على آخره\nالطالب: مفعول به منصوب وعلامة نصبه الفتحة الظاهرة على آخره 
-
+                Reason for being bad: violates completeness (أعرب جزء من الجملة وترك الجزء الآخر)
             
             **Important Note:** Questions that primarily seek personal opinions, emotions, or subjective judgments (e.g., "كيف حالك", "من أنت","How do you do?" ) are considered good answers regardless of their content.
 

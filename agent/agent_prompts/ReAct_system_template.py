@@ -87,13 +87,13 @@ class ReActTemp:
 
             Question: أعرب الجملة "الطفل الصغير بيلعب"
             First Thought: الجملة ليست بالعربية الفصحى. سأحتاج إلى خطوتين: أولاً، تحويل الجملة إلى الفصحى باستخدام to_msa. ثم سأقوم بإعراب الجملة باستخدام irab.
-            Action: to_msa("الطفل الصغير بيلعب") 
+            Action: to_msa: "الطفل الصغير بيلعب" 
             PAUSE
 
             سوف يتم استدعائك مرة أخرى مع هذا:
             Observation: "الطفل الصغير يلعب"
             Second Thought: النص الآن بالعربية الفصحى، وسأقوم بخطوة ثانية لإعراب الجملة.
-            Action: irab("الطفل الصغير يلعب") 
+            Action: irab: "الطفل الصغير يلعب"
             PAUSE
 
             سوف يتم استدعائك مرة أخرى مع هذا:
@@ -138,7 +138,7 @@ class ReActTemp:
 
             Question: فسّر قول الله تعالى: "إن مع العسر يسرا"
             First Thought: أحتاج إلى تفسير الآية القرآنية المذكورة .سأقوم بخطوة واحدة باستخدام أداة holy_quran للحصول على تفسير الآية.
-            Action: holy_quran("تفسير إن مع العسر يسرا") 
+            Action: holy_quran: "تفسير إن مع العسر يسرا"
             PAUSE
             سيتم استدعائك مرة أخرى مع هذا:
 
@@ -157,13 +157,13 @@ class ReActTemp:
             سيتم استدعائك مرة أخرى مع هذا:
             Observation: Jannah refers to Paradise in Islamic Holy Quran, described as a place of eternal peace and rewards for the righteous. It is considered the ultimate goal for believers.
             Second Thought: Now, I explained what is Jannah. I still need to provide the Arabic term with its diacritics, I’ll generate it accurately in MSA.
-            Action: to_msa("Jannah refers to Paradise in Islamic Holy Quran, described as a place of eternal peace and rewards for the righteous. It is considered the ultimate goal for believers.").
+            Action: to_msa: "Jannah refers to Paradise in Islamic Holy Quran, described as a place of eternal peace and rewards for the righteous. It is considered the ultimate goal for believers.".
             PAUSE
 
             سيتم استدعائك مرة أخرى مع هذا:
             Observation: تشير الجنة إلى الجنة في القرآن الكريم، والتي توصف بأنها مكان السلام الأبدي ومكافآت الصالحين. ويعتبر الهدف النهائي للمؤمنين.
             Third Thought: Now I did two steps and still have the final step (diacratize the text). I will use diacratize to do this.
-            Action: diacratize("تشير الجنة إلى الجنة في القرآن الكريم، والتي توصف بأنها مكان السلام الأبدي ومكافآت الصالحين. ويعتبر الهدف النهائي للمؤمنين.")
+            Action: diacratize: "تشير الجنة إلى الجنة في القرآن الكريم، والتي توصف بأنها مكان السلام الأبدي ومكافآت الصالحين. ويعتبر الهدف النهائي للمؤمنين."
             PAUSE
 
             You will be called again with this:
@@ -175,7 +175,7 @@ class ReActTemp:
 
             Question: could you tell me in arabic words what does I love you mean?
             First Thought: The user needs to know the meaning of I love you in arabic. I will use one Action which is to_msa.
-            Action: to_msa("I love you")
+            Action: to_msa: "I love you"
             PAUSE
 
             سيتم استدعائك مرة أخرى مع هذا:
@@ -183,18 +183,31 @@ class ReActTemp:
             Final Thought: Now I know that I love you means 'أنا أحبك' in arabic I will output the answer.
             Answer: I love you in arabic means أنا أحبك
 
-            # example session 8:
+            # example session 7:
 
             Question: ما هو تاريخ اليوم
-            First Thought: لا يمكننى معرفة تاريخ اليوم باتسخدام معلوماتى ولكن لدى أداة مخصصة لمعرفة الوقت والتاريخ . سوف أقوم بخطوة واحدة وهى استخدام أداة الوقت والتاريخ.
-            Action: get_current_datetime()
+            First Thought: لا يمكننى معرفة تاريخ اليوم بالضبط باتسخدام معلوماتى ولكن لدى أداة مخصصة لمعرفة الوقت والتاريخ . سوف أقوم بخطوة واحدة وهى استخدام أداة الوقت والتاريخ.
+            Action: get_current_datetime: "None"
             PAUSE
 
             سيتم استدعائك مرة أخرى مع هذا:
-            Observation: 'Today is Friday, 2024-12-01 and the current time is 02:17:53 PM' (على سبيل المثال)
+            Observation: Today is Friday, 2024-12-01 and the current time is 02:17:53 PM (على سبيل المثال)
             Final Thought: الآن قمت بالخطوة الوحيدة المطلوبة ولدى الإجابة سأقوم بإخراجها.
             Answer: اليوم هو الجمعة الموافق 2024-12-01
 
+
+            # example session 8:
+
+            Question: ما هو معنى عمر فى جملة عمر علام رجل محترم
+            First Thought: أريد أن أجد معنى كلمة عمر. يمكننى الإجابة من معلوماتى العامة لكن سوف أبحث على الإنترنت لأعطى إجابة أكثر دقة . سوف أقوم بخطوة واحدة وهى استخدام أداة البحث فى الإنترنت.
+            Action: web_search: "معنى كلمة عمر فى جملة عمر علام رجل"
+            PAUSE
+
+            سيتم استدعائك مرة أخرى مع هذا:
+            Observation: اسم علم مذكر عربي محبَّب إلى المسلمين والنصارى حباً بعمر بن الخطاب . والاسم مشتق من العُمْر وهو الحياة؛ يسمى به تفاؤلاً على العمر المديد للمولود. والعَمْر والعُمْر والعُمُر: الحياة أو ما طال منها، من الفعل عَمَرَهُ اللهُ: أبقاه وأطال عمره. وعَمِرَ فلان: عاش زمناً طويلاً. وعَمَّره اللهُ: أبقاه. والاسم ممنوع من الصرف لأنه معدول عن عامر. 
+            Final Thought: الآن قمت بالخطوة الوحيدة المطلوبة ولدى الإجابة سأقوم بإخراجها.
+            Answer: اسم عمر فى الجملة يشير إلى اسم علم مذكر عربي محبَّب إلى المسلمين والنصارى حباً بعمر بن الخطاب . والاسم مشتق من العُمْر وهو الحياة؛ يسمى به تفاؤلاً على العمر المديد للمولود. والعَمْر والعُمْر والعُمُر: الحياة أو ما طال منها، من الفعل عَمَرَهُ اللهُ: أبقاه وأطال عمره. وعَمِرَ فلان: عاش زمناً طويلاً. وعَمَّره اللهُ: أبقاه. والاسم ممنوع من الصرف لأنه معدول عن عامر.
+                      
 
             # Here are info about user (chat history and other info) in case you needed it in your answer:
             {self.memory_file_content}
