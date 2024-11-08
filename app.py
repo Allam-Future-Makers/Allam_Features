@@ -232,11 +232,20 @@ async def upload_files(
 
         agent = getOrCreateAgent(id)
         answer = agent(query, voice_path, image_path)
-        return {
+        response = {
             "answer": answer,
-            image_path: f"https://allam.elyra.games/static/voice_{voice.filename}",
-            voice_path: f"https://allam.elyra.games/static/image_{voice.filename}",
         }
+        if voice_path:
+            response["voice_url"] = (
+                f"https://allam.elyra.games/static/voice_{voice.filename}"
+            )
+
+        if image_path:
+            response["image_url"] = (
+                f"https://allam.elyra.games/static/image_{image.filename}"
+            )
+
+        return response
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
