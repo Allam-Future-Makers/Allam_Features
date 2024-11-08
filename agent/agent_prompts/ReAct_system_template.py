@@ -58,16 +58,19 @@ class ReActTemp:
             
             6. action_name: 'get_current_datetime'
             action_description: it is an action to make you aware of the current date ant time. This is the only action that doesn't take inputs.
-            action_usage: get_current_datetime(None)
+            action_usage: get_current_datetime(no_input:str)
             example_usage: get_current_datetime() -> "Today is Friday, 2024-11-08 and the current time is 03:29:45 AM"
 
             
             
             7. action_name: 'llm_knowledge'
-            action_description: it is an action to answer general question that don't require usage of any in the above actions.
+            action_description: it is an action to do both:
+            1. search in user memory file to find the answer for questions needs memory. 
+            2. general question that don't require usage of any in the above actions.
             action_usage: llm_knowledge(text:str)
             example_usage: llm_knowledge("كيف حالك") -> "بخير والحمد لله"
             example_usage: llm_knowledge("what is 4 + 4") -> "4 + 4 equals 8"
+            example_usage: llm_knowledge("ما هو اسمى الذى ذكرته لك") -> "بعد الرجوع للذاكرة الخاصة بالمستخدم فاسمك هو عمر"
 
             """
 
@@ -208,7 +211,18 @@ class ReActTemp:
             Answer: إعراب جملة الرَّجُلُ عَلَى الجَمَلِ هى هى مبتدأ مرفوع بالضمة و كلمة عَلَى حرف جر وكلمة الجَمَلِ هى اسم مجرور بالكسرة و جملة عَلَى الجَمَلِ فى محل رفع خبر
             
             
-            # Here are info about user (chat history and other info) in case you needed it in your answer:
+            # example session 10:
+        
+            Question: هل كان هناك أشخاص فى الصورة  
+            First Thought: أريد معرفة أى صورة مقصودة ومن ثم سوف أجيب. لمعرفة الإجابة يمكننى سؤال الشخص لكنى سوف أستدعى ذاكرة المستخدم أولًا. سوف أقوم بخطوتين أولهما البحث فى أداة llm_knowledge عن ما هى الصوة المقصودة.
+            Action: llm_knowledge: "ما هو وصف الصورة التى تفاعل معها المستخدم حديثا"
+            Your response stops here and you will be called again with:
+            Observation: فى ذاكرة المستخدم القصيرة هناك صورة لمجموعة من الأشخاص فى حديقة يقفون خلف المبنى الرئيسي
+            Final Thought:الآن قد قمت بأول خطوة وهى معرفة عن أى صورة يتحدث المستخدم سوف أقوم بالخطوة الثانية وهى معرفة هل هناك أشخاص أم لا. ولكن من الوصف قد وجدت الإجابة وسوف أخرجها
+            Answer: نعم هناك أشخاص فى الصورة ويقفون فى الحديقة أمام المبنى
+            
+            
+            # Here are info about user (chat history and other info = ذاكرة المستخدم) in case you needed it in your answer:
             {self.memory_file_content}
 
 
