@@ -20492,3 +20492,50 @@ Exception: Elasticsearch connection failed
 2024-11-07 12:36:21,565 - INFO - Successfully connected to Elasticsearch.
 2024-11-07 12:36:21,598 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.032s]
 2024-11-07 12:36:42,268 - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised InternalServerError: 500 An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting.
+2024-11-08 02:39:09,267 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.013s]
+2024-11-08 02:39:09,268 - INFO - Successfully connected to Elasticsearch.
+2024-11-08 02:39:09,283 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.016s]
+2024-11-08 02:39:24,376 - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised InternalServerError: 500 An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting.
+2024-11-08 02:42:36,566 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.012s]
+2024-11-08 02:42:36,566 - INFO - Successfully connected to Elasticsearch.
+2024-11-08 02:42:36,569 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.003s]
+2024-11-08 02:42:50,285 - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised InternalServerError: 500 An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting.
+2024-11-08 02:49:17,207 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.010s]
+2024-11-08 02:49:17,207 - INFO - Successfully connected to Elasticsearch.
+2024-11-08 02:49:17,209 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.003s]
+2024-11-08 02:49:35,742 - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised InternalServerError: 500 An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting.
+2024-11-08 02:51:09,123 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.009s]
+2024-11-08 02:51:09,123 - INFO - Successfully connected to Elasticsearch.
+2024-11-08 02:51:09,125 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.002s]
+2024-11-08 02:52:19,766 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.009s]
+2024-11-08 02:52:19,766 - INFO - Successfully connected to Elasticsearch.
+2024-11-08 02:52:19,768 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.002s]
+2024-11-08 02:54:10,473 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-08 02:54:10,473 - INFO - Successfully connected to Elasticsearch.
+2024-11-08 02:54:10,476 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.002s]
+2024-11-08 02:58:59,988 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.015s]
+2024-11-08 02:58:59,988 - INFO - Successfully connected to Elasticsearch.
+2024-11-08 02:58:59,997 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.008s]
+2024-11-08 03:01:48,386 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-08 03:01:48,386 - INFO - Successfully connected to Elasticsearch.
+2024-11-08 03:01:48,388 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.002s]
+2024-11-08 03:02:39,475 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-08 03:02:39,475 - INFO - Successfully connected to Elasticsearch.
+2024-11-08 03:02:39,477 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.002s]
+2024-11-08 03:02:57,557 - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised InternalServerError: 500 An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting.
+2024-11-08 03:03:23,100 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-08 03:03:23,100 - INFO - Successfully connected to Elasticsearch.
+2024-11-08 03:03:23,103 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.003s]
+2024-11-08 03:08:57,998 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-08 03:08:57,998 - INFO - Successfully connected to Elasticsearch.
+2024-11-08 03:08:58,001 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.002s]
+2024-11-08 03:09:11,322 - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised InternalServerError: 500 An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting.
+2024-11-08 03:10:06,618 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-08 03:10:06,618 - INFO - Successfully connected to Elasticsearch.
+2024-11-08 03:10:06,621 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.002s]
+2024-11-08 03:11:48,027 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-08 03:11:48,027 - INFO - Successfully connected to Elasticsearch.
+2024-11-08 03:11:48,029 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.002s]
+2024-11-08 03:12:05,100 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.003s]
+2024-11-08 03:12:05,100 - INFO - Successfully connected to Elasticsearch.
+2024-11-08 03:12:05,102 - INFO - HEAD http://localhost:9200/quran_ayah [status:200 duration:0.003s]
