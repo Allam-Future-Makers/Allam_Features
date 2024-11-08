@@ -197,7 +197,12 @@ async def agent_endpoint(input: AgentInput):
 
         agent = getOrCreateAgent(input.id)
         answer = agent(input.query, voice_path, image_path)
-        return {"answer": answer}
+        return {
+            "answer": answer,
+            "timestamp": timestamp,
+            image_path: f"https://allam.elyra.games/static/voice_{timestamp}.wav",
+            voice_path: f"https://allam.elyra.games/static/image_{timestamp}.png",
+        }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
