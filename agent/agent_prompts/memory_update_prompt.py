@@ -14,7 +14,7 @@ Based on the given interaction, update the memory file in the following structur
 
 "user_personal_info": [List any new or updated personal info], 
 "user_areas_of_interest": [List new or relevant topics based on recurring interest], 
-"short_term_memory": [Most recent question and answer, limited to recent 5–10 interactions], 
+"short_term_memory": [list of lists (not list of json) of most recent question and answer, limited to recent 5–10 interactions. example: [[question, answer],[question,answer], ...], 
 "long_term_memory": [Analyze the query-answer interactions in the short-term memory then record any deep or recurring insights about the user’s interests, values, or goals. Always check if any updates available for this section.] 
 
 here is the past query and answer interaction:

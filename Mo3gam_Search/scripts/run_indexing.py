@@ -2,6 +2,11 @@ import sys, os
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
+# Add the parent of the parent directory to the path
+grandparent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+sys.path.append(grandparent_dir)
+
+
 import pandas as pd
 from Mo3gam_Search.config.elastic_config import ElasticConfig
 from Mo3gam_Search.elastic.index_manager import IndexManager

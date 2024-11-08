@@ -76,3 +76,4 @@ zipp==3.20.2
 bs4
 elasticsearch==8.15.1
 python-dotenv==1.0.1
+python-multipart==0.0.17
