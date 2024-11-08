@@ -2,7 +2,7 @@ from agent.agent_utils.handle_multimodality import HandleMultiModality
 import os
 
 
-class Main:
+class AgentMain:
     def __init__(self, id, verbose=True, grade_answer=True):
 
         # multimodality variables
