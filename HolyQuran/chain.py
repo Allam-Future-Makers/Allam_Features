@@ -63,10 +63,16 @@ class HolyQuranChain:
                 | self.watsonx_llm
                 | JsonOutputParser()
             )
-            result = chain.invoke(query)['answer']
-            links = re.findall(r'http[|s]?://[^\s]+', result)
+            result = chain.invoke(query)["answer"]
+            links = re.findall(r"http[|s]?://[^\s]+", result)
+            if links:
+                pattern = r"http[s]?://\S+"
+                # Remove the URL from the text
+                result = re.sub(pattern, "", result).replace("الرابط","المقطع الصوتي")
 
             print("Allam\n")
+            self.instance.iterator += 1
+            return result, links
         except:
             try:
                 chain =(
@@ -75,15 +81,18 @@ class HolyQuranChain:
                     | self.gemini_llm
                     | JsonOutputParser()
                 )
-                result = chain.invoke(query)['answer']
-                links = re.findall(r'http[|s]?://[^\s]+', result)
+                result = chain.invoke(query)["answer"]
+                links = re.findall(r"http[|s]?://[^\s]+", result)
+                if links:
+                    pattern = r"http[s]?://\S+"
+                    # Remove the URL from the text
+                    result = re.sub(pattern, "", result).replace("الرابط","المقطع الصوتي")
                 print("Gemini\n")
+                self.instance.iterator += 1
+                return result, links
             except Exception as e:
                 print(f"Error has occured:{e}")
-        
-        self.instance.iterator += 1
-        return result, links 
-    
+
     def __call__(self, query):
         result, links = self.get_results(query)
         return result
