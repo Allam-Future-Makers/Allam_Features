@@ -4,17 +4,16 @@ The Holy Quran feature in AQSA allows users to gain insights and answers to ques
 **Feature Overview**
 **Input**
 The input for this feature is a sentence in Arabic that relates to a question about a Quranic verse.
-Note: The input should be a complete sentence. Direct commands such as "do irab for..." . Please phrase the query as a question or statement.
-Output
-Depending on the query, the output can include:
-
+**output can include:**
 Verse Irab (Grammar Analysis): Provides the grammatical parsing for each word in a verse.
 Tafseer (Interpretation): Offers an interpretation of the verse to help understand its meaning.
 Voice Reading Correction: If the sentence pertains to Quranic recitation, the feature can provide feedback or corrections for voice reading.
 Similar Verses Retrieval: Retrieves verses that are thematically or linguistically similar to the input sentence.
-Usage
 
-![image](https://github.com/user-attachments/assets/fb0b8b13-1e70-4a7d-b007-234ebbcfc5e4)
+
+**Usage**
+
+![holy](https://github.com/user-attachments/assets/21b8b494-2150-4ac1-9bbe-219c274e908f)
 
 **To use this feature from the command line interface (CLI) with Python, follow these steps**
 
