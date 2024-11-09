@@ -23,6 +23,7 @@ def index_quran():
         username=os.getenv("ELASTIC_USER", "elastic"),
         password=os.getenv("ELASTIC_PASSWORD", "changeme"),
     )
+    
     es_client = config.get_client()
 
     # Index settings and mapping

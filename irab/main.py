@@ -21,7 +21,7 @@ class Main:
         chain = IrabChain(self)
         
         s = time.time()
-        json_result = chain.process_irab(paragraph)[0]  # chain(paragraph) isn't used because this returs text file which is benefitial for the agent.
+        json_result = chain.process_irab(paragraph)  # chain(paragraph) isn't used because this returs text file which is benefitial for the agent.
         e = time.time()
         print(f"Coversion Ellapsed: {e-s : 0.8f} seconds")
     
