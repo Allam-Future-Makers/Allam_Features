@@ -21,7 +21,7 @@ class Main:
         chain = Mo3gamSearchChain(self)
         
         s = time.time()
-        text_result = chain(word, helper_sentence)
+        json_result = chain(word, helper_sentence)
         e = time.time()
         print(f"Coversion Ellapsed: {e-s : 0.8f} seconds")
 

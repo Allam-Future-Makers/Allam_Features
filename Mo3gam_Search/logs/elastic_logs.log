@@ -22193,3 +22193,28 @@ Traceback (most recent call last):
   File "/home/omar71023/miniconda3/envs/langchain/lib/python3.10/site-packages/elastic_transport/client_utils.py", line 215, in url_to_node_config
     raise ValueError(
 ValueError: URL must include a 'scheme', 'host', and 'port' component (ie 'https://localhost:9200')
+2024-11-09 09:52:35,714 - INFO - NumExpr defaulting to 8 threads.
+2024-11-09 09:52:39,394 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.008s]
+2024-11-09 09:52:39,394 - INFO - Successfully connected to Elasticsearch.
+2024-11-09 09:52:39,401 - INFO - HEAD http://localhost:9200/mo3gam_verse [status:200 duration:0.007s]
+2024-11-09 09:52:46,188 - INFO - Client successfully initialized
+2024-11-09 09:52:48,204 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-09 09:52:48,302 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.008s]
+2024-11-09 09:52:48,302 - INFO - Successfully connected to Elasticsearch.
+2024-11-09 09:52:48,426 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.124s]
+2024-11-09 09:53:23,043 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-09 09:53:23,045 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-09 09:55:11,735 - INFO - NumExpr defaulting to 8 threads.
+2024-11-09 09:55:13,763 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.005s]
+2024-11-09 09:55:13,763 - INFO - Successfully connected to Elasticsearch.
+2024-11-09 09:55:13,766 - INFO - HEAD http://localhost:9200/mo3gam_verse [status:200 duration:0.003s]
+2024-11-09 09:55:21,230 - INFO - Client successfully initialized
+2024-11-09 09:55:22,494 - INFO - Successfully finished Get available foundation models for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/foundation_model_specs?version=2024-10-14&project_id=89b6a9d9-cb31-48fd-b5a4-9ed49fdaab52&filters=function_text_generation%2C%21lifecycle_withdrawn%3Aand&limit=200'
+2024-11-09 09:55:22,624 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.010s]
+2024-11-09 09:55:22,625 - INFO - Successfully connected to Elasticsearch.
+2024-11-09 09:55:22,761 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.136s]
+2024-11-09 09:55:56,438 - INFO - HTTP Request: POST https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14 "HTTP/1.1 200 OK"
+2024-11-09 09:55:56,440 - INFO - Successfully finished generate for url: 'https://eu-de.ml.cloud.ibm.com/ml/v1/text/generation?version=2024-10-14'
+2024-11-09 09:55:56,943 - INFO - HEAD http://localhost:9200/ [status:200 duration:0.004s]
+2024-11-09 09:55:56,944 - INFO - Successfully connected to Elasticsearch.
+2024-11-09 09:55:57,001 - INFO - POST http://localhost:9200/mo3gam_verse/_search [status:200 duration:0.057s]
