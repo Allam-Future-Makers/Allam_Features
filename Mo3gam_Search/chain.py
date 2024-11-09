@@ -93,8 +93,21 @@ class Mo3gamSearchChain:
                     | JsonOutputParser()
                 )
                 json_result = chain.invoke(query)
-            except Exception as e:
-                print(f"Error has occured:{e}")
+            except:
+                try:
+                    chain = (
+                        {
+                            "query": RunnablePassthrough(),
+                            "context": RunnableLambda(self._get_similar_context_small),
+                        }
+                        | mo3gam_search_prompt
+                        | self.gemini_llm
+                        | JsonOutputParser()
+                    )
+                    json_result = chain.invoke(query)
+                except Exception as e:
+                    print(f"Error has occured:{e}")
+
 
         self.instance.iterator += 1
         return json_result

@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+
+load_dotenv()
 from main import AgentMain
 from test_input import query, voice_path, image_path
 object = AgentMain(0)
