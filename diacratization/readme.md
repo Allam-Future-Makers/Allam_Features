@@ -26,5 +26,3 @@ python main.py "العلم نور"
 ```
 
 ---
-
-This README provides a quick guide on using the **Arabic Text Diacritization** feature via CLI.
